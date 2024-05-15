@@ -81,6 +81,18 @@
       "**/*.(t|j)s"
     ],
     "coverageDirectory": "../coverage",
-    "testEnvironment": "node"
+    "coveragePathIgnorePatterns": [
+      ".module.ts$",
+      ".spec.ts$",
+      ".enum.ts$",
+      ".mock.ts$",
+      "src/core/entities/*",
+      "src/main.ts",
+      "src/app.controller.ts"
+    ],
+    "testEnvironment": "node",
+    "moduleNameMapper": {
+      "@/(.*)": "<rootDir>/$1"
+    }
   }
 }
