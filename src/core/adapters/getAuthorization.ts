@@ -1,4 +1,4 @@
-import { AuthDto } from '@/core/dtos/auth.dto'
+import { AuthDto } from '@/auth/dtos/auth.dto'
 
 export const getAuthorization = (context: any): AuthDto | null => {
   if (context?.authDto == null) {

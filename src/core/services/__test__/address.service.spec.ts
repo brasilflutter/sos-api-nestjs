@@ -1,4 +1,4 @@
-import { AddressDto } from '@/core/dtos/address.dto'
+import { AddressDto } from '@/address/dtos/address.dto'
 import { AddressEntity } from '@/core/entities/address.entity'
 import { AuthError } from '@/core/errors/auth.error'
 import { DatabaseError } from '@/core/errors/database.error'

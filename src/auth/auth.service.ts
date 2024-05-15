@@ -1,5 +1,5 @@
 import { LoginDto } from '@/auth/dtos/login.dto'
-import type { AuthDto } from '@/core/dtos/auth.dto'
+import type { AuthDto } from '@/auth/dtos/auth.dto'
 import {
   HttpException,
   Injectable,
