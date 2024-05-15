@@ -26,12 +26,18 @@ export class UserEntity {
   @Column('boolean', { name: 'isActive' })
   isActive: boolean
 
-  @Column('datetime', { name: 'createdAt', default: () => 'CURRENT_TIMESTAMP' })
+  @Column('timestamp', {
+    name: 'createdAt',
+    default: () => 'CURRENT_TIMESTAMP',
+  })
   createdAt: Date
 
-  @Column('datetime', { name: 'updatedAt', default: () => 'CURRENT_TIMESTAMP' })
+  @Column('timestamp', {
+    name: 'updatedAt',
+    default: () => 'CURRENT_TIMESTAMP',
+  })
   updatedAt: Date
 
-  @Column('datetime', { name: 'deletedAt', nullable: true })
+  @Column('timestamp', { name: 'deletedAt', nullable: true })
   deletedAt?: Date | null
 }

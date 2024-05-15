@@ -44,15 +44,21 @@ export class AddressEntity {
   @Column('varchar', { name: 'longitude', nullable: true, length: 20 })
   longitude?: string | null
 
-  @Column('tinyint', { name: 'index', default: () => true })
-  index: boolean
+  @Column('smallint', { name: 'index', default: () => 0 })
+  index: number
 
-  @Column('datetime', { name: 'createdAt', default: () => 'CURRENT_TIMESTAMP' })
+  @Column('timestamp', {
+    name: 'createdAt',
+    default: () => 'CURRENT_TIMESTAMP',
+  })
   createdAt: Date
 
-  @Column('datetime', { name: 'updatedAt', default: () => 'CURRENT_TIMESTAMP' })
+  @Column('timestamp', {
+    name: 'updatedAt',
+    default: () => 'CURRENT_TIMESTAMP',
+  })
   updatedAt: Date
 
-  @Column('datetime', { name: 'deletedAt', nullable: true })
+  @Column('timestamp', { name: 'deletedAt', nullable: true })
   deletedAt?: Date | null
 }
