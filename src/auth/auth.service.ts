@@ -6,16 +6,16 @@ import {
   UnauthorizedException,
 } from '@nestjs/common'
 import { JwtService } from '@nestjs/jwt'
-import { MoreThanOrEqual } from 'typeorm'
 import { EncrypterImpl } from '@/core/services/encripter.impl'
 import { Either, Left, Right } from '@/core/adapters/either'
 import { ResultTokenDto } from '@/auth/dtos/result.token.dto'
+import { UserService } from '@/auth/user.service'
 
 @Injectable()
 export class AuthService {
   constructor(
+    private readonly userService: UserService,
     private readonly jwtService: JwtService,
-
     private readonly encrypter: EncrypterImpl,
   ) {}
 
@@ -51,8 +51,6 @@ export class AuthService {
       })
       return {
         id: data.id,
-        businessId: data.businessId,
-        businessUnitId: data.businessUnitId,
         name: data.name,
         photo: data.photo,
         email: data.email,
@@ -60,36 +58,6 @@ export class AuthService {
     } catch (error) {
       throw new UnauthorizedException('Invalid token')
     }
-  }
-
-  async registerAccessError(email: string): Promise<void> {
-    await this.accessErrorRepository.save({
-      email,
-      createdAt: new Date(),
-    })
-  }
-
-  async itsAllowedToRetryLogin(email: string): Promise<boolean> {
-    const date = new Date()
-    date.setMinutes(date.getMinutes() - 30)
-
-    const result = await this.accessErrorRepository.count({
-      where: {
-        email,
-        createdAt: MoreThanOrEqual(date),
-      },
-    })
-
-    return result < 3
-  }
-
-  async accessLogRegister(userId: number) {
-    await this.accessLogRepository.save({
-      userId,
-      ipAddress: '',
-      userAgent: '',
-      createdAt: new Date(),
-    })
   }
 
   /**
@@ -103,17 +71,11 @@ export class AuthService {
   async login(
     loginDto: LoginDto,
   ): Promise<Either<HttpException, ResultTokenDto>> {
-    const allowRetry = await this.itsAllowedToRetryLogin(loginDto.email)
-    if (!allowRetry) {
-      return new Left(new UnauthorizedException('Too many attempts'))
-    }
     const user = await this.userService.findByEmail(loginDto.email)
     if (user.isLeft()) {
-      await this.registerAccessError(loginDto.email)
       return new Left(new UnauthorizedException('User or password incorrect'))
     }
     if (user.value.isActive === false) {
-      await this.registerAccessError(loginDto.email)
       return new Left(new UnauthorizedException('User is not active'))
     }
     const compare = await this.encrypter.compare(
@@ -122,27 +84,17 @@ export class AuthService {
     )
 
     if (!compare) {
-      await this.registerAccessError(loginDto.email)
       return new Left(new UnauthorizedException('User or password incorrect'))
     }
 
-    await this.accessLogRegister(user.value.id)
-
     const auth: AuthDto = {
       id: user.value.id,
-      businessId: user.value.businessId,
-      businessUnitId: user.value.businessUnitId,
       name: user.value.name,
       photo: 'photo',
       email: user.value.email,
     }
 
     return new Right(this.tokenCreate(auth))
-  }
-
-  async test(): Promise<string> {
-    const user = await this.userService.findOne(1)
-    return user.value.name
   }
 
   /**
@@ -164,37 +116,13 @@ export class AuthService {
   /**
    * User Has Permission
    * Check if user has permission to access the resource
-   * @param data UserHasPermission
+   * @param data string
    * @returns boolean
    */
 
   async userHasPermission(
-    data: UserHasPermission,
+    data: string,
   ): Promise<Either<HttpException, boolean>> {
-    const routine = await this.routineRepository.findOne({
-      where: {
-        resource: data.resource,
-        action: data.action,
-        method: data.method,
-        isActive: true,
-      },
-    })
-
-    if (!routine) {
-      // return new Left(new UnauthorizedException('Routine not found'))
-      return new Right(true)
-    }
-
-    const result = await this.permissionRepository.query(
-      `SELECT count(userHasProfile.id) as count
-      FROM userHasProfile
-      INNER JOIN permission ON userHasProfile.profileId = permission.profileId
-      WHERE userHasProfile.userId = ${data.user.id}
-      AND permission.routineId = ${routine.id}
-      AND permission.isActive = 1
-      `,
-    )
-
-    return new Right(parseInt(result[0].count) > 0)
+    return new Right(data.length > 0)
   }
 }
