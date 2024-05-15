@@ -1,6 +1,6 @@
-import { Body, Controller, Get, Param, Post, UseGuards } from "@nestjs/common"
-import { ApiTags } from "@nestjs/swagger"
-import { LoginDto } from "./dtos/login.dto"
+import { LoginDto } from '@/auth/dtos/login.dto'
+import { Body, Controller, Get, Post } from '@nestjs/common'
+import { ApiTags } from '@nestjs/swagger'
 
 @ApiTags('Auth')
 @Controller('auth')
@@ -13,7 +13,7 @@ export class AuthController {
   }
 
   @Get('me')
-    async me(): Promise<string> {
-        return 'Hello World'
-    }
+  async me(): Promise<string> {
+    return 'Hello World'
+  }
 }

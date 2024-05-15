@@ -1,65 +1,65 @@
-import { MigrationInterface, QueryRunner } from 'typeorm';
+import { MigrationInterface, QueryRunner } from 'typeorm'
 
 export class Migrate1715717203760 implements MigrationInterface {
   public async up(queryRunner: QueryRunner): Promise<void> {
     await queryRunner.query(`
-      CREATE TYPE "active_status" AS ENUM (
+      CREATE TYPE "activeStatus" AS ENUM (
         'active',
         'inactive'
       );
-      
-      CREATE TYPE "user_role" AS ENUM (
+
+      CREATE TYPE "userRole" AS ENUM (
         'admin',
         'user',
         'volunteer'
       );
-      
-      CREATE TYPE "pet_status" AS ENUM (
+
+      CREATE TYPE "petStatus" AS ENUM (
         'missing',
         'found'
       );
-      
-      CREATE TYPE "pet_colors_type" AS ENUM (
+
+      CREATE TYPE "petColorsType" AS ENUM (
         'main',
         'secondary'
       );
-      
+
       CREATE TABLE "shelters" (
         "id" integer PRIMARY KEY,
         "name" varchar,
-        "status" active_status,
-        "created_at" timestamp DEFAULT (now()),
-        "updated_at" timestamp DEFAULT (now()),
-        "deleted_at" timestamp
+        "status" activeStatus,
+        "createdAt" timestamp DEFAULT (now()),
+        "updatedAt" timestamp DEFAULT (now()),
+        "deletedAt" timestamp
       );
-      
-      CREATE TABLE "shelter_addresses" (
+
+      CREATE TABLE "shelterAddresses" (
         "id" integer PRIMARY KEY,
-        "id_shelter" integer,
-        "id_address" integer
+        "idShelter" integer,
+        "idAddress" integer
       );
-      
-      CREATE TABLE "shelter_users" (
+
+      CREATE TABLE "shelterUsers" (
         "id" integer PRIMARY KEY,
-        "id_shelter" integer,
-        "id_user" integer,
-        "role" user_role,
+        "idShelter" integer,
+        "idUser" integer,
+        "role" userRole,
         "index" integer
       );
-      
-      CREATE TABLE "shelter_contacts" (
+
+      CREATE TABLE "shelterContacts" (
         "id" integer PRIMARY KEY,
-        "id_shelter" integer,
+        "idShelter" integer,
         "type" integer,
         "value" varchar
       );
-      
-      CREATE TABLE "contact_types" (
+
+      CREATE TABLE "contactTypes" (
         "id" integer PRIMARY KEY,
         "description" varchar,
         "mask" varchar
       );
-      
+
       CREATE TABLE "addresses" (
         "id" integer PRIMARY KEY,
         "name" varchar,
@@ -71,175 +71,176 @@ export class Migrate1715717203760 implements MigrationInterface {
         "country" varchar,
         "zip" varchar,
         "description" varchar,
+        "complement" varchar,
         "latitude" float,
         "longitude" float,
         "index" integer,
-        "created_at" timestamp DEFAULT (now()),
-        "updated_at" timestamp DEFAULT (now()),
-        "deleted_at" timestamp
+        "createdAt" timestamp DEFAULT (now()),
+        "updatedAt" timestamp DEFAULT (now()),
+        "deletedAt" timestamp
       );
-      
+
       CREATE TABLE "users" (
         "id" integer PRIMARY KEY,
         "name" varchar,
         "photo" varchar,
-        "created_at" timestamp DEFAULT (now()),
-        "updated_at" timestamp DEFAULT (now()),
-        "deleted_at" timestamp
+        "createdAt" timestamp DEFAULT (now()),
+        "updatedAt" timestamp DEFAULT (now()),
+        "deletedAt" timestamp
       );
-      
-      CREATE TABLE "user_favorite_shelters" (
+
+      CREATE TABLE "userFavoriteShelters" (
         "id" integer PRIMARY KEY,
-        "id_user" integer,
-        "id_shelter" integer
+        "idUser" integer,
+        "idShelter" integer
       );
-      
-      CREATE TABLE "user_addresses" (
+
+      CREATE TABLE "userAddresses" (
         "id" integer PRIMARY KEY,
-        "id_user" integer,
-        "id_address" integer
+        "idUser" integer,
+        "idAddress" integer
       );
-      
-      CREATE TABLE "user_contacts" (
+
+      CREATE TABLE "userContacts" (
         "id" integer PRIMARY KEY,
-        "id_user" integer,
+        "idUser" integer,
         "type" integer,
         "value" varchar
       );
-      
-      CREATE TABLE "user_pets" (
+
+      CREATE TABLE "userPets" (
         "id" integer PRIMARY KEY,
-        "id_user" integer,
-        "id_pet" integer
+        "idUser" integer,
+        "idPet" integer
       );
-      
+
       CREATE TABLE "pets" (
         "id" integer PRIMARY KEY,
-        "id_specimen" integer,
-        "id_breed" integer,
-        "id_size" integer,
+        "idSpecimen" integer,
+        "idBreed" integer,
+        "idSize" integer,
         "description" varchar,
-        "last_seen_location" varchar,
-        "status" pet_status,
-        "created_at" timestamp DEFAULT (now()),
-        "updated_at" timestamp DEFAULT (now()),
-        "deleted_at" timestamp
+        "lastSeenLocation" varchar,
+        "status" petStatus,
+        "createdAt" timestamp DEFAULT (now()),
+        "updatedAt" timestamp DEFAULT (now()),
+        "deletedAt" timestamp
       );
-      
-      CREATE TABLE "pet_images" (
+
+      CREATE TABLE "petImages" (
         "id" integer PRIMARY KEY,
-        "id_pet" integer,
+        "idPet" integer,
         "url" varchar
       );
-      
-      CREATE TABLE "pet_colors" (
+
+      CREATE TABLE "petColors" (
         "id" integer PRIMARY KEY,
-        "id_pet" integer,
-        "id_color" integer,
-        "type" pet_colors_type
+        "idPet" integer,
+        "idColor" integer,
+        "type" petColorsType
       );
-      
+
       CREATE TABLE "specimens" (
         "id" integer PRIMARY KEY,
         "description" varchar
       );
-      
+
       CREATE TABLE "breeds" (
         "id" integer PRIMARY KEY,
         "description" varchar
       );
-      
+
       CREATE TABLE "colors" (
         "id" integer PRIMARY KEY,
         "description" varchar
       );
-      
+
       CREATE TABLE "sizes" (
         "id" integer PRIMARY KEY,
         "description" varchar
       );
-      
+
       COMMENT ON COLUMN "users"."photo" IS 'Uses a default image if null';
-      
-      ALTER TABLE "shelter_addresses" ADD FOREIGN KEY ("id_shelter") REFERENCES "shelters" ("id");
-      
-      ALTER TABLE "shelter_addresses" ADD FOREIGN KEY ("id_address") REFERENCES "addresses" ("id");
-      
-      ALTER TABLE "shelter_users" ADD FOREIGN KEY ("id_shelter") REFERENCES "shelters" ("id");
-      
-      ALTER TABLE "shelter_users" ADD FOREIGN KEY ("id_user") REFERENCES "users" ("id");
-      
-      ALTER TABLE "shelter_contacts" ADD FOREIGN KEY ("id_shelter") REFERENCES "shelters" ("id");
-      
-      ALTER TABLE "shelter_contacts" ADD FOREIGN KEY ("type") REFERENCES "contact_types" ("id");
-      
-      ALTER TABLE "user_favorite_shelters" ADD FOREIGN KEY ("id_user") REFERENCES "users" ("id");
-      
-      ALTER TABLE "user_favorite_shelters" ADD FOREIGN KEY ("id_shelter") REFERENCES "shelters" ("id");
-      
-      ALTER TABLE "user_addresses" ADD FOREIGN KEY ("id_user") REFERENCES "users" ("id");
-      
-      ALTER TABLE "user_addresses" ADD FOREIGN KEY ("id_address") REFERENCES "addresses" ("id");
-      
-      ALTER TABLE "user_contacts" ADD FOREIGN KEY ("id_user") REFERENCES "users" ("id");
-      
-      ALTER TABLE "user_contacts" ADD FOREIGN KEY ("type") REFERENCES "contact_types" ("id");
-      
-      ALTER TABLE "user_pets" ADD FOREIGN KEY ("id_user") REFERENCES "users" ("id");
-      
-      ALTER TABLE "user_pets" ADD FOREIGN KEY ("id_pet") REFERENCES "pets" ("id");
-      
-      ALTER TABLE "pet_images" ADD FOREIGN KEY ("id_pet") REFERENCES "pets" ("id");
-      
-      ALTER TABLE "pet_colors" ADD FOREIGN KEY ("id_pet") REFERENCES "pets" ("id");
-      
-      ALTER TABLE "pet_colors" ADD FOREIGN KEY ("id_color") REFERENCES "colors" ("id");
-    `);
+
+      ALTER TABLE "shelterAddresses" ADD FOREIGN KEY ("idShelter") REFERENCES "shelters" ("id");
+
+      ALTER TABLE "shelterAddresses" ADD FOREIGN KEY ("idAddress") REFERENCES "addresses" ("id");
+
+      ALTER TABLE "shelterUsers" ADD FOREIGN KEY ("idShelter") REFERENCES "shelters" ("id");
+
+      ALTER TABLE "shelterUsers" ADD FOREIGN KEY ("idUser") REFERENCES "users" ("id");
+
+      ALTER TABLE "shelterContacts" ADD FOREIGN KEY ("idShelter") REFERENCES "shelters" ("id");
+
+      ALTER TABLE "shelterContacts" ADD FOREIGN KEY ("type") REFERENCES "contactTypes" ("id");
+
+      ALTER TABLE "userFavoriteShelters" ADD FOREIGN KEY ("idUser") REFERENCES "users" ("id");
+
+      ALTER TABLE "userFavoriteShelters" ADD FOREIGN KEY ("idShelter") REFERENCES "shelters" ("id");
+
+      ALTER TABLE "userAddresses" ADD FOREIGN KEY ("idUser") REFERENCES "users" ("id");
+
+      ALTER TABLE "userAddresses" ADD FOREIGN KEY ("idAddress") REFERENCES "addresses" ("id");
+
+      ALTER TABLE "userContacts" ADD FOREIGN KEY ("idUser") REFERENCES "users" ("id");
+
+      ALTER TABLE "userContacts" ADD FOREIGN KEY ("type") REFERENCES "contactTypes" ("id");
+
+      ALTER TABLE "userPets" ADD FOREIGN KEY ("idUser") REFERENCES "users" ("id");
+
+      ALTER TABLE "userPets" ADD FOREIGN KEY ("idPet") REFERENCES "pets" ("id");
+
+      ALTER TABLE "petImages" ADD FOREIGN KEY ("idPet") REFERENCES "pets" ("id");
+
+      ALTER TABLE "petColors" ADD FOREIGN KEY ("idPet") REFERENCES "pets" ("id");
+
+      ALTER TABLE "petColors" ADD FOREIGN KEY ("idColor") REFERENCES "colors" ("id");
+    `)
   }
 
   public async down(queryRunner: QueryRunner): Promise<void> {
     await queryRunner.query(`
-      ALTER TABLE "pet_colors" DROP CONSTRAINT IF EXISTS "pet_colors_id_color_fkey";
-      ALTER TABLE "pet_colors" DROP CONSTRAINT IF EXISTS "pet_colors_id_pet_fkey";
-      ALTER TABLE "pet_images" DROP CONSTRAINT IF EXISTS "pet_images_id_pet_fkey";
-      ALTER TABLE "user_pets" DROP CONSTRAINT IF EXISTS "user_pets_id_pet_fkey";
-      ALTER TABLE "user_pets" DROP CONSTRAINT IF EXISTS "user_pets_id_user_fkey";
-      ALTER TABLE "user_contacts" DROP CONSTRAINT IF EXISTS "user_contacts_type_fkey";
-      ALTER TABLE "user_contacts" DROP CONSTRAINT IF EXISTS "user_contacts_id_user_fkey";
-      ALTER TABLE "user_addresses" DROP CONSTRAINT IF EXISTS "user_addresses_id_address_fkey";
-      ALTER TABLE "user_addresses" DROP CONSTRAINT IF EXISTS "user_addresses_id_user_fkey";
-      ALTER TABLE "user_favorite_shelters" DROP CONSTRAINT IF EXISTS "user_favorite_shelters_id_shelter_fkey";
-      ALTER TABLE "user_favorite_shelters" DROP CONSTRAINT IF EXISTS "user_favorite_shelters_id_user_fkey";
-      ALTER TABLE "shelter_contacts" DROP CONSTRAINT IF EXISTS "shelter_contacts_type_fkey";
-      ALTER TABLE "shelter_contacts" DROP CONSTRAINT IF EXISTS "shelter_contacts_id_shelter_fkey";
-      ALTER TABLE "shelter_users" DROP CONSTRAINT IF EXISTS "shelter_users_id_user_fkey";
-      ALTER TABLE "shelter_users" DROP CONSTRAINT IF EXISTS "shelter_users_id_shelter_fkey";
-      ALTER TABLE "shelter_addresses" DROP CONSTRAINT IF EXISTS "shelter_addresses_id_address_fkey";
-      ALTER TABLE "shelter_addresses" DROP CONSTRAINT IF EXISTS "shelter_addresses_id_shelter_fkey";
+      ALTER TABLE "petColors" DROP CONSTRAINT IF EXISTS "petColors_idColor_fkey";
+      ALTER TABLE "petColors" DROP CONSTRAINT IF EXISTS "petColors_idPet_fkey";
+      ALTER TABLE "petImages" DROP CONSTRAINT IF EXISTS "petImages_idPet_fkey";
+      ALTER TABLE "userPets" DROP CONSTRAINT IF EXISTS "userPets_idPet_fkey";
+      ALTER TABLE "userPets" DROP CONSTRAINT IF EXISTS "userPets_idUser_fkey";
+      ALTER TABLE "userContacts" DROP CONSTRAINT IF EXISTS "userContacts_type_fkey";
+      ALTER TABLE "userContacts" DROP CONSTRAINT IF EXISTS "userContacts_idUser_fkey";
+      ALTER TABLE "userAddresses" DROP CONSTRAINT IF EXISTS "userAddresses_idAddress_fkey";
+      ALTER TABLE "userAddresses" DROP CONSTRAINT IF EXISTS "userAddresses_idUser_fkey";
+      ALTER TABLE "userFavoriteShelters" DROP CONSTRAINT IF EXISTS "userFavoriteShelters_idShelter_fkey";
+      ALTER TABLE "userFavoriteShelters" DROP CONSTRAINT IF EXISTS "userFavoriteShelters_idUser_fkey";
+      ALTER TABLE "shelterContacts" DROP CONSTRAINT IF EXISTS "shelterContacts_type_fkey";
+      ALTER TABLE "shelterContacts" DROP CONSTRAINT IF EXISTS "shelterContacts_idShelter_fkey";
+      ALTER TABLE "shelterUsers" DROP CONSTRAINT IF EXISTS "shelterUsers_idUser_fkey";
+      ALTER TABLE "shelterUsers" DROP CONSTRAINT IF EXISTS "shelterUsers_idShelter_fkey";
+      ALTER TABLE "shelterAddresses" DROP CONSTRAINT IF EXISTS "shelterAddresses_idAddress_fkey";
+      ALTER TABLE "shelterAddresses" DROP CONSTRAINT IF EXISTS "shelterAddresses_idShelter_fkey";
 
       DROP TABLE IF EXISTS "sizes";
       DROP TABLE IF EXISTS "colors";
       DROP TABLE IF EXISTS "breeds";
       DROP TABLE IF EXISTS "specimens";
-      DROP TABLE IF EXISTS "pet_colors";
-      DROP TABLE IF EXISTS "pet_images";
+      DROP TABLE IF EXISTS "petColors";
+      DROP TABLE IF EXISTS "petImages";
       DROP TABLE IF EXISTS "pets";
-      DROP TABLE IF EXISTS "user_pets";
-      DROP TABLE IF EXISTS "user_contacts";
-      DROP TABLE IF EXISTS "user_addresses";
-      DROP TABLE IF EXISTS "user_favorite_shelters";
+      DROP TABLE IF EXISTS "userPets";
+      DROP TABLE IF EXISTS "userContacts";
+      DROP TABLE IF EXISTS "userAddresses";
+      DROP TABLE IF EXISTS "userFavoriteShelters";
       DROP TABLE IF EXISTS "users";
       DROP TABLE IF EXISTS "addresses";
-      DROP TABLE IF EXISTS "contact_types";
-      DROP TABLE IF EXISTS "shelter_contacts";
-      DROP TABLE IF EXISTS "shelter_users";
-      DROP TABLE IF EXISTS "shelter_addresses";
+      DROP TABLE IF EXISTS "contactTypes";
+      DROP TABLE IF EXISTS "shelterContacts";
+      DROP TABLE IF EXISTS "shelterUsers";
+      DROP TABLE IF EXISTS "shelterAddresses";
       DROP TABLE IF EXISTS "shelters";
 
-      DROP TYPE IF EXISTS "pet_colors_type";
-      DROP TYPE IF EXISTS "pet_status";
-      DROP TYPE IF EXISTS "user_role";
-      DROP TYPE IF EXISTS "active_status";
-    `);
+      DROP TYPE IF EXISTS "petColorsType";
+      DROP TYPE IF EXISTS "petStatus";
+      DROP TYPE IF EXISTS "userRole";
+      DROP TYPE IF EXISTS "activeStatus";
+    `)
   }
 }
