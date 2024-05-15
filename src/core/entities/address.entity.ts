@@ -1,5 +1,4 @@
-import { ClientEntity } from '@/core/entities/client.entity'
-import { Column, Entity, ManyToOne, PrimaryGeneratedColumn } from 'typeorm'
+import { Column, Entity, PrimaryGeneratedColumn } from 'typeorm'
 
 @Entity('address')
 export class AddressEntity {
@@ -12,17 +11,17 @@ export class AddressEntity {
   @PrimaryGeneratedColumn({ type: 'int', name: 'id', unsigned: true })
   id: number
 
-  @Column('varchar', { name: 'zipCode', length: 8 })
-  zipCode: string
+  @Column('varchar', { name: 'name', length: 255 })
+  name: string
 
-  @Column('varchar', { name: 'address', length: 255 })
-  address: string
-
-  @Column('varchar', { name: 'number', length: 10 })
+  @Column('varchar', { name: 'number', length: 255 })
   number: string
 
-  @Column('varchar', { name: 'complement', nullable: true, length: 255 })
-  complement?: string | null
+  @Column('varchar', { name: 'street', length: 255 })
+  street: string
+
+  @Column('varchar', { name: 'description', nullable: true, length: 255 })
+  description?: string | null
 
   @Column('varchar', { name: 'neighborhood', length: 255 })
   neighborhood: string
@@ -30,8 +29,14 @@ export class AddressEntity {
   @Column('varchar', { name: 'city', length: 255 })
   city: string
 
-  @Column('varchar', { name: 'state', length: 2 })
+  @Column('varchar', { name: 'state', length: 100 })
   state: string
+
+  @Column('varchar', { name: 'country', length: 100 })
+  country: string
+
+  @Column('varchar', { name: 'zip', length: 100 })
+  zip: string
 
   @Column('varchar', { name: 'latitude', nullable: true, length: 20 })
   latitude?: string | null
@@ -39,8 +44,8 @@ export class AddressEntity {
   @Column('varchar', { name: 'longitude', nullable: true, length: 20 })
   longitude?: string | null
 
-  @Column('tinyint', { name: 'isActive', default: () => true })
-  isActive: boolean
+  @Column('tinyint', { name: 'index', default: () => true })
+  index: boolean
 
   @Column('datetime', { name: 'createdAt', default: () => 'CURRENT_TIMESTAMP' })
   createdAt: Date
@@ -50,19 +55,4 @@ export class AddressEntity {
 
   @Column('datetime', { name: 'deletedAt', nullable: true })
   deletedAt?: Date | null
-
-  @Column('int', { name: 'clientId', nullable: true, unsigned: true })
-  clientId?: number | null
-
-  @Column('int', { nullable: true, unsigned: true })
-  businessUnitId?: number | null
-
-  @Column('int', { nullable: true, unsigned: true })
-  userId?: number | null
-
-  @ManyToOne(() => ClientEntity, (client) => client.addresses, {
-    onDelete: 'CASCADE',
-    onUpdate: 'NO ACTION',
-  })
-  client?: ClientEntity
 }
