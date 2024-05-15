@@ -8,6 +8,7 @@ import { UserModule } from "@/user/user.module";
 import { AddressModule } from "@/address/address.module";
 import { PetModule } from "@/pet/pet.module";
 import { ShelterModule } from "@/shelter/shelter.module";
+import { ProfileModule } from "@/profile/profile.module";
 
 @Module({
   imports: [
@@ -31,6 +32,7 @@ import { ShelterModule } from "@/shelter/shelter.module";
     AddressModule,
     PetModule,
     ShelterModule,
+    ProfileModule,
   ],
   controllers: [AppController],
 })
