@@ -1,5 +1,4 @@
 import { AddressEntity } from '@/core/entities/address.entity'
-import { UserEntity } from '@/core/entities/user.entity'
 import { ApiProperty } from '@nestjs/swagger'
 
 export class AddressDto {
@@ -14,8 +13,6 @@ export class AddressDto {
   id?: number
   @ApiProperty({ type: 'number', required: false })
   businessUnitId?: number
-  @ApiProperty({ type: 'number', required: false })
-  user?: UserEntity
   @ApiProperty({ type: 'number', required: false })
   clientId?: number
   @ApiProperty({ type: 'string', required: true })
