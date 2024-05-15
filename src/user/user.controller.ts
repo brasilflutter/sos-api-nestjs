@@ -1,7 +1,6 @@
-import { LoginDto } from '@/auth/dtos/login.dto'
 import { Controller, Get } from '@nestjs/common'
-import { ApiOkResponse, ApiTags } from "@nestjs/swagger";
-import { AddressDto } from "@/address/dtos/address.dto";
+import { ApiOkResponse, ApiTags } from '@nestjs/swagger'
+import { AddressDto } from '@/address/dtos/address.dto'
 
 @ApiTags('User')
 @Controller('user')

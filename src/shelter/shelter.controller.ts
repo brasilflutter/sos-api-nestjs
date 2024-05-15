@@ -16,4 +16,13 @@ export class ShelterController {
   async get(): Promise<LoginDto> {
     throw new Error('Not implemented')
   }
+  @ApiOkResponse({
+    description: 'The user records',
+    type: AddressDto,
+    isArray: true,
+  })
+  @Post(':id')
+  async getById(): Promise<LoginDto> {
+    throw new Error('Not implemented')
+  }
 }
