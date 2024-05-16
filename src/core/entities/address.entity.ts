@@ -1,6 +1,6 @@
 import { Column, Entity, PrimaryGeneratedColumn } from 'typeorm'
 
-@Entity('address')
+@Entity('addresses')
 export class AddressEntity {
   constructor(partial?: Partial<AddressEntity>) {
     if (partial) {
