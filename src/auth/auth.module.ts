@@ -1,8 +1,24 @@
 import { AuthController } from '@/auth/auth.controller'
 import { Module } from '@nestjs/common'
+import { AuthService } from '@/auth/auth.service'
+import { JwtModule } from '@nestjs/jwt'
+import { CoreModule } from '@/core/core.module'
+import { UserService } from '@/auth/user.service'
+import { TypeOrmModule } from '@nestjs/typeorm'
+import { UserEntity } from '@/core/entities/user.entity'
+
+const JwtModuleInstance = JwtModule.register({
+  secret: String(process.env.JWT_SECRET),
+})
 
 @Module({
   controllers: [AuthController],
-  exports: [],
+  exports: [AuthService],
+  providers: [AuthService, UserService],
+  imports: [
+    JwtModuleInstance,
+    CoreModule,
+    TypeOrmModule.forFeature([UserEntity]),
+  ],
 })
 export class AuthModule {}

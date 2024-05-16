@@ -1,11 +1,16 @@
-import { Controller, Delete, Get, Put } from '@nestjs/common'
-import { ApiOkResponse, ApiTags } from '@nestjs/swagger'
+import { Controller, Delete, Get, Put, UseGuards } from '@nestjs/common'
+import { ApiOkResponse, ApiSecurity, ApiTags } from '@nestjs/swagger'
 import { AddressDto } from '@/address/dtos/address.dto'
+import { ProfileService } from '@/profile/services/profile.service'
+import { AuthGuard } from '@/core/guards/auth.guard'
 
+@ApiSecurity('bearer')
 @ApiTags('Profile')
+@UseGuards(AuthGuard)
 @Controller('profile')
 export class ProfileController {
-  constructor() {}
+  constructor(private readonly profileService: ProfileService) {}
+
   @ApiOkResponse({
     description: 'The user profile',
     type: AddressDto,
@@ -13,8 +18,10 @@ export class ProfileController {
   })
   @Get('')
   async get(): Promise<any> {
-    throw new Error('Not implemented')
+    // this.profileService.get()
+    return await this.profileService.get()
   }
+
   @ApiOkResponse({
     description: 'The user profile',
     type: AddressDto,
@@ -24,6 +31,7 @@ export class ProfileController {
   async put(): Promise<any> {
     throw new Error('Not implemented')
   }
+
   @ApiOkResponse({
     description: 'The user profile',
     type: AddressDto,
