@@ -136,7 +136,7 @@ export class Migrate1715717203760 implements MigrationInterface {
       CREATE TABLE "pet_colors" (
         "id" integer PRIMARY KEY,
         "idPet" integer,
-        "id_color" integer,
+        "idColor" integer,
         "type" pet_colors_type
       );
 
@@ -194,13 +194,13 @@ export class Migrate1715717203760 implements MigrationInterface {
 
       ALTER TABLE "pet_colors" ADD FOREIGN KEY ("idPet") REFERENCES "pets" ("id");
 
-      ALTER TABLE "pet_colors" ADD FOREIGN KEY ("id_color") REFERENCES "colors" ("id");
+      ALTER TABLE "pet_colors" ADD FOREIGN KEY ("idColor") REFERENCES "colors" ("id");
     `)
   }
 
   public async down(queryRunner: QueryRunner): Promise<void> {
     await queryRunner.query(`
-      ALTER TABLE "pet_colors" DROP CONSTRAINT IF EXISTS "pet_colors_id_color_fkey";
+      ALTER TABLE "pet_colors" DROP CONSTRAINT IF EXISTS "pet_colors_idColor_fkey";
       ALTER TABLE "pet_colors" DROP CONSTRAINT IF EXISTS "pet_colors_idPet_fkey";
       ALTER TABLE "pet_images" DROP CONSTRAINT IF EXISTS "pet_images_idPet_fkey";
       ALTER TABLE "user_pets" DROP CONSTRAINT IF EXISTS "user_pets_idPet_fkey";

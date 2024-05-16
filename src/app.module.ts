@@ -3,12 +3,12 @@ import { AppController } from './app.controller'
 import { AuthModule } from './auth/auth.module'
 import { ConfigModule } from '@nestjs/config'
 import { TypeOrmModule } from '@nestjs/typeorm'
-import { CoreModule } from "@/core/core.module";
-import { UserModule } from "@/user/user.module";
-import { AddressModule } from "@/address/address.module";
-import { PetModule } from "@/pet/pet.module";
-import { ShelterModule } from "@/shelter/shelter.module";
-import { ProfileModule } from "@/profile/profile.module";
+import { CoreModule } from '@/core/core.module'
+import { UserModule } from '@/user/user.module'
+import { AddressModule } from '@/address/address.module'
+import { PetModule } from '@/pet/pet.module'
+import { ShelterModule } from '@/shelter/shelter.module'
+import { ProfileModule } from '@/profile/profile.module'
 
 @Module({
   imports: [
