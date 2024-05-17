@@ -1,5 +1,5 @@
 import { ResponseDto } from '@/core/dtos/response.dto'
-import { Type, applyDecorators } from '@nestjs/common'
+import { applyDecorators, Type } from '@nestjs/common'
 import { ApiExtraModels, ApiOkResponse, getSchemaPath } from '@nestjs/swagger'
 
 export const ApiBaseResponse = <DataDto extends Type<unknown>>(

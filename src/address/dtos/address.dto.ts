@@ -2,13 +2,6 @@ import { AddressEntity } from '@/core/entities/address.entity'
 import { ApiProperty } from '@nestjs/swagger'
 
 export class AddressDto {
-  constructor(partial?: Partial<AddressDto>) {
-    if (partial) {
-      Object.assign(this, partial)
-      this.zipCode = partial.zipCode.replaceAll(/\D/g, '')
-    }
-  }
-
   @ApiProperty({ type: 'number', required: false })
   id?: number
   @ApiProperty({ type: 'number', required: false })
@@ -33,6 +26,13 @@ export class AddressDto {
   latitude?: string
   @ApiProperty({ type: 'string', required: true })
   longitude?: string
+
+  constructor(partial?: Partial<AddressDto>) {
+    if (partial) {
+      Object.assign(this, partial)
+      this.zipCode = partial.zipCode.replaceAll(/\D/g, '')
+    }
+  }
 
   static fromEntity(entity: AddressEntity): AddressDto {
     const address = { ...entity } as unknown as AddressDto

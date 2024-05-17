@@ -11,7 +11,7 @@ import { ResultTokenDto } from '@/auth/dtos/result.token.dto'
 import { UserService } from '@/auth/services/user.service'
 import { AuthDto } from '@/auth/dtos/auth.dto'
 import { SignInDto } from '@/auth/dtos/sign-in.dto'
-import { SignUpDto } from "@/auth/dtos/sign-up.dto";
+import { SignUpDto } from '@/auth/dtos/sign-up.dto'
 
 @Injectable()
 export class AuthService {

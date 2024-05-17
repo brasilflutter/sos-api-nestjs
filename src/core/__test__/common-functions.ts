@@ -1,4 +1,4 @@
-import { ROUTE_ARGS_METADATA } from '@nestjs/common/constants'
+import { ROUTE_ARGS_METADATA } from "@nestjs/common/constants";
 
 /* istanbul ignore next */
 export function getParamDecoratorFactory(decorator: any) {

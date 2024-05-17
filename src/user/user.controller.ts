@@ -6,6 +6,7 @@ import { AddressDto } from '@/address/dtos/address.dto'
 @Controller('user')
 export class UserController {
   constructor() {}
+
   @ApiOkResponse({
     description: 'The user records',
     type: AddressDto,
@@ -15,6 +16,7 @@ export class UserController {
   async get(): Promise<any> {
     throw new Error('Not implemented')
   }
+
   @ApiOkResponse({
     description: 'The user records',
     type: AddressDto,

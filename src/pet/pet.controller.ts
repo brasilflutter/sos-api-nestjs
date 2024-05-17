@@ -7,6 +7,7 @@ import { ParamId } from '@/core/decorators/param-id.decorator'
 @Controller('pet')
 export class PetController {
   constructor() {}
+
   @ApiOkResponse({
     description: 'The user records',
     type: AddressDto,
@@ -16,6 +17,7 @@ export class PetController {
   async get(): Promise<any> {
     throw new Error('Not implemented')
   }
+
   @ApiOkResponse({
     description: 'The user records',
     type: AddressDto,
