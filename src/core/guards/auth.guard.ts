@@ -1,4 +1,4 @@
-import { AuthService } from '@/auth/auth.service'
+import { AuthService } from '@/auth/services/auth.service'
 import { CanActivate, ExecutionContext, Injectable } from '@nestjs/common'
 
 @Injectable()

@@ -1,4 +1,4 @@
-import { AuthService } from '@/auth/auth.service'
+import { AuthService } from '@/auth/services/auth.service'
 import { Left, Right } from '@/core/adapters/either'
 import { AuthGuard } from '@/core/guards/auth.guard'
 

@@ -26,4 +26,31 @@ export class UserService {
 
     return new Left(new HttpException('User not found', 404))
   }
+
+  async createUser(
+    params: CreateUserParams,
+  ): Promise<Either<HttpException, UserEntity>> {
+    const user = this.userRepository.create()
+
+    user.email = params.email
+    user.password = params.password
+    user.isActive = true
+
+    const createUser = await this.userRepository.save(user)
+
+    if (createUser) {
+      return new Right(createUser)
+    }
+    return new Left(new HttpException('User not created', 500))
+  }
+
+  async createDefaultUser(): Promise<Either<HttpException, UserEntity>> {
+    const user = this.userRepository.create()
+
+    if (user) {
+      return new Right(await this.userRepository.save(user))
+    }
+
+    return new Left(new HttpException('User not created', 500))
+  }
 }

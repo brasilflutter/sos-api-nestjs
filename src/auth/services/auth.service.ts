@@ -1,15 +1,17 @@
-import { LoginDto } from '@/auth/dtos/login.dto'
-import type { AuthDto } from '@/auth/dtos/auth.dto'
 import {
   HttpException,
   Injectable,
+  InternalServerErrorException,
   UnauthorizedException,
 } from '@nestjs/common'
 import { JwtService } from '@nestjs/jwt'
 import { EncrypterImpl } from '@/core/services/encripter.impl'
 import { Either, Left, Right } from '@/core/adapters/either'
 import { ResultTokenDto } from '@/auth/dtos/result.token.dto'
-import { UserService } from '@/auth/user.service'
+import { UserService } from '@/auth/services/user.service'
+import { AuthDto } from '@/auth/dtos/auth.dto'
+import { SignInDto } from '@/auth/dtos/sign-in.dto'
+import { SignUpDto } from "@/auth/dtos/sign-up.dto";
 
 @Injectable()
 export class AuthService {
@@ -65,13 +67,13 @@ export class AuthService {
    * Find user by email and compare password with the received in the request
    * If user and password are correct, return a jwt token
    * If user or password are incorrect, return Custom Error
-   * @param authDto LoginDto
    * @returns Promise<Either<HttpException, ResultTokenDto>>
+   * @param signInDto
    */
-  async login(
-    loginDto: LoginDto,
+  async signIn(
+    signInDto: SignInDto,
   ): Promise<Either<HttpException, ResultTokenDto>> {
-    const user = await this.userService.findByEmail(loginDto.email)
+    const user = await this.userService.findByEmail(signInDto.email)
     if (user.isLeft()) {
       return new Left(new UnauthorizedException('User or password incorrect'))
     }
@@ -79,7 +81,7 @@ export class AuthService {
       return new Left(new UnauthorizedException('User is not active'))
     }
     const compare = await this.encrypter.compare(
-      loginDto.password,
+      signInDto.password,
       user.value.password,
     )
 
@@ -94,6 +96,39 @@ export class AuthService {
       email: user.value.email,
     }
 
+    return new Right(this.tokenCreate(auth))
+  }
+
+  async signUp(
+    signUpDto: SignUpDto,
+  ): Promise<Either<HttpException, ResultTokenDto>> {
+    const user = await this.userService.createUser(
+      new CreateUserParams(signUpDto.email, signUpDto.password),
+    )
+
+    if (user.isLeft()) {
+      return new Left(new InternalServerErrorException('User not created'))
+    }
+    const auth: AuthDto = {
+      id: user.value.id,
+      name: user.value.name,
+      photo: 'photo',
+      email: user.value.email,
+    }
+    return new Right(this.tokenCreate(auth))
+  }
+
+  async signInAnonymous(): Promise<Either<HttpException, ResultTokenDto>> {
+    const user = await this.userService.createDefaultUser()
+    if (user.isLeft()) {
+      return new Left(new InternalServerErrorException('User not created'))
+    }
+    const auth: AuthDto = {
+      id: user.value.id,
+      name: user.value.name,
+      photo: 'photo',
+      email: user.value.email,
+    }
     return new Right(this.tokenCreate(auth))
   }
 
