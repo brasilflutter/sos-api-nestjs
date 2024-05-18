@@ -6,8 +6,6 @@ export class AuthGuard implements CanActivate {
   constructor(private readonly authService: AuthService) {}
 
   async canActivate(context: ExecutionContext): Promise<boolean> {
-    return true
-
     const request = context.switchToHttp().getRequest()
     const { authorization } = request.headers
 
@@ -17,26 +15,7 @@ export class AuthGuard implements CanActivate {
       return false
     }
 
-    const authDto = this.authService.tokenGetData(token)
-
-    request.authDto = authDto
-
-    const paths = (request.route.path ?? '').split('/')
-
-    // const resource = paths[1] ?? ''
-    let action = paths[2] ?? ''
-
-    if (action.includes(':')) {
-      action = ''
-    }
-
-    // @todo: Implementar verificação de permissão
-    const result = await this.authService.userHasPermission('need_change')
-
-    if (result.isLeft()) {
-      return false
-    }
-
-    // return result.value
+    request.authDto = this.authService.tokenGetData(token)
+    return true
   }
 }
