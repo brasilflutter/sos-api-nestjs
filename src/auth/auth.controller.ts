@@ -1,5 +1,5 @@
-import { Body, Controller, Get, Post, UseGuards } from '@nestjs/common'
-import { ApiTags } from '@nestjs/swagger'
+import { Body, Controller, Get, Param, Post, UseGuards } from '@nestjs/common'
+import { ApiParam, ApiTags } from '@nestjs/swagger'
 import { SignInDto } from '@/auth/dtos/sign-in.dto'
 import { ResultTokenDto } from '@/auth/dtos/result.token.dto'
 import { SignUpDto } from '@/auth/dtos/sign-up.dto'
@@ -43,8 +43,9 @@ export class AuthController {
     return either.value
   }
 
+  @ApiParam({ name: 'token', type: 'string' })
   @Get('refresh-token/:token')
-  async refreshToken(token: string): Promise<ResultTokenDto> {
+  async refreshToken(@Param('token') token: string): Promise<ResultTokenDto> {
     const either = await this.authService.refreshToken(token)
 
     if (either.isLeft()) {

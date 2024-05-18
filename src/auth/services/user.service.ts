@@ -4,12 +4,14 @@ import { InjectRepository } from '@nestjs/typeorm'
 import { Either, Left, Right } from '@/core/adapters/either'
 import { UserEntity } from '@/core/entities/user.entity'
 import { SignUpDto } from '@/auth/dtos/sign-up.dto'
+import { EncrypterImpl } from '@/core/services/encripter.impl'
 
 @Injectable()
 export class UserService {
   constructor(
     @InjectRepository(UserEntity)
     private readonly userRepository: Repository<UserEntity>,
+    private readonly encrypter: EncrypterImpl,
   ) {}
 
   async findByEmail(email: string): Promise<Either<HttpException, UserEntity>> {
@@ -31,9 +33,11 @@ export class UserService {
   async createUser(
     params: SignUpDto,
   ): Promise<Either<HttpException, UserEntity>> {
+    const password = await this.encrypter.encrypt(params.password)
+
     const user: Partial<UserEntity> = {
       email: params.email,
-      password: params.password,
+      password,
       isActive: true,
     }
 
