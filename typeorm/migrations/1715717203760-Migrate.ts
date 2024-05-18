@@ -25,7 +25,7 @@ export class Migrate1715717203760 implements MigrationInterface {
       );
 
       CREATE TABLE "shelters" (
-        "id" integer PRIMARY KEY,
+        "id" serial PRIMARY KEY,
         "name" varchar,
         "status" active_status,
         "createdAt" timestamp DEFAULT (now()),
@@ -34,13 +34,13 @@ export class Migrate1715717203760 implements MigrationInterface {
       );
 
       CREATE TABLE "shelter_addresses" (
-        "id" integer PRIMARY KEY,
+        "id" serial PRIMARY KEY,
         "idShelter" integer,
         "idAddress" integer
       );
 
       CREATE TABLE "shelter_users" (
-        "id" integer PRIMARY KEY,
+        "id" serial PRIMARY KEY,
         "idShelter" integer,
         "idUser" integer,
         "role" user_role,
@@ -48,20 +48,20 @@ export class Migrate1715717203760 implements MigrationInterface {
       );
 
       CREATE TABLE "shelter_contacts" (
-        "id" integer PRIMARY KEY,
+        "id" serial PRIMARY KEY,
         "idShelter" integer,
         "type" integer,
         "value" varchar
       );
 
       CREATE TABLE "contact_types" (
-        "id" integer PRIMARY KEY,
+        "id" serial PRIMARY KEY,
         "description" varchar,
         "mask" varchar
       );
 
       CREATE TABLE "addresses" (
-        "id" integer PRIMARY KEY,
+        "id" serial PRIMARY KEY,
         "name" varchar,
         "number" varchar,
         "street" varchar,
@@ -81,7 +81,7 @@ export class Migrate1715717203760 implements MigrationInterface {
       );
 
       CREATE TABLE "users" (
-        "id" integer PRIMARY KEY,
+        "id" serial PRIMARY KEY,
         "name" varchar,
         "photo" varchar,
         "createdAt" timestamp DEFAULT (now()),
@@ -90,32 +90,32 @@ export class Migrate1715717203760 implements MigrationInterface {
       );
 
       CREATE TABLE "user_favorite_shelters" (
-        "id" integer PRIMARY KEY,
+        "id" serial PRIMARY KEY,
         "idUser" integer,
         "idShelter" integer
       );
 
       CREATE TABLE "user_addresses" (
-        "id" integer PRIMARY KEY,
+        "id" serial PRIMARY KEY,
         "idUser" integer,
         "idAddress" integer
       );
 
       CREATE TABLE "user_contacts" (
-        "id" integer PRIMARY KEY,
+        "id" serial PRIMARY KEY,
         "idUser" integer,
         "type" integer,
         "value" varchar
       );
 
       CREATE TABLE "user_pets" (
-        "id" integer PRIMARY KEY,
+        "id" serial PRIMARY KEY,
         "idUser" integer,
         "idPet" integer
       );
 
       CREATE TABLE "pets" (
-        "id" integer PRIMARY KEY,
+        "id" serial PRIMARY KEY,
         "idSpecimen" integer,
         "idBreed" integer,
         "idSize" integer,
@@ -128,35 +128,35 @@ export class Migrate1715717203760 implements MigrationInterface {
       );
 
       CREATE TABLE "pet_images" (
-        "id" integer PRIMARY KEY,
+        "id" serial PRIMARY KEY,
         "idPet" integer,
         "url" varchar
       );
 
       CREATE TABLE "pet_colors" (
-        "id" integer PRIMARY KEY,
+        "id" serial PRIMARY KEY,
         "idPet" integer,
         "idColor" integer,
         "type" pet_colors_type
       );
 
       CREATE TABLE "specimens" (
-        "id" integer PRIMARY KEY,
+        "id" serial PRIMARY KEY,
         "description" varchar
       );
 
       CREATE TABLE "breeds" (
-        "id" integer PRIMARY KEY,
+        "id" serial PRIMARY KEY,
         "description" varchar
       );
 
       CREATE TABLE "colors" (
-        "id" integer PRIMARY KEY,
+        "id" serial PRIMARY KEY,
         "description" varchar
       );
 
       CREATE TABLE "sizes" (
-        "id" integer PRIMARY KEY,
+        "id" serial PRIMARY KEY,
         "description" varchar
       );
 
