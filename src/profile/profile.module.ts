@@ -1,5 +1,5 @@
 import { forwardRef, Module } from '@nestjs/common'
-import { ProfileController } from '@/profile/controllers/profile.controller'
+import { ProfileController } from '@/profile/profile.controller'
 import { ProfileService } from '@/profile/services/profile.service'
 import { CoreModule } from '@/core/core.module'
 import { AuthModule } from '@/auth/auth.module'

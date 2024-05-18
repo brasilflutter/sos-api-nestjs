@@ -1,29 +1,28 @@
-import { Controller, Get } from '@nestjs/common'
-import { ApiOkResponse, ApiTags } from '@nestjs/swagger'
-import { AddressDto } from '@/address/dtos/address.dto'
+import { Controller, Delete, Get, Post, Put } from '@nestjs/common'
+import { ApiTags } from '@nestjs/swagger'
 
 @ApiTags('Address')
 @Controller('address')
 export class AddressController {
   constructor() {}
 
-  @ApiOkResponse({
-    description: 'The address records',
-    type: AddressDto,
-    isArray: true,
-  })
-  @Get('')
-  async get(): Promise<AddressDto> {
-    throw new Error('Not implemented')
+  @Get(':id')
+  getById() {
+    return 'This action returns an item from the profile route'
   }
 
-  @ApiOkResponse({
-    description: 'A single address record',
-    type: AddressDto,
-    isArray: true,
-  })
-  @Get(':id')
-  async getById(id: string): Promise<AddressDto> {
-    throw new Error('Not implemented')
+  @Put(':id')
+  put() {
+    return 'This action updates an item from the profile route'
+  }
+
+  @Post()
+  post() {
+    return 'This action creates an item from the profile route'
+  }
+
+  @Delete(':id')
+  delete() {
+    return 'This action removes an item from the profile route'
   }
 }
