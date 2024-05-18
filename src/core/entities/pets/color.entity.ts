@@ -1,4 +1,5 @@
-import { Column, Entity, PrimaryGeneratedColumn } from 'typeorm'
+import { Column, Entity, OneToMany, PrimaryGeneratedColumn } from 'typeorm'
+import { PetColorsEntity } from '@/core/entities/pets/pet-colors-entity'
 
 @Entity('colors')
 export class ColorEntity {
@@ -10,6 +11,9 @@ export class ColorEntity {
 
   @Column({ type: 'string', name: 'description', unsigned: true })
   description: string
+
+  @OneToMany(() => PetColorsEntity, (entity) => entity.color)
+  petColors: PetColorsEntity[]
 
   constructor(partial?: Partial<ColorEntity>) {
     if (partial) {

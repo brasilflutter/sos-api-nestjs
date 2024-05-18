@@ -1,6 +1,10 @@
 import { PetStatusEnum } from '@/core/enums/pet-status.enum'
 import { Column, Entity, OneToMany, PrimaryGeneratedColumn } from 'typeorm'
 import { PetColorsEntity } from '@/core/entities/pets/pet-colors-entity'
+import { SpecimenEntity } from '@/core/entities/pets/specimen.entity'
+import { BreedEntity } from '@/core/entities/pets/breedEntity'
+import { SizeEntity } from '@/core/entities/pets/size.entity'
+import { GenderEnum } from '@/core/enums/gender.enum'
 
 @Entity('pets')
 export class PetEntity {
@@ -40,8 +44,17 @@ export class PetEntity {
   @Column('timestamp', { name: 'deletedAt', nullable: true })
   deletedAt?: Date | null
 
-  @OneToMany(() => PetColorsEntity, (petColors) => petColors.idPet)
+  @OneToMany(() => PetColorsEntity, (entity) => entity.pets)
   colors: PetColorsEntity[]
+
+  @OneToMany(() => SpecimenEntity, (entity) => entity.pets)
+  specimen?: SpecimenEntity
+
+  @OneToMany(() => BreedEntity, (entity) => entity.pets)
+  breed?: BreedEntity
+
+  @OneToMany(() => SizeEntity, (entity) => entity.pets)
+  size?: SizeEntity
 
   constructor(partial?: Partial<PetEntity>) {
     if (partial) {
