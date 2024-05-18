@@ -40,7 +40,7 @@ export class PetEntity {
   @Column('timestamp', { name: 'deletedAt', nullable: true })
   deletedAt?: Date | null
 
-  @OneToMany(() => PetColorsEntity, (petColors) => petColors.pet)
+  @OneToMany(() => PetColorsEntity, (petColors) => petColors.idPet)
   colors: PetColorsEntity[]
 
   constructor(partial?: Partial<PetEntity>) {
