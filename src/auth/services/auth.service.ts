@@ -34,32 +34,38 @@ export class AuthService {
     }
   }
 
-  tokenIsValid(token: string): boolean {
+  tokenIsValid(token: string): Either<UnauthorizedException, boolean> {
     try {
-      const data = this.jwtService.verify(token, {
+      this.jwtService.verify(token, {
         secret: String(process.env.JWT_SECRET),
       })
-      return !!data.id
+      return new Right(true)
     } catch (error) {
-      throw new UnauthorizedException('Invalid token')
+      return new Left(new UnauthorizedException('Invalid token'))
     }
   }
 
-  tokenGetData(token: string): AuthDto {
-    try {
-      this.tokenIsValid(token)
-      const data = this.jwtService.verify(token, {
-        secret: String(process.env.JWT_SECRET),
-      })
-      return {
+  tokenGetData(token: string): Either<UnauthorizedException, AuthDto> {
+    const tokenIsValid = this.tokenIsValid(token)
+
+    if (tokenIsValid.isLeft()) {
+      return new Left(tokenIsValid.value)
+    }
+
+    const data = this.jwtService.verify(token, {
+      secret: String(process.env.JWT_SECRET),
+    })
+
+    if (data) {
+      return new Right({
         id: data.id,
         name: data.name,
         photo: data.photo,
         email: data.email,
-      }
-    } catch (error) {
-      throw new UnauthorizedException('Invalid token')
+      })
     }
+
+    return new Left(new UnauthorizedException('Invalid token'))
   }
 
   /**
@@ -138,12 +144,13 @@ export class AuthService {
   async refreshToken(
     token: string,
   ): Promise<Either<HttpException, ResultTokenDto>> {
-    try {
-      const data = this.tokenGetData(token)
-      return new Right(this.tokenCreate(data))
-    } catch (error) {
-      return new Left(new UnauthorizedException('Invalid token'))
+    const data = this.tokenGetData(token)
+
+    if (data.isLeft()) {
+      return new Left(data.value)
     }
+
+    return new Right(this.tokenCreate(data.value))
   }
 
   /**
