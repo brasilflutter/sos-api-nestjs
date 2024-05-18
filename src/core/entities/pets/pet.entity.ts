@@ -4,7 +4,6 @@ import { PetColorsEntity } from '@/core/entities/pets/pet-colors-entity'
 import { SpecimenEntity } from '@/core/entities/pets/specimen.entity'
 import { BreedEntity } from '@/core/entities/pets/breedEntity'
 import { SizeEntity } from '@/core/entities/pets/size.entity'
-import { GenderEnum } from '@/core/enums/gender.enum'
 
 @Entity('pets')
 export class PetEntity {
