@@ -1,61 +1,33 @@
-import {
-  Body,
-  Controller,
-  Delete,
-  Get,
-  HttpException,
-  Inject,
-  Put,
-  UseGuards,
-} from '@nestjs/common'
-import { ApiOkResponse, ApiSecurity, ApiTags } from '@nestjs/swagger'
-import { AddressDto } from '@/address/dtos/address.dto'
-import { ProfileService } from '@/profile/services/profile.service'
+import { Controller, Delete, Get, Post, Put, UseGuards } from '@nestjs/common'
 import { AuthGuard } from '@/core/guards/auth.guard'
-import { REQUEST } from '@nestjs/core'
-import { UserEntity } from '@/core/entities/user.entity'
-import { Either } from '@/core/adapters/either'
+import { ApiTags } from '@nestjs/swagger'
 
-@ApiSecurity('bearer')
-@ApiTags('Profile')
 @UseGuards(AuthGuard)
-@Controller('profile')
+@ApiTags('Profile Shelters')
+@Controller('profile/shelters')
 export class ProfileSheltersController {
-  constructor(
-    private readonly profileService: ProfileService,
-    @Inject(REQUEST)
-    private readonly request: Request,
-  ) {}
-
-  @ApiOkResponse({
-    description: 'The user profile',
-    type: AddressDto,
-    isArray: true,
-  })
-  @Get('')
-  async get(): Promise<Either<HttpException, UserEntity>> {
-    return this.profileService.get()
+  @Get()
+  get() {
+    return 'This action returns all items from the profile route'
   }
 
-  @ApiOkResponse({
-    description: 'The user profile',
-    type: AddressDto,
-    isArray: true,
-  })
-  @Put('')
-  async put(
-    @Body() userEntity: Partial<UserEntity>,
-  ): Promise<Either<HttpException, UserEntity>> {
-    return this.profileService.update(userEntity)
+  @Get(':id')
+  getById() {
+    return 'This action returns an item from the profile route'
   }
 
-  @ApiOkResponse({
-    description: 'The user profile',
-    type: AddressDto,
-    isArray: true,
-  })
-  @Delete('')
-  async delete(): Promise<Either<HttpException, any>> {
-    return this.profileService.delete()
+  @Put(':id')
+  put() {
+    return 'This action updates an item from the profile route'
+  }
+
+  @Post()
+  post() {
+    return 'This action creates an item from the profile route'
+  }
+
+  @Delete(':id')
+  delete() {
+    return 'This action removes an item from the profile route'
   }
 }

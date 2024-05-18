@@ -1,7 +1,6 @@
 import { HttpException, Inject, Injectable } from '@nestjs/common'
 import { REQUEST } from '@nestjs/core'
 import { InjectRepository } from '@nestjs/typeorm'
-import { AddressEntity } from '@/core/entities/address.entity'
 import { Repository } from 'typeorm'
 import { UserEntity } from '@/core/entities/user.entity'
 import { Either, Left, Right } from '@/core/adapters/either'
@@ -12,8 +11,6 @@ export class ProfileService {
   constructor(
     @Inject(REQUEST)
     private readonly request: Request,
-    @InjectRepository(AddressEntity)
-    private readonly addressRepository: Repository<AddressEntity>,
     @InjectRepository(UserEntity)
     private readonly userRepository: Repository<UserEntity>,
   ) {}
