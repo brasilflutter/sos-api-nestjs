@@ -3,6 +3,7 @@ import { IsNull, Repository } from 'typeorm'
 import { InjectRepository } from '@nestjs/typeorm'
 import { Either, Left, Right } from '@/core/adapters/either'
 import { UserEntity } from '@/core/entities/user.entity'
+import { SignUpDto } from '@/auth/dtos/sign-up.dto'
 
 @Injectable()
 export class UserService {
@@ -28,13 +29,13 @@ export class UserService {
   }
 
   async createUser(
-    params: CreateUserParams,
+    params: SignUpDto,
   ): Promise<Either<HttpException, UserEntity>> {
-    const user = this.userRepository.create()
-
-    user.email = params.email
-    user.password = params.password
-    user.isActive = true
+    const user: Partial<UserEntity> = {
+      email: params.email,
+      password: params.password,
+      isActive: true,
+    }
 
     const createUser = await this.userRepository.save(user)
 

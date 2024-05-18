@@ -102,9 +102,7 @@ export class AuthService {
   async signUp(
     signUpDto: SignUpDto,
   ): Promise<Either<HttpException, ResultTokenDto>> {
-    const user = await this.userService.createUser(
-      new CreateUserParams(signUpDto.email, signUpDto.password),
-    )
+    const user = await this.userService.createUser(signUpDto)
 
     if (user.isLeft()) {
       return new Left(new InternalServerErrorException('User not created'))
