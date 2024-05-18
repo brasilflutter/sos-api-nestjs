@@ -8,21 +8,21 @@ export class AddressController {
 
   @Get(':id')
   getById() {
-    return 'This action returns an item from the profile route'
+    return 'This action returns an item'
   }
 
   @Put(':id')
   put() {
-    return 'This action updates an item from the profile route'
+    return 'This action updates an item'
   }
 
   @Post()
   post() {
-    return 'This action creates an item from the profile route'
+    return 'This action creates an item'
   }
 
   @Delete(':id')
   delete() {
-    return 'This action removes an item from the profile route'
+    return 'This action removes an item'
   }
 }

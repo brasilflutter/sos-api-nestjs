@@ -1,31 +1,28 @@
-import { Controller, Get } from '@nestjs/common'
-import { ApiOkResponse, ApiTags } from '@nestjs/swagger'
-import { AddressDto } from '@/address/dtos/address.dto'
-import { ParamId } from '@/core/decorators/param-id.decorator'
+import { Controller, Delete, Get, Post, Put } from '@nestjs/common'
+import { ApiTags } from '@nestjs/swagger'
 
 @ApiTags('Pet')
 @Controller('pet')
 export class PetController {
   constructor() {}
 
-  @ApiOkResponse({
-    description: 'The user records',
-    type: AddressDto,
-    isArray: true,
-  })
-  @Get('')
-  async get(): Promise<any> {
-    throw new Error('Not implemented')
+  @Get(':id')
+  getById() {
+    return 'This action returns an item'
   }
 
-  @ApiOkResponse({
-    description: 'The user records',
-    type: AddressDto,
-    isArray: true,
-  })
-  @Get(':id')
-  async getById(@ParamId() id: string): Promise<any> {
-    console.log(id)
-    throw new Error('Not implemented')
+  @Put(':id')
+  put() {
+    return 'This action updates an item'
+  }
+
+  @Post()
+  post() {
+    return 'This action creates an item'
+  }
+
+  @Delete(':id')
+  delete() {
+    return 'This action removes an item'
   }
 }
