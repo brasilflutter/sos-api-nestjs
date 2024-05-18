@@ -19,8 +19,6 @@ async function bootstrap() {
       type: 'http',
       scheme: 'bearer',
     })
-    .addTag('Auth', 'Endpoints for authentication')
-    .addTag('Users', 'Endpoints for users')
     .build()
 
   const document = SwaggerModule.createDocument(app, options)
