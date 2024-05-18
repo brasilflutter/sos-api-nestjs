@@ -7,8 +7,8 @@ export class PetEntity {
   @PrimaryGeneratedColumn({ type: 'int', name: 'id', unsigned: true })
   id: number
 
-  @Column('int', { name: 'idSpeciment', unsigned: true })
-  idSpeciment: number
+  @Column('int', { name: 'idSpecimen', unsigned: true })
+  idSpecimen: number
 
   @Column('int', { name: 'idBreed', unsigned: true })
   idBreed: number

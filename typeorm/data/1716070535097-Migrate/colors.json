@@ -1,0 +1,818 @@
+[
+  {
+    "description": "Amarelo",
+    "id": 1,
+    "created_at": "2020-05-20T21:11:07.396793+00:00",
+    "updated_at": "2020-05-20T21:11:07.396793+00:00"
+  },
+  {
+    "description": "Amarelo Canário",
+    "id": 2,
+    "created_at": "2020-05-20T21:11:07.396793+00:00",
+    "updated_at": "2020-05-20T21:11:07.396793+00:00"
+  },
+  {
+    "description": "Amarelo Claro",
+    "id": 3,
+    "created_at": "2020-05-20T21:11:07.396793+00:00",
+    "updated_at": "2020-05-20T21:11:07.396793+00:00"
+  },
+  {
+    "description": "Amarelo Escuro",
+    "id": 4,
+    "created_at": "2020-05-20T21:11:07.396793+00:00",
+    "updated_at": "2020-05-20T21:11:07.396793+00:00"
+  },
+  {
+    "description": "Amarelo Limão",
+    "id": 5,
+    "created_at": "2020-05-20T21:11:07.396793+00:00",
+    "updated_at": "2020-05-20T21:11:07.396793+00:00"
+  },
+  {
+    "description": "Amarelo Neon",
+    "id": 6,
+    "created_at": "2020-05-20T21:11:07.396793+00:00",
+    "updated_at": "2020-05-20T21:11:07.396793+00:00"
+  },
+  {
+    "description": "Amarelo Poderoso",
+    "id": 7,
+    "created_at": "2020-05-20T21:11:07.396793+00:00",
+    "updated_at": "2020-05-20T21:11:07.396793+00:00"
+  },
+  {
+    "description": "Areia",
+    "id": 8,
+    "created_at": "2020-05-20T21:11:07.396793+00:00",
+    "updated_at": "2020-05-20T21:11:07.396793+00:00"
+  },
+  {
+    "description": "Azul",
+    "id": 9,
+    "created_at": "2020-05-20T21:11:07.396793+00:00",
+    "updated_at": "2020-05-20T21:11:07.396793+00:00"
+  },
+  {
+    "description": "Azul Água",
+    "id": 10,
+    "created_at": "2020-05-20T21:11:07.396793+00:00",
+    "updated_at": "2020-05-20T21:11:07.396793+00:00"
+  },
+  {
+    "description": "Azul Céu",
+    "id": 11,
+    "created_at": "2020-05-20T21:11:07.396793+00:00",
+    "updated_at": "2020-05-20T21:11:07.396793+00:00"
+  },
+  {
+    "description": "Azul Claro",
+    "id": 12,
+    "created_at": "2020-05-20T21:11:07.396793+00:00",
+    "updated_at": "2020-05-20T21:11:07.396793+00:00"
+  },
+  {
+    "description": "Azul Cobalto",
+    "id": 13,
+    "created_at": "2020-05-20T21:11:07.396793+00:00",
+    "updated_at": "2020-05-20T21:11:07.396793+00:00"
+  },
+  {
+    "description": "Azul Escuro",
+    "id": 14,
+    "created_at": "2020-05-20T21:11:07.396793+00:00",
+    "updated_at": "2020-05-20T21:11:07.396793+00:00"
+  },
+  {
+    "description": "Azul Marinho",
+    "id": 15,
+    "created_at": "2020-05-20T21:11:07.396793+00:00",
+    "updated_at": "2020-05-20T21:11:07.396793+00:00"
+  },
+  {
+    "description": "Azul Metálico",
+    "id": 16,
+    "created_at": "2020-05-20T21:11:07.396793+00:00",
+    "updated_at": "2020-05-20T21:11:07.396793+00:00"
+  },
+  {
+    "description": "Azul Real",
+    "id": 17,
+    "created_at": "2020-05-20T21:11:07.396793+00:00",
+    "updated_at": "2020-05-20T21:11:07.396793+00:00"
+  },
+  {
+    "description": "Azul Turquesa",
+    "id": 18,
+    "created_at": "2020-05-20T21:11:07.396793+00:00",
+    "updated_at": "2020-05-20T21:11:07.396793+00:00"
+  },
+  {
+    "description": "Bege",
+    "id": 19,
+    "created_at": "2020-05-20T21:11:07.396793+00:00",
+    "updated_at": "2020-05-20T21:11:07.396793+00:00"
+  },
+  {
+    "description": "Bege Claro",
+    "id": 20,
+    "created_at": "2020-05-20T21:11:07.396793+00:00",
+    "updated_at": "2020-05-20T21:11:07.396793+00:00"
+  },
+  {
+    "description": "Bege Escuro",
+    "id": 21,
+    "created_at": "2020-05-20T21:11:07.396793+00:00",
+    "updated_at": "2020-05-20T21:11:07.396793+00:00"
+  },
+  {
+    "description": "Branco",
+    "id": 22,
+    "created_at": "2020-05-20T21:11:07.396793+00:00",
+    "updated_at": "2020-05-20T21:11:07.396793+00:00"
+  },
+  {
+    "description": "Branco Malhado",
+    "id": 23,
+    "created_at": "2020-05-20T21:11:07.396793+00:00",
+    "updated_at": "2020-05-20T21:11:07.396793+00:00"
+  },
+  {
+    "description": "Branco Listrado",
+    "id": 24,
+    "created_at": "2020-05-20T21:11:07.396793+00:00",
+    "updated_at": "2020-05-20T21:11:07.396793+00:00"
+  },
+  {
+    "description": "Branco Mesclado",
+    "id": 25,
+    "created_at": "2020-05-20T21:11:07.396793+00:00",
+    "updated_at": "2020-05-20T21:11:07.396793+00:00"
+  },
+  {
+    "description": "Bronze Metálico",
+    "id": 26,
+    "created_at": "2020-05-20T21:11:07.396793+00:00",
+    "updated_at": "2020-05-20T21:11:07.396793+00:00"
+  },
+  {
+    "description": "Canela",
+    "id": 27,
+    "created_at": "2020-05-20T21:11:07.396793+00:00",
+    "updated_at": "2020-05-20T21:11:07.396793+00:00"
+  },
+  {
+    "description": "Caramelo",
+    "id": 28,
+    "created_at": "2020-05-20T21:11:07.396793+00:00",
+    "updated_at": "2020-05-20T21:11:07.396793+00:00"
+  },
+  {
+    "description": "Carmim",
+    "id": 29,
+    "created_at": "2020-05-20T21:11:07.396793+00:00",
+    "updated_at": "2020-05-20T21:11:07.396793+00:00"
+  },
+  {
+    "description": "Cinza",
+    "id": 30,
+    "created_at": "2020-05-20T21:11:07.396793+00:00",
+    "updated_at": "2020-05-20T21:11:07.396793+00:00"
+  },
+  {
+    "description": "Cinza Azulado",
+    "id": 31,
+    "created_at": "2020-05-20T21:11:07.396793+00:00",
+    "updated_at": "2020-05-20T21:11:07.396793+00:00"
+  },
+  {
+    "description": "Cinza Claro",
+    "id": 32,
+    "created_at": "2020-05-20T21:11:07.396793+00:00",
+    "updated_at": "2020-05-20T21:11:07.396793+00:00"
+  },
+  {
+    "description": "Cinza Escuro",
+    "id": 33,
+    "created_at": "2020-05-20T21:11:07.396793+00:00",
+    "updated_at": "2020-05-20T21:11:07.396793+00:00"
+  },
+  {
+    "description": "Cinza Gelo",
+    "id": 34,
+    "created_at": "2020-05-20T21:11:07.396793+00:00",
+    "updated_at": "2020-05-20T21:11:07.396793+00:00"
+  },
+  {
+    "description": "Cinza Quente",
+    "id": 35,
+    "created_at": "2020-05-20T21:11:07.396793+00:00",
+    "updated_at": "2020-05-20T21:11:07.396793+00:00"
+  },
+  {
+    "description": "Creme",
+    "id": 36,
+    "created_at": "2020-05-20T21:11:07.396793+00:00",
+    "updated_at": "2020-05-20T21:11:07.396793+00:00"
+  },
+  {
+    "description": "Dourado",
+    "id": 37,
+    "created_at": "2020-05-20T21:11:07.396793+00:00",
+    "updated_at": "2020-05-20T21:11:07.396793+00:00"
+  },
+  {
+    "description": "Fúcsia",
+    "id": 38,
+    "created_at": "2020-05-20T21:11:07.396793+00:00",
+    "updated_at": "2020-05-20T21:11:07.396793+00:00"
+  },
+  {
+    "description": "Laranja",
+    "id": 39,
+    "created_at": "2020-05-20T21:11:07.396793+00:00",
+    "updated_at": "2020-05-20T21:11:07.396793+00:00"
+  },
+  {
+    "description": "Laranja Claro",
+    "id": 40,
+    "created_at": "2020-05-20T21:11:07.396793+00:00",
+    "updated_at": "2020-05-20T21:11:07.396793+00:00"
+  },
+  {
+    "description": "Laranja Escuro",
+    "id": 41,
+    "created_at": "2020-05-20T21:11:07.396793+00:00",
+    "updated_at": "2020-05-20T21:11:07.396793+00:00"
+  },
+  {
+    "description": "Laranja Neon",
+    "id": 42,
+    "created_at": "2020-05-20T21:11:07.396793+00:00",
+    "updated_at": "2020-05-20T21:11:07.396793+00:00"
+  },
+  {
+    "description": "Lilás",
+    "id": 43,
+    "created_at": "2020-05-20T21:11:07.396793+00:00",
+    "updated_at": "2020-05-20T21:11:07.396793+00:00"
+  },
+  {
+    "description": "Lilás Claro",
+    "id": 44,
+    "created_at": "2020-05-20T21:11:07.396793+00:00",
+    "updated_at": "2020-05-20T21:11:07.396793+00:00"
+  },
+  {
+    "description": "Lilás Escuro",
+    "id": 45,
+    "created_at": "2020-05-20T21:11:07.396793+00:00",
+    "updated_at": "2020-05-20T21:11:07.396793+00:00"
+  },
+  {
+    "description": "Listrado",
+    "id": 46,
+    "created_at": "2020-05-20T21:11:07.396793+00:00",
+    "updated_at": "2020-05-20T21:11:07.396793+00:00"
+  },
+  {
+    "description": "Malhado",
+    "id": 47,
+    "created_at": "2020-05-20T21:11:07.396793+00:00",
+    "updated_at": "2020-05-20T21:11:07.396793+00:00"
+  },
+  {
+    "description": "Marrom",
+    "id": 48,
+    "created_at": "2020-05-20T21:11:07.396793+00:00",
+    "updated_at": "2020-05-20T21:11:07.396793+00:00"
+  },
+  {
+    "description": "Marrom Claro",
+    "id": 49,
+    "created_at": "2020-05-20T21:11:07.396793+00:00",
+    "updated_at": "2020-05-20T21:11:07.396793+00:00"
+  },
+  {
+    "description": "Marrom Escuro",
+    "id": 50,
+    "created_at": "2020-06-08T17:07:00.642819+00:00",
+    "updated_at": "2020-06-08T17:07:00.642819+00:00"
+  },
+  {
+    "description": "Mesclado",
+    "id": 51,
+    "created_at": "2020-06-08T17:07:00.642819+00:00",
+    "updated_at": "2020-06-08T17:07:00.642819+00:00"
+  },
+  {
+    "description": "Ocre",
+    "id": 52,
+    "created_at": "2020-06-08T17:07:00.642819+00:00",
+    "updated_at": "2020-06-08T17:07:00.642819+00:00"
+  },
+  {
+    "description": "Ocre Alaranjado",
+    "id": 53,
+    "created_at": "2020-06-08T17:07:00.642819+00:00",
+    "updated_at": "2020-06-08T17:07:00.642819+00:00"
+  },
+  {
+    "description": "Ouro Metálico",
+    "id": 54,
+    "created_at": "2020-06-08T17:07:00.642819+00:00",
+    "updated_at": "2020-06-08T17:07:00.642819+00:00"
+  },
+  {
+    "description": "Prata",
+    "id": 55,
+    "created_at": "2020-06-08T17:07:00.642819+00:00",
+    "updated_at": "2020-06-08T17:07:00.642819+00:00"
+  },
+  {
+    "description": "Preto",
+    "id": 56,
+    "created_at": "2020-06-08T17:07:00.642819+00:00",
+    "updated_at": "2020-06-08T17:07:00.642819+00:00"
+  },
+  {
+    "description": "Preto Malhado",
+    "id": 57,
+    "created_at": "2020-06-08T17:07:00.642819+00:00",
+    "updated_at": "2020-06-08T17:07:00.642819+00:00"
+  },
+  {
+    "description": "Preto Listrado",
+    "id": 58,
+    "created_at": "2020-06-08T17:07:00.642819+00:00",
+    "updated_at": "2020-06-08T17:07:00.642819+00:00"
+  },
+  {
+    "description": "Preto Mesclado",
+    "id": 59,
+    "created_at": "2020-06-08T17:07:00.642819+00:00",
+    "updated_at": "2020-06-08T17:07:00.642819+00:00"
+  },
+  {
+    "description": "Púrpura",
+    "id": 60,
+    "created_at": "2020-06-08T17:07:00.642819+00:00",
+    "updated_at": "2020-06-08T17:07:00.642819+00:00"
+  },
+  {
+    "description": "Rosa",
+    "id": 61,
+    "created_at": "2020-06-08T17:07:00.642819+00:00",
+    "updated_at": "2020-06-08T17:07:00.642819+00:00"
+  },
+  {
+    "description": "Rosa Chiclete",
+    "id": 62,
+    "created_at": "2020-06-08T17:07:00.642819+00:00",
+    "updated_at": "2020-06-08T17:07:00.642819+00:00"
+  },
+  {
+    "description": "Rosa Claro",
+    "id": 63,
+    "created_at": "2020-06-08T17:07:00.642819+00:00",
+    "updated_at": "2020-06-08T17:07:00.642819+00:00"
+  },
+  {
+    "description": "Rosa Neon",
+    "id": 64,
+    "created_at": "2020-06-08T17:07:00.642819+00:00",
+    "updated_at": "2020-06-08T17:07:00.642819+00:00"
+  },
+  {
+    "description": "Rosa Pétala",
+    "id": 65,
+    "created_at": "2020-06-08T17:07:00.642819+00:00",
+    "updated_at": "2020-06-08T17:07:00.642819+00:00"
+  },
+  {
+    "description": "Roxo",
+    "id": 66,
+    "created_at": "2020-06-08T17:07:00.642819+00:00",
+    "updated_at": "2020-06-08T17:07:00.642819+00:00"
+  },
+  {
+    "description": "Roxo Claro",
+    "id": 67,
+    "created_at": "2020-06-08T17:07:00.642819+00:00",
+    "updated_at": "2020-06-08T17:07:00.642819+00:00"
+  },
+  {
+    "description": "Roxo Escuro",
+    "id": 68,
+    "created_at": "2020-06-08T17:07:00.642819+00:00",
+    "updated_at": "2020-06-08T17:07:00.642819+00:00"
+  },
+  {
+    "description": "Roxo Metálico",
+    "id": 69,
+    "created_at": "2020-06-08T17:07:00.642819+00:00",
+    "updated_at": "2020-06-08T17:07:00.642819+00:00"
+  },
+  {
+    "description": "Salmão",
+    "id": 70,
+    "created_at": "2020-06-08T17:07:00.642819+00:00",
+    "updated_at": "2020-06-08T17:07:00.642819+00:00"
+  },
+  {
+    "description": "Salmão Claro",
+    "id": 71,
+    "created_at": "2020-06-08T17:07:00.642819+00:00",
+    "updated_at": "2020-06-08T17:07:00.642819+00:00"
+  },
+  {
+    "description": "Salmão Escuro",
+    "id": 72,
+    "created_at": "2020-06-08T17:07:00.642819+00:00",
+    "updated_at": "2020-06-08T17:07:00.642819+00:00"
+  },
+  {
+    "description": "Sépia",
+    "id": 73,
+    "created_at": "2020-06-08T17:07:00.642819+00:00",
+    "updated_at": "2020-06-08T17:07:00.642819+00:00"
+  },
+  {
+    "description": "Verde",
+    "id": 74,
+    "created_at": "2020-06-08T17:07:00.642819+00:00",
+    "updated_at": "2020-06-08T17:07:00.642819+00:00"
+  },
+  {
+    "description": "Verde Água",
+    "id": 75,
+    "created_at": "2020-06-08T17:07:00.642819+00:00",
+    "updated_at": "2020-06-08T17:07:00.642819+00:00"
+  },
+  {
+    "description": "Verde Claro",
+    "id": 76,
+    "created_at": "2020-06-08T17:07:00.642819+00:00",
+    "updated_at": "2020-06-08T17:07:00.642819+00:00"
+  },
+  {
+    "description": "Verde Escuro",
+    "id": 77,
+    "created_at": "2020-06-08T17:07:00.642819+00:00",
+    "updated_at": "2020-06-08T17:07:00.642819+00:00"
+  },
+  {
+    "description": "Verde Folha",
+    "id": 78,
+    "created_at": "2020-06-08T17:07:00.642819+00:00",
+    "updated_at": "2020-06-08T17:07:00.642819+00:00"
+  },
+  {
+    "description": "Verde Mar",
+    "id": 79,
+    "created_at": "2020-06-08T17:07:00.642819+00:00",
+    "updated_at": "2020-06-08T17:07:00.642819+00:00"
+  },
+  {
+    "description": "Verde Marinho",
+    "id": 80,
+    "created_at": "2020-06-08T17:07:00.642819+00:00",
+    "updated_at": "2020-06-08T17:07:00.642819+00:00"
+  },
+  {
+    "description": "Verde Metálico",
+    "id": 81,
+    "created_at": "2020-06-08T17:07:00.642819+00:00",
+    "updated_at": "2020-06-08T17:07:00.642819+00:00"
+  },
+  {
+    "description": "Verde Oliva",
+    "id": 82,
+    "created_at": "2020-06-08T17:07:00.642819+00:00",
+    "updated_at": "2020-06-08T17:07:00.642819+00:00"
+  },
+  {
+    "description": "Verde Turquesa",
+    "id": 83,
+    "created_at": "2020-06-08T17:07:00.642819+00:00",
+    "updated_at": "2020-06-08T17:07:00.642819+00:00"
+  },
+  {
+    "description": "Vermelho",
+    "id": 84,
+    "created_at": "2020-06-08T17:07:00.642819+00:00",
+    "updated_at": "2020-06-08T17:07:00.642819+00:00"
+  },
+  {
+    "description": "Vermelho Claro",
+    "id": 85,
+    "created_at": "2020-06-08T17:07:00.642819+00:00",
+    "updated_at": "2020-06-08T17:07:00.642819+00:00"
+  },
+  {
+    "description": "Vermelho Escuro",
+    "id": 86,
+    "created_at": "2020-06-08T17:07:00.642819+00:00",
+    "updated_at": "2020-06-08T17:07:00.642819+00:00"
+  },
+  {
+    "description": "Vermelho Violeta",
+    "id": 87,
+    "created_at": "2020-06-08T17:07:00.642819+00:00",
+    "updated_at": "2020-06-08T17:07:00.642819+00:00"
+  },
+  {
+    "description": "Vinho",
+    "id": 88,
+    "created_at": "2020-06-08T17:07:00.642819+00:00",
+    "updated_at": "2020-06-08T17:07:00.642819+00:00"
+  },
+  {
+    "description": "Vinho Claro",
+    "id": 89,
+    "created_at": "2020-06-08T17:07:00.642819+00:00",
+    "updated_at": "2020-06-08T17:07:00.642819+00:00"
+  },
+  {
+    "description": "Vinho Escuro",
+    "id": 90,
+    "created_at": "2020-06-08T17:07:00.642819+00:00",
+    "updated_at": "2020-06-08T17:07:00.642819+00:00"
+  },
+  {
+    "description": "Violeta",
+    "id": 91,
+    "created_at": "2020-06-08T17:07:00.642819+00:00",
+    "updated_at": "2020-06-08T17:07:00.642819+00:00"
+  },
+  {
+    "description": "Abricot",
+    "id": 92,
+    "created_at": "2021-11-23T01:03:01.987604+00:00",
+    "updated_at": "2021-11-23T01:03:01.987604+00:00"
+  },
+  {
+    "description": "Preto e Branco",
+    "id": 93,
+    "created_at": "2021-11-23T01:03:28.566468+00:00",
+    "updated_at": "2021-11-23T01:03:28.566468+00:00"
+  },
+  {
+    "description": "Cinza Dourado",
+    "id": 94,
+    "created_at": "2023-03-01T11:46:28.926588+00:00",
+    "updated_at": "2023-03-01T11:46:28.926588+00:00"
+  },
+  {
+    "description": "Equino Preto",
+    "id": 95,
+    "created_at": "2023-03-15T13:57:43.057453+00:00",
+    "updated_at": "2023-03-15T13:57:43.057453+00:00"
+  },
+  {
+    "description": "Equino Picaço",
+    "id": 96,
+    "created_at": "2023-03-15T13:58:49.686834+00:00",
+    "updated_at": "2023-03-15T13:58:49.686834+00:00"
+  },
+  {
+    "description": "Equino Zaino",
+    "id": 97,
+    "created_at": "2023-03-15T13:59:01.980026+00:00",
+    "updated_at": "2023-03-15T13:59:01.980026+00:00"
+  },
+  {
+    "description": "Equino Colorado Requeimado",
+    "id": 98,
+    "created_at": "2023-03-15T13:59:32.000832+00:00",
+    "updated_at": "2023-03-15T13:59:32.000832+00:00"
+  },
+  {
+    "description": "Equino Colorado",
+    "id": 99,
+    "created_at": "2023-03-15T14:00:19.30675+00:00",
+    "updated_at": "2023-03-15T14:00:19.30675+00:00"
+  },
+  {
+    "description": "Equino Rosilho",
+    "id": 100,
+    "created_at": "2023-03-15T14:00:42.757571+00:00",
+    "updated_at": "2023-03-15T14:00:42.757571+00:00"
+  },
+  {
+    "description": "Equino Mouro",
+    "id": 101,
+    "created_at": "2023-03-15T19:36:57.238005+00:00",
+    "updated_at": "2023-03-15T19:36:57.238005+00:00"
+  },
+  {
+    "description": "Equino Lobuno",
+    "id": 102,
+    "created_at": "2023-03-15T19:37:18.695385+00:00",
+    "updated_at": "2023-03-15T19:37:18.695385+00:00"
+  },
+  {
+    "description": "Equino Cebruno",
+    "id": 103,
+    "created_at": "2023-03-15T19:37:41.079497+00:00",
+    "updated_at": "2023-03-15T19:37:41.079497+00:00"
+  },
+  {
+    "description": "Equino Baio Encerado",
+    "id": 104,
+    "created_at": "2023-03-15T19:37:58.383341+00:00",
+    "updated_at": "2023-03-15T19:37:58.383341+00:00"
+  },
+  {
+    "description": "Equino Baio Ovo de Pato",
+    "id": 105,
+    "created_at": "2023-03-15T19:38:13.952191+00:00",
+    "updated_at": "2023-03-15T19:38:13.952191+00:00"
+  },
+  {
+    "description": "Equino Baio Ruano",
+    "id": 106,
+    "created_at": "2023-03-15T19:38:30.278713+00:00",
+    "updated_at": "2023-03-15T19:38:30.278713+00:00"
+  },
+  {
+    "description": "Equino Baio Cabos Negros",
+    "id": 107,
+    "created_at": "2023-03-15T19:39:11.859008+00:00",
+    "updated_at": "2023-03-15T19:39:11.859008+00:00"
+  },
+  {
+    "description": "Equino Gateado",
+    "id": 108,
+    "created_at": "2023-03-15T19:39:36.511198+00:00",
+    "updated_at": "2023-03-15T19:39:36.511198+00:00"
+  },
+  {
+    "description": "Equino Gateado Pangaré",
+    "id": 109,
+    "created_at": "2023-03-15T19:39:55.807142+00:00",
+    "updated_at": "2023-03-15T19:39:55.807142+00:00"
+  },
+  {
+    "description": "Equino Gateado Brasino",
+    "id": 110,
+    "created_at": "2023-03-15T19:40:14.739761+00:00",
+    "updated_at": "2023-03-15T19:40:14.739761+00:00"
+  },
+  {
+    "description": "Equino Gateado Ruivo",
+    "id": 111,
+    "created_at": "2023-03-15T19:40:45.641866+00:00",
+    "updated_at": "2023-03-15T19:40:45.641866+00:00"
+  },
+  {
+    "description": "Equino Tordilho Negro",
+    "id": 112,
+    "created_at": "2023-03-15T19:41:03.831183+00:00",
+    "updated_at": "2023-03-15T19:41:03.831183+00:00"
+  },
+  {
+    "description": "Equino Tordilho Branco",
+    "id": 113,
+    "created_at": "2023-03-15T19:41:21.991169+00:00",
+    "updated_at": "2023-03-15T19:41:21.991169+00:00"
+  },
+  {
+    "description": "Equino Oveiro Negro",
+    "id": 114,
+    "created_at": "2023-03-15T19:42:37.162341+00:00",
+    "updated_at": "2023-03-15T19:42:37.162341+00:00"
+  },
+  {
+    "description": "Equino Oveiro Colorado",
+    "id": 115,
+    "created_at": "2023-03-15T19:43:42.379068+00:00",
+    "updated_at": "2023-03-15T19:43:42.379068+00:00"
+  },
+  {
+    "description": "Equino Azulejo",
+    "id": 116,
+    "created_at": "2023-03-15T19:44:24.030658+00:00",
+    "updated_at": "2023-03-15T19:44:24.030658+00:00"
+  },
+  {
+    "description": "Equino Tostado Escuro",
+    "id": 117,
+    "created_at": "2023-03-15T19:45:09.781372+00:00",
+    "updated_at": "2023-03-15T19:45:09.781372+00:00"
+  },
+  {
+    "description": "Equino Tostado Claro",
+    "id": 118,
+    "created_at": "2023-03-15T19:45:19.353203+00:00",
+    "updated_at": "2023-03-15T19:45:19.353203+00:00"
+  },
+  {
+    "description": "Equino Tobiano",
+    "id": 119,
+    "created_at": "2023-03-15T19:47:21.794596+00:00",
+    "updated_at": "2023-03-15T19:47:21.794596+00:00"
+  },
+  {
+    "description": "Equino Alazão",
+    "id": 120,
+    "created_at": "2023-03-15T19:47:33.54465+00:00",
+    "updated_at": "2023-03-15T19:47:33.54465+00:00"
+  },
+  {
+    "description": "Black Tortie",
+    "id": 121,
+    "created_at": "2023-09-01T13:41:58.764018+00:00",
+    "updated_at": "2023-09-01T13:41:58.764018+00:00"
+  },
+  {
+    "description": "Blue Tortie",
+    "id": 122,
+    "created_at": "2023-09-01T13:43:13.163492+00:00",
+    "updated_at": "2023-09-01T13:43:13.163492+00:00"
+  },
+  {
+    "description": "Black Tortie e White",
+    "id": 123,
+    "created_at": "2023-09-01T13:44:26.392721+00:00",
+    "updated_at": "2023-09-01T13:44:26.392721+00:00"
+  },
+  {
+    "description": "Blue Tortie e White",
+    "id": 124,
+    "created_at": "2023-09-01T13:44:48.246207+00:00",
+    "updated_at": "2023-09-01T13:44:48.246207+00:00"
+  },
+  {
+    "description": "Silver",
+    "id": 125,
+    "created_at": "2023-09-01T13:45:43.246229+00:00",
+    "updated_at": "2023-09-01T13:45:43.246229+00:00"
+  },
+  {
+    "description": "Smoke",
+    "id": 126,
+    "created_at": "2023-09-01T13:45:54.428817+00:00",
+    "updated_at": "2023-09-01T13:45:54.428817+00:00"
+  },
+  {
+    "description": "Tabby",
+    "id": 127,
+    "created_at": "2023-09-01T13:46:03.866205+00:00",
+    "updated_at": "2023-09-01T13:46:03.866205+00:00"
+  },
+  {
+    "description": "White",
+    "id": 128,
+    "created_at": "2023-09-01T13:46:12.60609+00:00",
+    "updated_at": "2023-09-01T13:46:12.60609+00:00"
+  },
+  {
+    "description": "Black",
+    "id": 129,
+    "created_at": "2023-09-01T13:47:45.584969+00:00",
+    "updated_at": "2023-09-01T13:47:45.584969+00:00"
+  },
+  {
+    "description": "Blue",
+    "id": 130,
+    "created_at": "2023-09-01T13:47:54.988192+00:00",
+    "updated_at": "2023-09-01T13:47:54.988192+00:00"
+  },
+  {
+    "description": "Red",
+    "id": 131,
+    "created_at": "2023-09-01T13:48:00.912636+00:00",
+    "updated_at": "2023-09-01T13:48:00.912636+00:00"
+  },
+  {
+    "description": "Cream",
+    "id": 132,
+    "created_at": "2023-09-01T13:48:20.985266+00:00",
+    "updated_at": "2023-09-01T13:48:20.985266+00:00"
+  },
+  {
+    "description": "Cream e White",
+    "id": 133,
+    "created_at": "2023-09-01T13:48:33.687357+00:00",
+    "updated_at": "2023-09-01T13:48:33.687357+00:00"
+  },
+  {
+    "description": "Red e White",
+    "id": 134,
+    "created_at": "2023-09-01T13:48:41.044131+00:00",
+    "updated_at": "2023-09-01T13:48:41.044131+00:00"
+  },
+  {
+    "description": "Tricolor",
+    "id": 136,
+    "created_at": "2024-02-07T21:44:43.053531+00:00",
+    "updated_at": "2024-02-07T21:44:43.053531+00:00"
+  },
+  {
+    "description": "Chocolate",
+    "id": 135,
+    "created_at": "2024-02-07T21:41:40.011433+00:00",
+    "updated_at": "2024-02-07T21:49:31.002292+00:00"
+  }
+]

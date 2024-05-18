@@ -40,7 +40,7 @@ export class PetService {
     newPet.description = pet.description
     newPet.idBreed = pet.idBreed
     newPet.idSize = pet.idSize
-    newPet.idSpeciment = pet.idSpecimen
+    newPet.idSpecimen = pet.idSpecimen
     newPet.lastSeenLocation = pet.lastSeenLocation
     newPet.status = pet.status
 

@@ -1,0 +1,2708 @@
+[
+  {
+    "id": 1,
+    "description": "Camundongos",
+    "id_species": 6,
+    "created_at": "2020-05-20T21:10:57.358661+00:00"
+  },
+  {
+    "id": 2,
+    "description": "Chinchila",
+    "id_species": 6,
+    "created_at": "2020-05-20T21:10:57.358661+00:00"
+  },
+  {
+    "id": 3,
+    "description": "Duprasi",
+    "id_species": 6,
+    "created_at": "2020-05-20T21:10:57.358661+00:00"
+  },
+  {
+    "id": 4,
+    "description": "Gerbil",
+    "id_species": 6,
+    "created_at": "2020-05-20T21:10:57.358661+00:00"
+  },
+  {
+    "id": 5,
+    "description": "Esquilo da Mongólia",
+    "id_species": 6,
+    "created_at": "2020-05-20T21:10:57.358661+00:00"
+  },
+  {
+    "id": 6,
+    "description": "Hamster",
+    "id_species": 6,
+    "created_at": "2020-05-20T21:10:57.358661+00:00"
+  },
+  {
+    "id": 7,
+    "description": "Porquinho-da-Índia",
+    "id_species": 6,
+    "created_at": "2020-05-20T21:10:57.358661+00:00"
+  },
+  {
+    "id": 8,
+    "description": "Mini Pig (Sus scrofa domesticus)",
+    "id_species": 9,
+    "created_at": "2020-05-20T21:12:35.159677+00:00"
+  },
+  {
+    "id": 9,
+    "description": "Cágado de Barbicha",
+    "id_species": 3,
+    "created_at": "2020-05-20T21:12:45.716624+00:00"
+  },
+  {
+    "id": 10,
+    "description": "Cobras (Não Específico)",
+    "id_species": 3,
+    "created_at": "2020-05-20T21:12:45.716624+00:00"
+  },
+  {
+    "id": 11,
+    "description": "Dragão Barbudo (Pogona vitticeps)",
+    "id_species": 3,
+    "created_at": "2020-05-20T21:12:45.716624+00:00"
+  },
+  {
+    "id": 12,
+    "description": "Iguanas Verdes (Iguana Iguana)",
+    "id_species": 3,
+    "created_at": "2020-05-20T21:12:45.716624+00:00"
+  },
+  {
+    "id": 13,
+    "description": "Jabutis (Chelonoides carbonaria)",
+    "id_species": 3,
+    "created_at": "2020-05-20T21:12:45.716624+00:00"
+  },
+  {
+    "id": 14,
+    "description": "Jibóia arco-íris da Amazônia (Epicrates cenchria cenchria)",
+    "id_species": 3,
+    "created_at": "2020-05-20T21:12:45.716624+00:00"
+  },
+  {
+    "id": 15,
+    "description": "Jibóia arco-íris da Caatinga (Epicrates cenchria assisi)",
+    "id_species": 3,
+    "created_at": "2020-05-20T21:12:45.716624+00:00"
+  },
+  {
+    "id": 16,
+    "description": "Jibóia arco-íris do Cerrado (Epicrates cenchria crassus)",
+    "id_species": 3,
+    "created_at": "2020-05-20T21:12:45.716624+00:00"
+  },
+  {
+    "id": 17,
+    "description": "Lagarto de língua azul (Tiliqua scincoides)",
+    "id_species": 3,
+    "created_at": "2020-05-20T21:12:45.716624+00:00"
+  },
+  {
+    "id": 18,
+    "description": "Lagartos domésticos (Não Específico)",
+    "id_species": 3,
+    "created_at": "2020-05-20T21:12:45.716624+00:00"
+  },
+  {
+    "id": 19,
+    "description": "Leopard Gecko (Eublepharis macularius)",
+    "id_species": 3,
+    "created_at": "2020-05-20T21:12:45.716624+00:00"
+  },
+  {
+    "id": 20,
+    "description": "Piriquitamboias (Corallus caninus)",
+    "id_species": 3,
+    "created_at": "2020-05-20T21:12:45.716624+00:00"
+  },
+  {
+    "id": 21,
+    "description": "Salamantas (Epicrates cenchria)",
+    "id_species": 3,
+    "created_at": "2020-05-20T21:12:45.716624+00:00"
+  },
+  {
+    "id": 22,
+    "description": "Suaçuboias (Corallus hortulanus)",
+    "id_species": 3,
+    "created_at": "2020-05-20T21:12:45.716624+00:00"
+  },
+  {
+    "id": 23,
+    "description": "Teius (Salvator merianae)",
+    "id_species": 3,
+    "created_at": "2020-05-20T21:12:45.716624+00:00"
+  },
+  {
+    "id": 24,
+    "description": "Teius (Tupinambis)",
+    "id_species": 3,
+    "created_at": "2020-05-20T21:12:45.716624+00:00"
+  },
+  {
+    "id": 25,
+    "description": "Tigre d’água (Trachemys dorbigni)",
+    "id_species": 3,
+    "created_at": "2020-05-20T21:12:45.716624+00:00"
+  },
+  {
+    "id": 26,
+    "description": "Sagui",
+    "id_species": 8,
+    "created_at": "2020-05-20T21:12:52.167334+00:00"
+  },
+  {
+    "id": 27,
+    "description": "Macaco-Prego",
+    "id_species": 8,
+    "created_at": "2020-05-20T21:12:52.167334+00:00"
+  },
+  {
+    "id": 28,
+    "description": "Abissínio",
+    "id_species": 2,
+    "created_at": "2020-05-20T21:12:58.622147+00:00"
+  },
+  {
+    "id": 29,
+    "description": "Angorá Turco",
+    "id_species": 2,
+    "created_at": "2020-05-20T21:12:58.622147+00:00"
+  },
+  {
+    "id": 30,
+    "description": "Asiático de Pêlo Semi-Longo",
+    "id_species": 2,
+    "created_at": "2020-05-20T21:12:58.622147+00:00"
+  },
+  {
+    "id": 31,
+    "description": "Azul Russo",
+    "id_species": 2,
+    "created_at": "2020-05-20T21:12:58.622147+00:00"
+  },
+  {
+    "id": 32,
+    "description": "Balinês",
+    "id_species": 2,
+    "created_at": "2020-05-20T21:12:58.622147+00:00"
+  },
+  {
+    "id": 33,
+    "description": "Bambino",
+    "id_species": 2,
+    "created_at": "2020-05-20T21:12:58.622147+00:00"
+  },
+  {
+    "id": 34,
+    "description": "Bicolor Oriental",
+    "id_species": 2,
+    "created_at": "2020-05-20T21:12:58.622147+00:00"
+  },
+  {
+    "id": 35,
+    "description": "Bengal",
+    "id_species": 2,
+    "created_at": "2020-05-20T21:12:58.622147+00:00"
+  },
+  {
+    "id": 36,
+    "description": "Bobtail americano",
+    "id_species": 2,
+    "created_at": "2020-05-20T21:12:58.622147+00:00"
+  },
+  {
+    "id": 37,
+    "description": "Bobtail japonês",
+    "id_species": 2,
+    "created_at": "2020-05-20T21:12:58.622147+00:00"
+  },
+  {
+    "id": 38,
+    "description": "Bombay",
+    "id_species": 2,
+    "created_at": "2020-05-20T21:12:58.622147+00:00"
+  },
+  {
+    "id": 39,
+    "description": "Burmês ou Birmanês",
+    "id_species": 2,
+    "created_at": "2020-05-20T21:12:58.622147+00:00"
+  },
+  {
+    "id": 40,
+    "description": "Burmila",
+    "id_species": 2,
+    "created_at": "2020-05-20T21:12:58.622147+00:00"
+  },
+  {
+    "id": 41,
+    "description": "California Spangled",
+    "id_species": 2,
+    "created_at": "2020-05-20T21:12:58.622147+00:00"
+  },
+  {
+    "id": 42,
+    "description": "Cingapura",
+    "id_species": 2,
+    "created_at": "2020-05-20T21:12:58.622147+00:00"
+  },
+  {
+    "id": 43,
+    "description": "Chartreux",
+    "id_species": 2,
+    "created_at": "2020-05-20T21:12:58.622147+00:00"
+  },
+  {
+    "id": 44,
+    "description": "Chausie",
+    "id_species": 2,
+    "created_at": "2020-05-20T21:12:58.622147+00:00"
+  },
+  {
+    "id": 45,
+    "description": "Colorpoint de Pêlo Curto",
+    "id_species": 2,
+    "created_at": "2020-05-20T21:12:58.622147+00:00"
+  },
+  {
+    "id": 46,
+    "description": "Cornish Rex",
+    "id_species": 2,
+    "created_at": "2020-05-20T21:12:58.622147+00:00"
+  },
+  {
+    "id": 47,
+    "description": "Curl Americano",
+    "id_species": 2,
+    "created_at": "2020-05-20T21:12:58.622147+00:00"
+  },
+  {
+    "id": 48,
+    "description": "Devon Rex",
+    "id_species": 2,
+    "created_at": "2020-05-20T21:12:58.622147+00:00"
+  },
+  {
+    "id": 49,
+    "description": "Donskoy",
+    "id_species": 2,
+    "created_at": "2020-05-20T21:12:58.622147+00:00"
+  },
+  {
+    "id": 50,
+    "description": "Dragon Li",
+    "id_species": 2,
+    "created_at": "2020-05-20T21:12:58.622147+00:00"
+  },
+  {
+    "id": 51,
+    "description": "Egeu",
+    "id_species": 2,
+    "created_at": "2020-05-20T21:12:58.622147+00:00"
+  },
+  {
+    "id": 52,
+    "description": "Exótico Shorthair",
+    "id_species": 2,
+    "created_at": "2020-05-20T21:12:58.622147+00:00"
+  },
+  {
+    "id": 53,
+    "description": "Gato de Bengala",
+    "id_species": 2,
+    "created_at": "2020-05-20T21:12:58.622147+00:00"
+  },
+  {
+    "id": 54,
+    "description": "Gato do Chipre",
+    "id_species": 2,
+    "created_at": "2020-05-20T21:12:58.622147+00:00"
+  },
+  {
+    "id": 55,
+    "description": "Gato Asiático",
+    "id_species": 2,
+    "created_at": "2020-05-20T21:12:58.622147+00:00"
+  },
+  {
+    "id": 56,
+    "description": "Gato Siberiano",
+    "id_species": 2,
+    "created_at": "2020-05-20T21:12:58.622147+00:00"
+  },
+  {
+    "id": 57,
+    "description": "Havana Marrom",
+    "id_species": 2,
+    "created_at": "2020-05-20T21:12:58.622147+00:00"
+  },
+  {
+    "id": 58,
+    "description": "Himalaio",
+    "id_species": 2,
+    "created_at": "2020-05-20T21:12:58.622147+00:00"
+  },
+  {
+    "id": 59,
+    "description": "Javanês",
+    "id_species": 2,
+    "created_at": "2020-05-20T21:12:58.622147+00:00"
+  },
+  {
+    "id": 60,
+    "description": "Korat",
+    "id_species": 2,
+    "created_at": "2020-05-20T21:12:58.622147+00:00"
+  },
+  {
+    "id": 61,
+    "description": "Khao Manee",
+    "id_species": 2,
+    "created_at": "2020-05-20T21:12:58.622147+00:00"
+  },
+  {
+    "id": 62,
+    "description": "Kurilian Bobtail",
+    "id_species": 2,
+    "created_at": "2020-05-20T21:12:58.622147+00:00"
+  },
+  {
+    "id": 63,
+    "description": "LaPerm",
+    "id_species": 2,
+    "created_at": "2020-05-20T21:12:58.622147+00:00"
+  },
+  {
+    "id": 64,
+    "description": "Levkoy Ucraniano",
+    "id_species": 2,
+    "created_at": "2020-05-20T21:12:58.622147+00:00"
+  },
+  {
+    "id": 65,
+    "description": "Lykoi",
+    "id_species": 2,
+    "created_at": "2020-05-20T21:12:58.622147+00:00"
+  },
+  {
+    "id": 66,
+    "description": "Maine Coon",
+    "id_species": 2,
+    "created_at": "2020-05-20T21:12:58.622147+00:00"
+  },
+  {
+    "id": 67,
+    "description": "Manx",
+    "id_species": 2,
+    "created_at": "2020-05-20T21:12:58.622147+00:00"
+  },
+  {
+    "id": 68,
+    "description": "Manx de Pêlo Longo",
+    "id_species": 2,
+    "created_at": "2020-05-20T21:12:58.622147+00:00"
+  },
+  {
+    "id": 69,
+    "description": "Mau Árabe",
+    "id_species": 2,
+    "created_at": "2020-05-20T21:12:58.622147+00:00"
+  },
+  {
+    "id": 70,
+    "description": "Mau Egípcio",
+    "id_species": 2,
+    "created_at": "2020-05-20T21:12:58.622147+00:00"
+  },
+  {
+    "id": 71,
+    "description": "MinsKin",
+    "id_species": 2,
+    "created_at": "2020-05-20T21:12:58.622147+00:00"
+  },
+  {
+    "id": 72,
+    "description": "Mist Australiano",
+    "id_species": 2,
+    "created_at": "2020-05-20T21:12:58.622147+00:00"
+  },
+  {
+    "id": 73,
+    "description": "Munchkin",
+    "id_species": 2,
+    "created_at": "2020-05-20T21:12:58.622147+00:00"
+  },
+  {
+    "id": 74,
+    "description": "Nebelung",
+    "id_species": 2,
+    "created_at": "2020-05-20T21:12:58.622147+00:00"
+  },
+  {
+    "id": 75,
+    "description": "Norueguês da Floresta",
+    "id_species": 2,
+    "created_at": "2020-05-20T21:12:58.622147+00:00"
+  },
+  {
+    "id": 76,
+    "description": "Ocicat",
+    "id_species": 2,
+    "created_at": "2020-05-20T21:12:58.622147+00:00"
+  },
+  {
+    "id": 77,
+    "description": "Ojos Azules",
+    "id_species": 2,
+    "created_at": "2020-05-20T21:12:58.622147+00:00"
+  },
+  {
+    "id": 78,
+    "description": "Oregon Rex",
+    "id_species": 2,
+    "created_at": "2020-05-20T21:12:58.622147+00:00"
+  },
+  {
+    "id": 79,
+    "description": "Pêlo Curto Americano",
+    "id_species": 2,
+    "created_at": "2020-05-20T21:12:58.622147+00:00"
+  },
+  {
+    "id": 80,
+    "description": "Pêlo Curto Brasileiro",
+    "id_species": 2,
+    "created_at": "2020-05-20T21:12:58.622147+00:00"
+  },
+  {
+    "id": 81,
+    "description": "Pêlo Curto Europeu",
+    "id_species": 2,
+    "created_at": "2020-05-20T21:12:58.622147+00:00"
+  },
+  {
+    "id": 82,
+    "description": "Pêlo Curto Inglês ou British Shorthair",
+    "id_species": 2,
+    "created_at": "2020-05-20T21:12:58.622147+00:00"
+  },
+  {
+    "id": 83,
+    "description": "Pêlo Longo Inglês",
+    "id_species": 2,
+    "created_at": "2020-05-20T21:12:58.622147+00:00"
+  },
+  {
+    "id": 84,
+    "description": "Pêlo Curto Oriental",
+    "id_species": 2,
+    "created_at": "2020-05-20T21:12:58.622147+00:00"
+  },
+  {
+    "id": 85,
+    "description": "Pêlo Longo Oriental",
+    "id_species": 2,
+    "created_at": "2020-05-20T21:12:58.622147+00:00"
+  },
+  {
+    "id": 86,
+    "description": "Persa",
+    "id_species": 2,
+    "created_at": "2020-05-20T21:12:58.622147+00:00"
+  },
+  {
+    "id": 87,
+    "description": "Peterbald",
+    "id_species": 2,
+    "created_at": "2020-05-20T21:12:58.622147+00:00"
+  },
+  {
+    "id": 88,
+    "description": "Pixie-bob",
+    "id_species": 2,
+    "created_at": "2020-05-20T21:12:58.622147+00:00"
+  },
+  {
+    "id": 89,
+    "description": "Raas",
+    "id_species": 2,
+    "created_at": "2020-05-20T21:12:58.622147+00:00"
+  },
+  {
+    "id": 90,
+    "description": "Ragamuffin",
+    "id_species": 2,
+    "created_at": "2020-05-20T21:12:58.622147+00:00"
+  },
+  {
+    "id": 91,
+    "description": "Ragdoll",
+    "id_species": 2,
+    "created_at": "2020-05-20T21:12:58.622147+00:00"
+  },
+  {
+    "id": 92,
+    "description": "Rex Alemão",
+    "id_species": 2,
+    "created_at": "2020-05-20T21:12:58.622147+00:00"
+  },
+  {
+    "id": 93,
+    "description": "Sagrado da Birmânia",
+    "id_species": 2,
+    "created_at": "2020-05-20T21:12:58.622147+00:00"
+  },
+  {
+    "id": 94,
+    "description": "Savannah",
+    "id_species": 2,
+    "created_at": "2020-05-20T21:12:58.622147+00:00"
+  },
+  {
+    "id": 95,
+    "description": "Scottish Fold",
+    "id_species": 2,
+    "created_at": "2020-05-20T21:12:58.622147+00:00"
+  },
+  {
+    "id": 96,
+    "description": "Selkirk Rex",
+    "id_species": 2,
+    "created_at": "2020-05-20T21:12:58.622147+00:00"
+  },
+  {
+    "id": 97,
+    "description": "Serengeti",
+    "id_species": 2,
+    "created_at": "2020-05-20T21:12:58.622147+00:00"
+  },
+  {
+    "id": 98,
+    "description": "Siamês",
+    "id_species": 2,
+    "created_at": "2020-05-20T21:12:58.622147+00:00"
+  },
+  {
+    "id": 99,
+    "description": "Singapura",
+    "id_species": 2,
+    "created_at": "2020-05-20T21:12:58.622147+00:00"
+  },
+  {
+    "id": 100,
+    "description": "Snowshoe",
+    "id_species": 2,
+    "created_at": "2020-05-20T21:12:58.622147+00:00"
+  },
+  {
+    "id": 101,
+    "description": "Sokoke",
+    "id_species": 2,
+    "created_at": "2020-05-20T21:12:58.622147+00:00"
+  },
+  {
+    "id": 102,
+    "description": "Somali",
+    "id_species": 2,
+    "created_at": "2020-05-20T21:12:58.622147+00:00"
+  },
+  {
+    "id": 103,
+    "description": "Sphynx",
+    "id_species": 2,
+    "created_at": "2020-05-20T21:12:58.622147+00:00"
+  },
+  {
+    "id": 104,
+    "description": "Suphalak",
+    "id_species": 2,
+    "created_at": "2020-05-20T21:12:58.622147+00:00"
+  },
+  {
+    "id": 105,
+    "description": "Thai",
+    "id_species": 2,
+    "created_at": "2020-05-20T21:12:58.622147+00:00"
+  },
+  {
+    "id": 106,
+    "description": "Tiffany-Chantilly",
+    "id_species": 2,
+    "created_at": "2020-05-20T21:12:58.622147+00:00"
+  },
+  {
+    "id": 107,
+    "description": "Tonquinês",
+    "id_species": 2,
+    "created_at": "2020-05-20T21:12:58.622147+00:00"
+  },
+  {
+    "id": 108,
+    "description": "Toyger",
+    "id_species": 2,
+    "created_at": "2020-05-20T21:12:58.622147+00:00"
+  },
+  {
+    "id": 109,
+    "description": "Usuri",
+    "id_species": 2,
+    "created_at": "2020-05-20T21:12:58.622147+00:00"
+  },
+  {
+    "id": 110,
+    "description": "Van Turco",
+    "id_species": 2,
+    "created_at": "2020-05-20T21:12:58.622147+00:00"
+  },
+  {
+    "id": 111,
+    "description": "Wirehair Americano",
+    "id_species": 2,
+    "created_at": "2020-05-20T21:12:58.622147+00:00"
+  },
+  {
+    "id": 112,
+    "description": "Anão Holandês ou Netherland Dwarf",
+    "id_species": 4,
+    "created_at": "2020-05-20T21:13:04.190316+00:00"
+  },
+  {
+    "id": 113,
+    "description": "Argente Bleu",
+    "id_species": 4,
+    "created_at": "2020-05-20T21:13:04.190316+00:00"
+  },
+  {
+    "id": 114,
+    "description": "Argente Brun",
+    "id_species": 4,
+    "created_at": "2020-05-20T21:13:04.190316+00:00"
+  },
+  {
+    "id": 115,
+    "description": "Beveren",
+    "id_species": 4,
+    "created_at": "2020-05-20T21:13:04.190316+00:00"
+  },
+  {
+    "id": 116,
+    "description": "Branco De Florida",
+    "id_species": 4,
+    "created_at": "2020-05-20T21:13:04.190316+00:00"
+  },
+  {
+    "id": 117,
+    "description": "Britannia Petite",
+    "id_species": 4,
+    "created_at": "2020-05-20T21:13:04.190316+00:00"
+  },
+  {
+    "id": 118,
+    "description": "Coelho Alaska",
+    "id_species": 4,
+    "created_at": "2020-05-20T21:13:04.190316+00:00"
+  },
+  {
+    "id": 119,
+    "description": "Coelho Americano",
+    "id_species": 4,
+    "created_at": "2020-05-20T21:13:04.190316+00:00"
+  },
+  {
+    "id": 120,
+    "description": "Califórnia",
+    "id_species": 4,
+    "created_at": "2020-05-20T21:13:04.190316+00:00"
+  },
+  {
+    "id": 121,
+    "description": "Canela ou Cinnamom",
+    "id_species": 4,
+    "created_at": "2020-05-20T21:13:04.190316+00:00"
+  },
+  {
+    "id": 123,
+    "description": "D’Argente de Nata",
+    "id_species": 4,
+    "created_at": "2020-05-20T21:13:04.190316+00:00"
+  },
+  {
+    "id": 124,
+    "description": "D’Argente de Champagne",
+    "id_species": 4,
+    "created_at": "2020-05-20T21:13:04.190316+00:00"
+  },
+  {
+    "id": 125,
+    "description": "English Spot",
+    "id_species": 4,
+    "created_at": "2020-05-20T21:13:04.190316+00:00"
+  },
+  {
+    "id": 126,
+    "description": "Fuzzy Lop Americano",
+    "id_species": 4,
+    "created_at": "2020-05-20T21:13:04.190316+00:00"
+  },
+  {
+    "id": 127,
+    "description": "Gigante Britânico",
+    "id_species": 4,
+    "created_at": "2020-05-20T21:13:04.190316+00:00"
+  },
+  {
+    "id": 128,
+    "description": "Gigante De Checkered",
+    "id_species": 4,
+    "created_at": "2020-05-20T21:13:04.190316+00:00"
+  },
+  {
+    "id": 129,
+    "description": "Gigante Flemish ou Flamengo",
+    "id_species": 4,
+    "created_at": "2020-05-20T21:13:04.190316+00:00"
+  },
+  {
+    "id": 130,
+    "description": "Hare Belgas",
+    "id_species": 4,
+    "created_at": "2020-05-20T21:13:04.190316+00:00"
+  },
+  {
+    "id": 131,
+    "description": "Harlequin",
+    "id_species": 4,
+    "created_at": "2020-05-20T21:13:04.190316+00:00"
+  },
+  {
+    "id": 132,
+    "description": "Havana",
+    "id_species": 4,
+    "created_at": "2020-05-20T21:13:04.190316+00:00"
+  },
+  {
+    "id": 134,
+    "description": "Holandês",
+    "id_species": 4,
+    "created_at": "2020-05-20T21:13:04.190316+00:00"
+  },
+  {
+    "id": 135,
+    "description": "Hotot Anão",
+    "id_species": 4,
+    "created_at": "2020-05-20T21:13:04.190316+00:00"
+  },
+  {
+    "id": 136,
+    "description": "Jersey Wooly",
+    "id_species": 4,
+    "created_at": "2020-05-20T21:13:04.190316+00:00"
+  },
+  {
+    "id": 137,
+    "description": "Lilac",
+    "id_species": 4,
+    "created_at": "2020-05-20T21:13:04.190316+00:00"
+  },
+  {
+    "id": 138,
+    "description": "Lionhead",
+    "id_species": 4,
+    "created_at": "2020-05-20T21:13:04.190316+00:00"
+  },
+  {
+    "id": 139,
+    "description": "Lop",
+    "id_species": 4,
+    "created_at": "2020-05-20T21:13:04.190316+00:00"
+  },
+  {
+    "id": 140,
+    "description": "Lustrador",
+    "id_species": 4,
+    "created_at": "2020-05-20T21:13:04.190316+00:00"
+  },
+  {
+    "id": 141,
+    "description": "Mini Lop",
+    "id_species": 4,
+    "created_at": "2020-05-20T21:13:04.190316+00:00"
+  },
+  {
+    "id": 142,
+    "description": "Mini Rex",
+    "id_species": 4,
+    "created_at": "2020-05-20T21:13:04.190316+00:00"
+  },
+  {
+    "id": 143,
+    "description": "Mini Teddy",
+    "id_species": 4,
+    "created_at": "2020-05-20T21:13:04.190316+00:00"
+  },
+  {
+    "id": 144,
+    "description": "Nova Zelândia",
+    "id_species": 4,
+    "created_at": "2020-05-20T21:13:04.190316+00:00"
+  },
+  {
+    "id": 145,
+    "description": "Palomino",
+    "id_species": 4,
+    "created_at": "2020-05-20T21:13:04.190316+00:00"
+  },
+  {
+    "id": 146,
+    "description": "Pérola Do Fumo",
+    "id_species": 4,
+    "created_at": "2020-05-20T21:13:04.190316+00:00"
+  },
+  {
+    "id": 147,
+    "description": "Prata",
+    "id_species": 4,
+    "created_at": "2020-05-20T21:13:04.190316+00:00"
+  },
+  {
+    "id": 148,
+    "description": "Raposa De Prata",
+    "id_species": 4,
+    "created_at": "2020-05-20T21:13:04.190316+00:00"
+  },
+  {
+    "id": 149,
+    "description": "Raposa Suíça",
+    "id_species": 4,
+    "created_at": "2020-05-20T21:13:04.190316+00:00"
+  },
+  {
+    "id": 150,
+    "description": "Rex",
+    "id_species": 4,
+    "created_at": "2020-05-20T21:13:04.190316+00:00"
+  },
+  {
+    "id": 151,
+    "description": "Rhinelander",
+    "id_species": 4,
+    "created_at": "2020-05-20T21:13:04.190316+00:00"
+  },
+  {
+    "id": 152,
+    "description": "Sable Americano",
+    "id_species": 4,
+    "created_at": "2020-05-20T21:13:04.190316+00:00"
+  },
+  {
+    "id": 153,
+    "description": "Satin",
+    "id_species": 4,
+    "created_at": "2020-05-20T21:13:04.190316+00:00"
+  },
+  {
+    "id": 154,
+    "description": "Siberiano",
+    "id_species": 4,
+    "created_at": "2020-05-20T21:13:04.190316+00:00"
+  },
+  {
+    "id": 155,
+    "description": "Sussex",
+    "id_species": 4,
+    "created_at": "2020-05-20T21:13:04.190316+00:00"
+  },
+  {
+    "id": 156,
+    "description": "Tan",
+    "id_species": 4,
+    "created_at": "2020-05-20T21:13:04.190316+00:00"
+  },
+  {
+    "id": 157,
+    "description": "Thuringer",
+    "id_species": 4,
+    "created_at": "2020-05-20T21:13:04.190316+00:00"
+  },
+  {
+    "id": 158,
+    "description": "Viena",
+    "id_species": 4,
+    "created_at": "2020-05-20T21:13:04.190316+00:00"
+  },
+  {
+    "id": 159,
+    "description": "Afegão ou Afghan Hound",
+    "id_species": 1,
+    "created_at": "2020-05-20T21:13:10.917122+00:00"
+  },
+  {
+    "id": 160,
+    "description": "Affenpinscher",
+    "id_species": 1,
+    "created_at": "2020-05-20T21:13:10.917122+00:00"
+  },
+  {
+    "id": 161,
+    "description": "Airedale Terrier",
+    "id_species": 1,
+    "created_at": "2020-05-20T21:13:10.917122+00:00"
+  },
+  {
+    "id": 162,
+    "description": "Akita Americano",
+    "id_species": 1,
+    "created_at": "2020-05-20T21:13:10.917122+00:00"
+  },
+  {
+    "id": 163,
+    "description": "Akita Inu ou Akita Japonês",
+    "id_species": 1,
+    "created_at": "2020-05-20T21:13:10.917122+00:00"
+  },
+  {
+    "id": 164,
+    "description": "Alano Espanhol",
+    "id_species": 1,
+    "created_at": "2020-05-20T21:13:10.917122+00:00"
+  },
+  {
+    "id": 165,
+    "description": "American Staffordshire Terrier",
+    "id_species": 1,
+    "created_at": "2020-05-20T21:13:10.917122+00:00"
+  },
+  {
+    "id": 166,
+    "description": "American Water Spaniel",
+    "id_species": 1,
+    "created_at": "2020-05-20T21:13:10.917122+00:00"
+  },
+  {
+    "id": 167,
+    "description": "Barbet",
+    "id_species": 1,
+    "created_at": "2020-05-20T21:13:10.917122+00:00"
+  },
+  {
+    "id": 168,
+    "description": "Basenji",
+    "id_species": 1,
+    "created_at": "2020-05-20T21:13:10.917122+00:00"
+  },
+  {
+    "id": 169,
+    "description": "Basset Azul da Gasconha",
+    "id_species": 1,
+    "created_at": "2020-05-20T21:13:10.917122+00:00"
+  },
+  {
+    "id": 170,
+    "description": "Basset Fulvo da Bretanha",
+    "id_species": 1,
+    "created_at": "2020-05-20T21:13:10.917122+00:00"
+  },
+  {
+    "id": 171,
+    "description": "Basset Hound",
+    "id_species": 1,
+    "created_at": "2020-05-20T21:13:10.917122+00:00"
+  },
+  {
+    "id": 172,
+    "description": "Beagle",
+    "id_species": 1,
+    "created_at": "2020-05-20T21:13:10.917122+00:00"
+  },
+  {
+    "id": 173,
+    "description": "Beagle Harrier",
+    "id_species": 1,
+    "created_at": "2020-05-20T21:13:10.917122+00:00"
+  },
+  {
+    "id": 174,
+    "description": "Bearded Collie",
+    "id_species": 1,
+    "created_at": "2020-05-20T21:13:10.917122+00:00"
+  },
+  {
+    "id": 175,
+    "description": "Bedlington Terrier",
+    "id_species": 1,
+    "created_at": "2020-05-20T21:13:10.917122+00:00"
+  },
+  {
+    "id": 176,
+    "description": "Bernese Mountain Dog",
+    "id_species": 1,
+    "created_at": "2020-05-20T21:13:10.917122+00:00"
+  },
+  {
+    "id": 177,
+    "description": "Bichon Bolonhês",
+    "id_species": 1,
+    "created_at": "2020-05-20T21:13:10.917122+00:00"
+  },
+  {
+    "id": 178,
+    "description": "Bichon Havanês",
+    "id_species": 1,
+    "created_at": "2020-05-20T21:13:10.917122+00:00"
+  },
+  {
+    "id": 179,
+    "description": "Bichon Frisé",
+    "id_species": 1,
+    "created_at": "2020-05-20T21:13:10.917122+00:00"
+  },
+  {
+    "id": 180,
+    "description": "Bichon Maltês",
+    "id_species": 1,
+    "created_at": "2020-05-20T21:13:10.917122+00:00"
+  },
+  {
+    "id": 181,
+    "description": "Bloodhound",
+    "id_species": 1,
+    "created_at": "2020-05-20T21:13:10.917122+00:00"
+  },
+  {
+    "id": 182,
+    "description": "Boiadeiro Australiano",
+    "id_species": 1,
+    "created_at": "2020-05-20T21:13:10.917122+00:00"
+  },
+  {
+    "id": 183,
+    "description": "Boiadeiro Bernês",
+    "id_species": 1,
+    "created_at": "2020-05-20T21:13:10.917122+00:00"
+  },
+  {
+    "id": 184,
+    "description": "Border Collie",
+    "id_species": 1,
+    "created_at": "2020-05-20T21:13:10.917122+00:00"
+  },
+  {
+    "id": 185,
+    "description": "Border Terrier",
+    "id_species": 1,
+    "created_at": "2020-05-20T21:13:10.917122+00:00"
+  },
+  {
+    "id": 186,
+    "description": "Borzoi",
+    "id_species": 1,
+    "created_at": "2020-05-20T21:13:10.917122+00:00"
+  },
+  {
+    "id": 187,
+    "description": "Boston Terrier",
+    "id_species": 1,
+    "created_at": "2020-05-20T21:13:10.917122+00:00"
+  },
+  {
+    "id": 188,
+    "description": "Boxer",
+    "id_species": 1,
+    "created_at": "2020-05-20T21:13:10.917122+00:00"
+  },
+  {
+    "id": 189,
+    "description": "Bull Terrier",
+    "id_species": 1,
+    "created_at": "2020-05-20T21:13:10.917122+00:00"
+  },
+  {
+    "id": 190,
+    "description": "Buldogue ou Bulldog Inglês",
+    "id_species": 1,
+    "created_at": "2020-05-20T21:13:10.917122+00:00"
+  },
+  {
+    "id": 191,
+    "description": "Buldogue ou Bulldog Francês",
+    "id_species": 1,
+    "created_at": "2020-05-20T21:13:10.917122+00:00"
+  },
+  {
+    "id": 192,
+    "description": "Bullmastiff ou Bulmastife",
+    "id_species": 1,
+    "created_at": "2020-05-20T21:13:10.917122+00:00"
+  },
+  {
+    "id": 193,
+    "description": "Cairn Terrier",
+    "id_species": 1,
+    "created_at": "2020-05-20T21:13:10.917122+00:00"
+  },
+  {
+    "id": 194,
+    "description": "Cane Corso",
+    "id_species": 1,
+    "created_at": "2020-05-20T21:13:10.917122+00:00"
+  },
+  {
+    "id": 195,
+    "description": "Cão de Água Português",
+    "id_species": 1,
+    "created_at": "2020-05-20T21:13:10.917122+00:00"
+  },
+  {
+    "id": 196,
+    "description": "Cão de Crista Chinês",
+    "id_species": 1,
+    "created_at": "2020-05-20T21:13:10.917122+00:00"
+  },
+  {
+    "id": 197,
+    "description": "Cão de Montanha dos Pirinéus",
+    "id_species": 1,
+    "created_at": "2020-05-20T21:13:10.917122+00:00"
+  },
+  {
+    "id": 198,
+    "description": "Cão lobo checoslovaco",
+    "id_species": 1,
+    "created_at": "2020-05-20T21:13:10.917122+00:00"
+  },
+  {
+    "id": 199,
+    "description": "Cão da Groenlândia",
+    "id_species": 1,
+    "created_at": "2020-05-20T21:13:10.917122+00:00"
+  },
+  {
+    "id": 200,
+    "description": "Caniche ou Poodle",
+    "id_species": 1,
+    "created_at": "2020-05-20T21:13:10.917122+00:00"
+  },
+  {
+    "id": 201,
+    "description": "Cavalier King Charles Spaniel",
+    "id_species": 1,
+    "created_at": "2020-05-20T21:13:10.917122+00:00"
+  },
+  {
+    "id": 202,
+    "description": "Chesapeake Bay Retriever",
+    "id_species": 1,
+    "created_at": "2020-05-20T21:13:10.917122+00:00"
+  },
+  {
+    "id": 203,
+    "description": "Chihuahua",
+    "id_species": 1,
+    "created_at": "2020-05-20T21:13:10.917122+00:00"
+  },
+  {
+    "id": 204,
+    "description": "Chow Chow",
+    "id_species": 1,
+    "created_at": "2020-05-20T21:13:10.917122+00:00"
+  },
+  {
+    "id": 205,
+    "description": "Cirneco do Etna",
+    "id_species": 1,
+    "created_at": "2020-05-20T21:13:10.917122+00:00"
+  },
+  {
+    "id": 206,
+    "description": "Cocker Spaniel Americano",
+    "id_species": 1,
+    "created_at": "2020-05-20T21:13:10.917122+00:00"
+  },
+  {
+    "id": 207,
+    "description": "Cocker Spaniel Inglês",
+    "id_species": 1,
+    "created_at": "2020-05-20T21:13:10.917122+00:00"
+  },
+  {
+    "id": 208,
+    "description": "Collie",
+    "id_species": 1,
+    "created_at": "2020-05-20T21:13:10.917122+00:00"
+  },
+  {
+    "id": 209,
+    "description": "Coton de Tuléar",
+    "id_species": 1,
+    "created_at": "2020-05-20T21:13:10.917122+00:00"
+  },
+  {
+    "id": 210,
+    "description": "Dachshund",
+    "id_species": 1,
+    "created_at": "2020-05-20T21:13:10.917122+00:00"
+  },
+  {
+    "id": 211,
+    "description": "Dálmata",
+    "id_species": 1,
+    "created_at": "2020-05-20T21:13:10.917122+00:00"
+  },
+  {
+    "id": 212,
+    "description": "Dandie Dinmont Terrier",
+    "id_species": 1,
+    "created_at": "2020-05-20T21:13:10.917122+00:00"
+  },
+  {
+    "id": 213,
+    "description": "Doberman",
+    "id_species": 1,
+    "created_at": "2020-05-20T21:13:10.917122+00:00"
+  },
+  {
+    "id": 214,
+    "description": "Dogue Alemão",
+    "id_species": 1,
+    "created_at": "2020-05-20T21:13:10.917122+00:00"
+  },
+  {
+    "id": 215,
+    "description": "Dogue ou Dogo Argentino",
+    "id_species": 1,
+    "created_at": "2020-05-20T21:13:10.917122+00:00"
+  },
+  {
+    "id": 216,
+    "description": "Dogue Canário",
+    "id_species": 1,
+    "created_at": "2020-05-20T21:13:10.917122+00:00"
+  },
+  {
+    "id": 217,
+    "description": "Dogue de Bordeaux",
+    "id_species": 1,
+    "created_at": "2020-05-20T21:13:10.917122+00:00"
+  },
+  {
+    "id": 218,
+    "description": "Elkhound Norueguês",
+    "id_species": 1,
+    "created_at": "2020-05-20T21:13:10.917122+00:00"
+  },
+  {
+    "id": 219,
+    "description": "Fila Brasileiro",
+    "id_species": 1,
+    "created_at": "2020-05-20T21:13:10.917122+00:00"
+  },
+  {
+    "id": 220,
+    "description": "Fox Terrier (Pêlo Duro e Pêlo Liso)",
+    "id_species": 1,
+    "created_at": "2020-05-20T21:13:10.917122+00:00"
+  },
+  {
+    "id": 221,
+    "description": "Foxhound Inglês",
+    "id_species": 1,
+    "created_at": "2020-05-20T21:13:10.917122+00:00"
+  },
+  {
+    "id": 222,
+    "description": "Galgo Escocês",
+    "id_species": 1,
+    "created_at": "2020-05-20T21:13:10.917122+00:00"
+  },
+  {
+    "id": 223,
+    "description": "Galgo Irlandês",
+    "id_species": 1,
+    "created_at": "2020-05-20T21:13:10.917122+00:00"
+  },
+  {
+    "id": 224,
+    "description": "Golden Retriever",
+    "id_species": 1,
+    "created_at": "2020-05-20T21:13:10.917122+00:00"
+  },
+  {
+    "id": 225,
+    "description": "Gos d’Atura",
+    "id_species": 1,
+    "created_at": "2020-05-20T21:13:10.917122+00:00"
+  },
+  {
+    "id": 226,
+    "description": "Grande Boiadeiro Suiço",
+    "id_species": 1,
+    "created_at": "2020-05-20T21:13:10.917122+00:00"
+  },
+  {
+    "id": 343,
+    "description": "Botia palhaço",
+    "id_species": 5,
+    "created_at": "2020-05-20T21:13:22.281954+00:00"
+  },
+  {
+    "id": 227,
+    "description": "Greyhound ou Galgo Inglês",
+    "id_species": 1,
+    "created_at": "2020-05-20T21:13:10.917122+00:00"
+  },
+  {
+    "id": 228,
+    "description": "Grifo da Bélgica",
+    "id_species": 1,
+    "created_at": "2020-05-20T21:13:10.917122+00:00"
+  },
+  {
+    "id": 229,
+    "description": "Husky Siberiano",
+    "id_species": 1,
+    "created_at": "2020-05-20T21:13:10.917122+00:00"
+  },
+  {
+    "id": 230,
+    "description": "Jack Russel Terrier",
+    "id_species": 1,
+    "created_at": "2020-05-20T21:13:10.917122+00:00"
+  },
+  {
+    "id": 231,
+    "description": "King Charles",
+    "id_species": 1,
+    "created_at": "2020-05-20T21:13:10.917122+00:00"
+  },
+  {
+    "id": 232,
+    "description": "Komondor",
+    "id_species": 1,
+    "created_at": "2020-05-20T21:13:10.917122+00:00"
+  },
+  {
+    "id": 233,
+    "description": "Kuvasz",
+    "id_species": 1,
+    "created_at": "2020-05-20T21:13:10.917122+00:00"
+  },
+  {
+    "id": 234,
+    "description": "Labradoodle",
+    "id_species": 1,
+    "created_at": "2020-05-20T21:13:10.917122+00:00"
+  },
+  {
+    "id": 235,
+    "description": "Labrador Retriever",
+    "id_species": 1,
+    "created_at": "2020-05-20T21:13:10.917122+00:00"
+  },
+  {
+    "id": 236,
+    "description": "Laika",
+    "id_species": 1,
+    "created_at": "2020-05-20T21:13:10.917122+00:00"
+  },
+  {
+    "id": 237,
+    "description": "Lakeland Terrier",
+    "id_species": 1,
+    "created_at": "2020-05-20T21:13:10.917122+00:00"
+  },
+  {
+    "id": 238,
+    "description": "Leonberger",
+    "id_species": 1,
+    "created_at": "2020-05-20T21:13:10.917122+00:00"
+  },
+  {
+    "id": 239,
+    "description": "Lhasa Apso",
+    "id_species": 1,
+    "created_at": "2020-05-20T21:13:10.917122+00:00"
+  },
+  {
+    "id": 240,
+    "description": "Malamute-do-Alasca",
+    "id_species": 1,
+    "created_at": "2020-05-20T21:13:10.917122+00:00"
+  },
+  {
+    "id": 241,
+    "description": "Maltês",
+    "id_species": 1,
+    "created_at": "2020-05-20T21:13:10.917122+00:00"
+  },
+  {
+    "id": 242,
+    "description": "Mastife",
+    "id_species": 1,
+    "created_at": "2020-05-20T21:13:10.917122+00:00"
+  },
+  {
+    "id": 243,
+    "description": "Mastin dos Pirenéus",
+    "id_species": 1,
+    "created_at": "2020-05-20T21:13:10.917122+00:00"
+  },
+  {
+    "id": 244,
+    "description": "Mastin do Tibete",
+    "id_species": 1,
+    "created_at": "2020-05-20T21:13:10.917122+00:00"
+  },
+  {
+    "id": 245,
+    "description": "Mastin Espanhol",
+    "id_species": 1,
+    "created_at": "2020-05-20T21:13:10.917122+00:00"
+  },
+  {
+    "id": 246,
+    "description": "Mastín Napolitano",
+    "id_species": 1,
+    "created_at": "2020-05-20T21:13:10.917122+00:00"
+  },
+  {
+    "id": 247,
+    "description": "Norfolk Terrier",
+    "id_species": 1,
+    "created_at": "2020-05-20T21:13:10.917122+00:00"
+  },
+  {
+    "id": 248,
+    "description": "Norwich Terrier",
+    "id_species": 1,
+    "created_at": "2020-05-20T21:13:10.917122+00:00"
+  },
+  {
+    "id": 249,
+    "description": "Old English Sheepdog (Bobtail)",
+    "id_species": 1,
+    "created_at": "2020-05-20T21:13:10.917122+00:00"
+  },
+  {
+    "id": 250,
+    "description": "Papillon",
+    "id_species": 1,
+    "created_at": "2020-05-20T21:13:10.917122+00:00"
+  },
+  {
+    "id": 251,
+    "description": "Pastor Alemão",
+    "id_species": 1,
+    "created_at": "2020-05-20T21:13:10.917122+00:00"
+  },
+  {
+    "id": 252,
+    "description": "Pastor Australiano",
+    "id_species": 1,
+    "created_at": "2020-05-20T21:13:10.917122+00:00"
+  },
+  {
+    "id": 253,
+    "description": "Pastor Belga",
+    "id_species": 1,
+    "created_at": "2020-05-20T21:13:10.917122+00:00"
+  },
+  {
+    "id": 254,
+    "description": "Pastor de Brie",
+    "id_species": 1,
+    "created_at": "2020-05-20T21:13:10.917122+00:00"
+  },
+  {
+    "id": 255,
+    "description": "Pastor dos Pirenéus de Cara Rosa",
+    "id_species": 1,
+    "created_at": "2020-05-20T21:13:10.917122+00:00"
+  },
+  {
+    "id": 256,
+    "description": "Pequeno Cão Leão",
+    "id_species": 1,
+    "created_at": "2020-05-20T21:13:10.917122+00:00"
+  },
+  {
+    "id": 257,
+    "description": "Pequinês",
+    "id_species": 1,
+    "created_at": "2020-05-20T21:13:10.917122+00:00"
+  },
+  {
+    "id": 258,
+    "description": "Perdigueiro",
+    "id_species": 1,
+    "created_at": "2020-05-20T21:13:10.917122+00:00"
+  },
+  {
+    "id": 259,
+    "description": "Pinscher miniatura",
+    "id_species": 1,
+    "created_at": "2020-05-20T21:13:10.917122+00:00"
+  },
+  {
+    "id": 260,
+    "description": "Pitbull",
+    "id_species": 1,
+    "created_at": "2020-05-20T21:13:10.917122+00:00"
+  },
+  {
+    "id": 261,
+    "description": "Podengo",
+    "id_species": 1,
+    "created_at": "2020-05-20T21:13:10.917122+00:00"
+  },
+  {
+    "id": 262,
+    "description": "Poodle",
+    "id_species": 1,
+    "created_at": "2020-05-20T21:13:10.917122+00:00"
+  },
+  {
+    "id": 263,
+    "description": "Pointer",
+    "id_species": 1,
+    "created_at": "2020-05-20T21:13:10.917122+00:00"
+  },
+  {
+    "id": 264,
+    "description": "Pug",
+    "id_species": 1,
+    "created_at": "2020-05-20T21:13:10.917122+00:00"
+  },
+  {
+    "id": 265,
+    "description": "Rhodesian Ridgeback",
+    "id_species": 1,
+    "created_at": "2020-05-20T21:13:10.917122+00:00"
+  },
+  {
+    "id": 266,
+    "description": "Rottweiler",
+    "id_species": 1,
+    "created_at": "2020-05-20T21:13:10.917122+00:00"
+  },
+  {
+    "id": 267,
+    "description": "Rough Collie",
+    "id_species": 1,
+    "created_at": "2020-05-20T21:13:10.917122+00:00"
+  },
+  {
+    "id": 268,
+    "description": "Sabueso (Espanhol ou Italiano)",
+    "id_species": 1,
+    "created_at": "2020-05-20T21:13:10.917122+00:00"
+  },
+  {
+    "id": 269,
+    "description": "Saluki",
+    "id_species": 1,
+    "created_at": "2020-05-20T21:13:10.917122+00:00"
+  },
+  {
+    "id": 270,
+    "description": "Samoieda",
+    "id_species": 1,
+    "created_at": "2020-05-20T21:13:10.917122+00:00"
+  },
+  {
+    "id": 271,
+    "description": "São Bernardo",
+    "id_species": 1,
+    "created_at": "2020-05-20T21:13:10.917122+00:00"
+  },
+  {
+    "id": 272,
+    "description": "Sem Raça Definida (SRD)",
+    "id_species": 1,
+    "created_at": "2020-05-20T21:13:10.917122+00:00"
+  },
+  {
+    "id": 273,
+    "description": "Scottish Terrier",
+    "id_species": 1,
+    "created_at": "2020-05-20T21:13:10.917122+00:00"
+  },
+  {
+    "id": 274,
+    "description": "Setter Irlandés",
+    "id_species": 1,
+    "created_at": "2020-05-20T21:13:10.917122+00:00"
+  },
+  {
+    "id": 275,
+    "description": "Shar-Pei",
+    "id_species": 1,
+    "created_at": "2020-05-20T21:13:10.917122+00:00"
+  },
+  {
+    "id": 276,
+    "description": "Shiba Inu",
+    "id_species": 1,
+    "created_at": "2020-05-20T21:13:10.917122+00:00"
+  },
+  {
+    "id": 277,
+    "description": "Shih Tzu",
+    "id_species": 1,
+    "created_at": "2020-05-20T21:13:10.917122+00:00"
+  },
+  {
+    "id": 278,
+    "description": "SilKy Terrier",
+    "id_species": 1,
+    "created_at": "2020-05-20T21:13:10.917122+00:00"
+  },
+  {
+    "id": 279,
+    "description": "Skye Terrier",
+    "id_species": 1,
+    "created_at": "2020-05-20T21:13:10.917122+00:00"
+  },
+  {
+    "id": 280,
+    "description": "Smooth Collie",
+    "id_species": 1,
+    "created_at": "2020-05-20T21:13:10.917122+00:00"
+  },
+  {
+    "id": 281,
+    "description": "Spitz Alemão",
+    "id_species": 1,
+    "created_at": "2020-05-20T21:13:10.917122+00:00"
+  },
+  {
+    "id": 282,
+    "description": "Spitz Alemão - Spitz Lobo",
+    "id_species": 1,
+    "created_at": "2020-05-20T21:13:10.917122+00:00"
+  },
+  {
+    "id": 283,
+    "description": "Spitz Alemão - Spitz Gigante",
+    "id_species": 1,
+    "created_at": "2020-05-20T21:13:10.917122+00:00"
+  },
+  {
+    "id": 284,
+    "description": "Spitz Alemão - Spitz Médio",
+    "id_species": 1,
+    "created_at": "2020-05-20T21:13:10.917122+00:00"
+  },
+  {
+    "id": 285,
+    "description": "Spitz Alemão - Spitz Pequeno",
+    "id_species": 1,
+    "created_at": "2020-05-20T21:13:10.917122+00:00"
+  },
+  {
+    "id": 286,
+    "description": "Spitz Alemão - Spitz Anão",
+    "id_species": 1,
+    "created_at": "2020-05-20T21:13:10.917122+00:00"
+  },
+  {
+    "id": 287,
+    "description": "Spitz Alemão - Lulu da Pomerânia",
+    "id_species": 1,
+    "created_at": "2020-05-20T21:13:10.917122+00:00"
+  },
+  {
+    "id": 288,
+    "description": "Staffordshire Bull Terrier",
+    "id_species": 1,
+    "created_at": "2020-05-20T21:13:10.917122+00:00"
+  },
+  {
+    "id": 289,
+    "description": "Tamaskan",
+    "id_species": 1,
+    "created_at": "2020-05-20T21:13:10.917122+00:00"
+  },
+  {
+    "id": 290,
+    "description": "Teckel",
+    "id_species": 1,
+    "created_at": "2020-05-20T21:13:10.917122+00:00"
+  },
+  {
+    "id": 291,
+    "description": "Terra Nova",
+    "id_species": 1,
+    "created_at": "2020-05-20T21:13:10.917122+00:00"
+  },
+  {
+    "id": 292,
+    "description": "Terrier Australiano",
+    "id_species": 1,
+    "created_at": "2020-05-20T21:13:10.917122+00:00"
+  },
+  {
+    "id": 293,
+    "description": "Terrier Escocês",
+    "id_species": 1,
+    "created_at": "2020-05-20T21:13:10.917122+00:00"
+  },
+  {
+    "id": 294,
+    "description": "Terrier Irlandês",
+    "id_species": 1,
+    "created_at": "2020-05-20T21:13:10.917122+00:00"
+  },
+  {
+    "id": 295,
+    "description": "Terrier Japonês",
+    "id_species": 1,
+    "created_at": "2020-05-20T21:13:10.917122+00:00"
+  },
+  {
+    "id": 296,
+    "description": "Terrier Negro Russo",
+    "id_species": 1,
+    "created_at": "2020-05-20T21:13:10.917122+00:00"
+  },
+  {
+    "id": 297,
+    "description": "Terrier Norfolk",
+    "id_species": 1,
+    "created_at": "2020-05-20T21:13:10.917122+00:00"
+  },
+  {
+    "id": 298,
+    "description": "Terrier Norwich",
+    "id_species": 1,
+    "created_at": "2020-05-20T21:13:10.917122+00:00"
+  },
+  {
+    "id": 299,
+    "description": "Terrier Tibetano",
+    "id_species": 1,
+    "created_at": "2020-05-20T21:13:10.917122+00:00"
+  },
+  {
+    "id": 300,
+    "description": "Tosa",
+    "id_species": 1,
+    "created_at": "2020-05-20T21:13:10.917122+00:00"
+  },
+  {
+    "id": 301,
+    "description": "Weimaraner",
+    "id_species": 1,
+    "created_at": "2020-05-20T21:13:10.917122+00:00"
+  },
+  {
+    "id": 302,
+    "description": "Welsh Corgi (Cardigan)",
+    "id_species": 1,
+    "created_at": "2020-05-20T21:13:10.917122+00:00"
+  },
+  {
+    "id": 303,
+    "description": "Welsh Corgi (Pembroke)",
+    "id_species": 1,
+    "created_at": "2020-05-20T21:13:10.917122+00:00"
+  },
+  {
+    "id": 304,
+    "description": "West Highland White Terrier",
+    "id_species": 1,
+    "created_at": "2020-05-20T21:13:10.917122+00:00"
+  },
+  {
+    "id": 305,
+    "description": "Whippet",
+    "id_species": 1,
+    "created_at": "2020-05-20T21:13:10.917122+00:00"
+  },
+  {
+    "id": 306,
+    "description": "Xoloitzcuintli (Pelado Mexicano)",
+    "id_species": 1,
+    "created_at": "2020-05-20T21:13:10.917122+00:00"
+  },
+  {
+    "id": 307,
+    "description": "Yorkshire Terrier",
+    "id_species": 1,
+    "created_at": "2020-05-20T21:13:10.917122+00:00"
+  },
+  {
+    "id": 308,
+    "description": "Sem Raça Definida (Vira-Lata)",
+    "id_species": 1,
+    "created_at": "2020-05-20T21:13:10.917122+00:00"
+  },
+  {
+    "id": 309,
+    "description": "Agapornis",
+    "id_species": 7,
+    "created_at": "2020-05-20T21:13:16.061088+00:00"
+  },
+  {
+    "id": 310,
+    "description": "Araras",
+    "id_species": 7,
+    "created_at": "2020-05-20T21:13:16.061088+00:00"
+  },
+  {
+    "id": 311,
+    "description": "Cacatua",
+    "id_species": 7,
+    "created_at": "2020-05-20T21:13:16.061088+00:00"
+  },
+  {
+    "id": 312,
+    "description": "Calopsita",
+    "id_species": 7,
+    "created_at": "2020-05-20T21:13:16.061088+00:00"
+  },
+  {
+    "id": 313,
+    "description": "Canário",
+    "id_species": 7,
+    "created_at": "2020-05-20T21:13:16.061088+00:00"
+  },
+  {
+    "id": 314,
+    "description": "Canário Belga",
+    "id_species": 7,
+    "created_at": "2020-05-20T21:13:16.061088+00:00"
+  },
+  {
+    "id": 315,
+    "description": "Codorna",
+    "id_species": 7,
+    "created_at": "2020-05-20T21:13:16.061088+00:00"
+  },
+  {
+    "id": 316,
+    "description": "Diamante de Gould",
+    "id_species": 7,
+    "created_at": "2020-05-20T21:13:16.061088+00:00"
+  },
+  {
+    "id": 317,
+    "description": "Diamante de Mandarim",
+    "id_species": 7,
+    "created_at": "2020-05-20T21:13:16.061088+00:00"
+  },
+  {
+    "id": 318,
+    "description": "Galinha",
+    "id_species": 7,
+    "created_at": "2020-05-20T21:13:16.061088+00:00"
+  },
+  {
+    "id": 319,
+    "description": "Galo",
+    "id_species": 7,
+    "created_at": "2020-05-20T21:13:16.061088+00:00"
+  },
+  {
+    "id": 320,
+    "description": "Ganso",
+    "id_species": 7,
+    "created_at": "2020-05-20T21:13:16.061088+00:00"
+  },
+  {
+    "id": 321,
+    "description": "Manon",
+    "id_species": 7,
+    "created_at": "2020-05-20T21:13:16.061088+00:00"
+  },
+  {
+    "id": 322,
+    "description": "Maritaca",
+    "id_species": 7,
+    "created_at": "2020-05-20T21:13:16.061088+00:00"
+  },
+  {
+    "id": 323,
+    "description": "Papagaio",
+    "id_species": 7,
+    "created_at": "2020-05-20T21:13:16.061088+00:00"
+  },
+  {
+    "id": 324,
+    "description": "Pato",
+    "id_species": 7,
+    "created_at": "2020-05-20T21:13:16.061088+00:00"
+  },
+  {
+    "id": 325,
+    "description": "Periquito",
+    "id_species": 7,
+    "created_at": "2020-05-20T21:13:16.061088+00:00"
+  },
+  {
+    "id": 326,
+    "description": "Periquito Australiano",
+    "id_species": 7,
+    "created_at": "2020-05-20T21:13:16.061088+00:00"
+  },
+  {
+    "id": 327,
+    "description": "Pintassilgo",
+    "id_species": 7,
+    "created_at": "2020-05-20T21:13:16.061088+00:00"
+  },
+  {
+    "id": 328,
+    "description": "Pixarro/Trinca-Ferro",
+    "id_species": 7,
+    "created_at": "2020-05-20T21:13:16.061088+00:00"
+  },
+  {
+    "id": 329,
+    "description": "Ring Neck",
+    "id_species": 7,
+    "created_at": "2020-05-20T21:13:16.061088+00:00"
+  },
+  {
+    "id": 330,
+    "description": "Cisne",
+    "id_species": 7,
+    "created_at": "2020-05-20T21:13:16.061088+00:00"
+  },
+  {
+    "id": 331,
+    "description": "Curió",
+    "id_species": 7,
+    "created_at": "2020-05-20T21:13:16.061088+00:00"
+  },
+  {
+    "id": 332,
+    "description": "Diamante",
+    "id_species": 7,
+    "created_at": "2020-05-20T21:13:16.061088+00:00"
+  },
+  {
+    "id": 333,
+    "description": "Mandarim",
+    "id_species": 7,
+    "created_at": "2020-05-20T21:13:16.061088+00:00"
+  },
+  {
+    "id": 334,
+    "description": "Marreco",
+    "id_species": 7,
+    "created_at": "2020-05-20T21:13:16.061088+00:00"
+  },
+  {
+    "id": 335,
+    "description": "Pavão",
+    "id_species": 7,
+    "created_at": "2020-05-20T21:13:16.061088+00:00"
+  },
+  {
+    "id": 336,
+    "description": "Acará bandeira",
+    "id_species": 5,
+    "created_at": "2020-05-20T21:13:22.281954+00:00"
+  },
+  {
+    "id": 337,
+    "description": "Acará disco",
+    "id_species": 5,
+    "created_at": "2020-05-20T21:13:22.281954+00:00"
+  },
+  {
+    "id": 338,
+    "description": "Barbo sumatrano",
+    "id_species": 5,
+    "created_at": "2020-05-20T21:13:22.281954+00:00"
+  },
+  {
+    "id": 339,
+    "description": "Beijador",
+    "id_species": 5,
+    "created_at": "2020-05-20T21:13:22.281954+00:00"
+  },
+  {
+    "id": 340,
+    "description": "Betta",
+    "id_species": 5,
+    "created_at": "2020-05-20T21:13:22.281954+00:00"
+  },
+  {
+    "id": 341,
+    "description": "Blênio",
+    "id_species": 5,
+    "created_at": "2020-05-20T21:13:22.281954+00:00"
+  },
+  {
+    "id": 342,
+    "description": "Borboleta",
+    "id_species": 5,
+    "created_at": "2020-05-20T21:13:22.281954+00:00"
+  },
+  {
+    "id": 344,
+    "description": "Budiões",
+    "id_species": 5,
+    "created_at": "2020-05-20T21:13:22.281954+00:00"
+  },
+  {
+    "id": 345,
+    "description": "Chilodus",
+    "id_species": 5,
+    "created_at": "2020-05-20T21:13:22.281954+00:00"
+  },
+  {
+    "id": 346,
+    "description": "Cobrinha Kuhli",
+    "id_species": 5,
+    "created_at": "2020-05-20T21:13:22.281954+00:00"
+  },
+  {
+    "id": 347,
+    "description": "Colisa",
+    "id_species": 5,
+    "created_at": "2020-05-20T21:13:22.281954+00:00"
+  },
+  {
+    "id": 348,
+    "description": "Coral Beuaty",
+    "id_species": 5,
+    "created_at": "2020-05-20T21:13:22.281954+00:00"
+  },
+  {
+    "id": 349,
+    "description": "Coridora",
+    "id_species": 5,
+    "created_at": "2020-05-20T21:13:22.281954+00:00"
+  },
+  {
+    "id": 350,
+    "description": "Dânio",
+    "id_species": 5,
+    "created_at": "2020-05-20T21:13:22.281954+00:00"
+  },
+  {
+    "id": 351,
+    "description": "Donzela",
+    "id_species": 5,
+    "created_at": "2020-05-20T21:13:22.281954+00:00"
+  },
+  {
+    "id": 352,
+    "description": "Dottyback",
+    "id_species": 5,
+    "created_at": "2020-05-20T21:13:22.281954+00:00"
+  },
+  {
+    "id": 353,
+    "description": "Espada",
+    "id_species": 5,
+    "created_at": "2020-05-20T21:13:22.281954+00:00"
+  },
+  {
+    "id": 354,
+    "description": "Firefish",
+    "id_species": 5,
+    "created_at": "2020-05-20T21:13:22.281954+00:00"
+  },
+  {
+    "id": 355,
+    "description": "Goby",
+    "id_species": 5,
+    "created_at": "2020-05-20T21:13:22.281954+00:00"
+  },
+  {
+    "id": 356,
+    "description": "Guppy",
+    "id_species": 5,
+    "created_at": "2020-05-20T21:13:22.281954+00:00"
+  },
+  {
+    "id": 357,
+    "description": "Japonês",
+    "id_species": 5,
+    "created_at": "2020-05-20T21:13:22.281954+00:00"
+  },
+  {
+    "id": 358,
+    "description": "Limpa-vidro",
+    "id_species": 5,
+    "created_at": "2020-05-20T21:13:22.281954+00:00"
+  },
+  {
+    "id": 359,
+    "description": "Molinésia",
+    "id_species": 5,
+    "created_at": "2020-05-20T21:13:22.281954+00:00"
+  },
+  {
+    "id": 360,
+    "description": "Molly",
+    "id_species": 5,
+    "created_at": "2020-05-20T21:13:22.281954+00:00"
+  },
+  {
+    "id": 361,
+    "description": "Neon cardinal",
+    "id_species": 5,
+    "created_at": "2020-05-20T21:13:22.281954+00:00"
+  },
+  {
+    "id": 362,
+    "description": "Pangássius",
+    "id_species": 5,
+    "created_at": "2020-05-20T21:13:22.281954+00:00"
+  },
+  {
+    "id": 363,
+    "description": "Paulistinha",
+    "id_species": 5,
+    "created_at": "2020-05-20T21:13:22.281954+00:00"
+  },
+  {
+    "id": 364,
+    "description": "Peixinho Dourado",
+    "id_species": 5,
+    "created_at": "2020-05-20T21:13:22.281954+00:00"
+  },
+  {
+    "id": 365,
+    "description": "Platy",
+    "id_species": 5,
+    "created_at": "2020-05-20T21:13:22.281954+00:00"
+  },
+  {
+    "id": 366,
+    "description": "Ramirezi",
+    "id_species": 5,
+    "created_at": "2020-05-20T21:13:22.281954+00:00"
+  },
+  {
+    "id": 367,
+    "description": "Rodóstomo",
+    "id_species": 5,
+    "created_at": "2020-05-20T21:13:22.281954+00:00"
+  },
+  {
+    "id": 368,
+    "description": "Swordtail",
+    "id_species": 5,
+    "created_at": "2020-05-20T21:13:22.281954+00:00"
+  },
+  {
+    "id": 369,
+    "description": "Tangs",
+    "id_species": 5,
+    "created_at": "2020-05-20T21:13:22.281954+00:00"
+  },
+  {
+    "id": 370,
+    "description": "Tetra",
+    "id_species": 5,
+    "created_at": "2020-05-20T21:13:22.281954+00:00"
+  },
+  {
+    "id": 371,
+    "description": "Tetra preto",
+    "id_species": 5,
+    "created_at": "2020-05-20T21:13:22.281954+00:00"
+  },
+  {
+    "id": 372,
+    "description": "Tricogaster Leeri",
+    "id_species": 5,
+    "created_at": "2020-05-20T21:13:22.281954+00:00"
+  },
+  {
+    "id": 380,
+    "description": "Sem Raça Definida (SRD)",
+    "id_species": 9,
+    "created_at": "2020-06-12T14:51:55.736722+00:00"
+  },
+  {
+    "id": 381,
+    "description": "Sem Raça Definida (SRD)",
+    "id_species": 5,
+    "created_at": "2020-06-12T14:51:55.736722+00:00"
+  },
+  {
+    "id": 382,
+    "description": "Sem Raça Definida (SRD)",
+    "id_species": 7,
+    "created_at": "2020-06-12T14:51:55.736722+00:00"
+  },
+  {
+    "id": 383,
+    "description": "Sem Raça Definida (SRD)",
+    "id_species": 4,
+    "created_at": "2020-06-12T14:51:55.736722+00:00"
+  },
+  {
+    "id": 384,
+    "description": "Sem Raça Definida (SRD)",
+    "id_species": 2,
+    "created_at": "2020-06-12T14:51:55.736722+00:00"
+  },
+  {
+    "id": 385,
+    "description": "Sem Raça Definida (SRD)",
+    "id_species": 8,
+    "created_at": "2020-06-12T14:51:55.736722+00:00"
+  },
+  {
+    "id": 386,
+    "description": "Sem Raça Definida (SRD)",
+    "id_species": 3,
+    "created_at": "2020-06-12T14:51:55.736722+00:00"
+  },
+  {
+    "id": 388,
+    "description": "Twister/Mercol",
+    "id_species": 6,
+    "created_at": "2020-08-27T23:37:33.666016+00:00"
+  },
+  {
+    "id": 390,
+    "description": "Miniature Schnauzer",
+    "id_species": 1,
+    "created_at": "2020-05-20T21:13:10.917122+00:00"
+  },
+  {
+    "id": 391,
+    "description": "Schnauzer",
+    "id_species": 1,
+    "created_at": "2020-05-20T21:13:10.917122+00:00"
+  },
+  {
+    "id": 392,
+    "description": "Giant Schnauzer",
+    "id_species": 1,
+    "created_at": "2020-05-20T21:13:10.917122+00:00"
+  },
+  {
+    "id": 393,
+    "description": "Terrier Brasileiro (Fox Paulistinha)",
+    "id_species": 1,
+    "created_at": "2021-06-07T21:19:44.038726+00:00"
+  },
+  {
+    "id": 389,
+    "description": "Kelpie Australiano",
+    "id_species": 1,
+    "created_at": "2020-05-20T21:13:10.917122+00:00"
+  },
+  {
+    "id": 395,
+    "description": "Galgo Italiano",
+    "id_species": 1,
+    "created_at": "2020-05-20T21:13:10.917122+00:00"
+  },
+  {
+    "id": 396,
+    "description": "Sheltie",
+    "id_species": 1,
+    "created_at": "2020-05-20T21:13:10.917122+00:00"
+  },
+  {
+    "id": 397,
+    "description": "Pastor De Shetland",
+    "id_species": 1,
+    "created_at": "2020-05-20T21:13:10.917122+00:00"
+  },
+  {
+    "id": 398,
+    "description": "American Bully",
+    "id_species": 1,
+    "created_at": "2021-12-08T14:26:26.233101+00:00"
+  },
+  {
+    "id": 399,
+    "description": "American Bull",
+    "id_species": 1,
+    "created_at": "2021-12-08T14:26:32.991394+00:00"
+  },
+  {
+    "id": 400,
+    "description": "Biewer Terrier",
+    "id_species": 1,
+    "created_at": "2022-02-05T14:40:40.730857+00:00"
+  },
+  {
+    "id": 401,
+    "description": "Akhal-Teke",
+    "id_species": 19,
+    "created_at": "2022-05-17T17:19:49.151819+00:00"
+  },
+  {
+    "id": 402,
+    "description": "Andalucian",
+    "id_species": 19,
+    "created_at": "2022-05-17T17:19:49.151819+00:00"
+  },
+  {
+    "id": 403,
+    "description": "Andaluz",
+    "id_species": 19,
+    "created_at": "2022-05-17T17:19:49.151819+00:00"
+  },
+  {
+    "id": 404,
+    "description": "Anglo-Árabe",
+    "id_species": 19,
+    "created_at": "2022-05-17T17:19:49.151819+00:00"
+  },
+  {
+    "id": 405,
+    "description": "Appaloosa",
+    "id_species": 19,
+    "created_at": "2022-05-17T17:19:49.151819+00:00"
+  },
+  {
+    "id": 406,
+    "description": "Árabe",
+    "id_species": 19,
+    "created_at": "2022-05-17T17:19:49.151819+00:00"
+  },
+  {
+    "id": 407,
+    "description": "Banker",
+    "id_species": 19,
+    "created_at": "2022-05-17T17:19:49.151819+00:00"
+  },
+  {
+    "id": 408,
+    "description": "Bashkir",
+    "id_species": 19,
+    "created_at": "2022-05-17T17:19:49.151819+00:00"
+  },
+  {
+    "id": 409,
+    "description": "Berbere",
+    "id_species": 19,
+    "created_at": "2022-05-17T17:19:49.151819+00:00"
+  },
+  {
+    "id": 410,
+    "description": "Bretão",
+    "id_species": 19,
+    "created_at": "2022-05-17T17:19:49.151819+00:00"
+  },
+  {
+    "id": 411,
+    "description": "Campeiro",
+    "id_species": 19,
+    "created_at": "2022-05-17T17:19:49.151819+00:00"
+  },
+  {
+    "id": 412,
+    "description": "Campolina",
+    "id_species": 19,
+    "created_at": "2022-05-17T17:19:49.151819+00:00"
+  },
+  {
+    "id": 413,
+    "description": "Clydesdale",
+    "id_species": 19,
+    "created_at": "2022-05-17T17:19:49.151819+00:00"
+  },
+  {
+    "id": 414,
+    "description": "Crioulo",
+    "id_species": 19,
+    "created_at": "2022-05-17T17:19:49.151819+00:00"
+  },
+  {
+    "id": 415,
+    "description": "Fjord",
+    "id_species": 19,
+    "created_at": "2022-05-17T17:19:49.151819+00:00"
+  },
+  {
+    "id": 416,
+    "description": "Friesian",
+    "id_species": 19,
+    "created_at": "2022-05-17T17:19:49.151819+00:00"
+  },
+  {
+    "id": 417,
+    "description": "Gypsy Vanner",
+    "id_species": 19,
+    "created_at": "2022-05-17T17:19:49.151819+00:00"
+  },
+  {
+    "id": 418,
+    "description": "Haflinger",
+    "id_species": 19,
+    "created_at": "2022-05-17T17:19:49.151819+00:00"
+  },
+  {
+    "id": 419,
+    "description": "Lavradeiro",
+    "id_species": 19,
+    "created_at": "2022-05-17T17:19:49.151819+00:00"
+  },
+  {
+    "id": 420,
+    "description": "Lusitano",
+    "id_species": 19,
+    "created_at": "2022-05-17T17:19:49.151819+00:00"
+  },
+  {
+    "id": 421,
+    "description": "Mangalarga",
+    "id_species": 19,
+    "created_at": "2022-05-17T17:19:49.151819+00:00"
+  },
+  {
+    "id": 422,
+    "description": "Mangalarga Marchador",
+    "id_species": 19,
+    "created_at": "2022-05-17T17:19:49.151819+00:00"
+  },
+  {
+    "id": 423,
+    "description": "Marajoara",
+    "id_species": 19,
+    "created_at": "2022-05-17T17:19:49.151819+00:00"
+  },
+  {
+    "id": 424,
+    "description": "Marwari",
+    "id_species": 19,
+    "created_at": "2022-05-17T17:19:49.151819+00:00"
+  },
+  {
+    "id": 425,
+    "description": "Miniature",
+    "id_species": 19,
+    "created_at": "2022-05-17T17:19:49.151819+00:00"
+  },
+  {
+    "id": 426,
+    "description": "Mustang",
+    "id_species": 19,
+    "created_at": "2022-05-17T17:19:49.151819+00:00"
+  },
+  {
+    "id": 427,
+    "description": "Nordestino",
+    "id_species": 19,
+    "created_at": "2022-05-17T17:19:49.151819+00:00"
+  },
+  {
+    "id": 428,
+    "description": "Noriker",
+    "id_species": 19,
+    "created_at": "2022-05-17T17:19:49.151819+00:00"
+  },
+  {
+    "id": 429,
+    "description": "Paint",
+    "id_species": 19,
+    "created_at": "2022-05-17T17:19:49.151819+00:00"
+  },
+  {
+    "id": 430,
+    "description": "Pampa",
+    "id_species": 19,
+    "created_at": "2022-05-17T17:19:49.151819+00:00"
+  },
+  {
+    "id": 431,
+    "description": "Pantaneiro",
+    "id_species": 19,
+    "created_at": "2022-05-17T17:19:49.151819+00:00"
+  },
+  {
+    "id": 432,
+    "description": "Percheron",
+    "id_species": 19,
+    "created_at": "2022-05-17T17:19:49.151819+00:00"
+  },
+  {
+    "id": 433,
+    "description": "Pônei Brasileiro",
+    "id_species": 19,
+    "created_at": "2022-05-17T17:19:49.151819+00:00"
+  },
+  {
+    "id": 434,
+    "description": "Puro Sangue Inglês",
+    "id_species": 19,
+    "created_at": "2022-05-17T17:19:49.151819+00:00"
+  },
+  {
+    "id": 435,
+    "description": "Quarto de Milha",
+    "id_species": 19,
+    "created_at": "2022-05-17T17:19:49.151819+00:00"
+  },
+  {
+    "id": 436,
+    "description": "Shetland",
+    "id_species": 19,
+    "created_at": "2022-05-17T17:19:49.151819+00:00"
+  },
+  {
+    "id": 437,
+    "description": "Shire",
+    "id_species": 19,
+    "created_at": "2022-05-17T17:19:49.151819+00:00"
+  },
+  {
+    "id": 438,
+    "description": "Thoroughbred",
+    "id_species": 19,
+    "created_at": "2022-05-17T17:19:49.151819+00:00"
+  },
+  {
+    "id": 439,
+    "description": "Preto",
+    "id_species": 19,
+    "created_at": "2023-03-14T15:50:31.330936+00:00"
+  },
+  {
+    "id": 440,
+    "description": "Picaço",
+    "id_species": 19,
+    "created_at": "2023-03-14T16:02:10.760023+00:00"
+  },
+  {
+    "id": 441,
+    "description": "Zaino",
+    "id_species": 19,
+    "created_at": "2023-03-14T16:02:21.844279+00:00"
+  },
+  {
+    "id": 442,
+    "description": "Colorado Requeimado",
+    "id_species": 19,
+    "created_at": "2023-03-14T16:03:07.89004+00:00"
+  },
+  {
+    "id": 443,
+    "description": "Colorado",
+    "id_species": 19,
+    "created_at": "2023-03-14T16:03:16.692927+00:00"
+  },
+  {
+    "id": 444,
+    "description": "Rosilho",
+    "id_species": 19,
+    "created_at": "2023-03-14T16:03:37.32428+00:00"
+  },
+  {
+    "id": 445,
+    "description": "Mouro",
+    "id_species": 19,
+    "created_at": "2023-03-14T16:03:42.445814+00:00"
+  },
+  {
+    "id": 446,
+    "description": "Lobuno",
+    "id_species": 19,
+    "created_at": "2023-03-14T16:03:54.261176+00:00"
+  },
+  {
+    "id": 447,
+    "description": "Cebruno",
+    "id_species": 19,
+    "created_at": "2023-03-14T16:04:09.897064+00:00"
+  },
+  {
+    "id": 448,
+    "description": "Baio Encerado",
+    "id_species": 19,
+    "created_at": "2023-03-14T16:04:29.12921+00:00"
+  },
+  {
+    "id": 449,
+    "description": "Baio Ovo de Pato",
+    "id_species": 19,
+    "created_at": "2023-03-14T16:04:43.248693+00:00"
+  },
+  {
+    "id": 450,
+    "description": "Baio Ruano",
+    "id_species": 19,
+    "created_at": "2023-03-14T16:04:55.431755+00:00"
+  },
+  {
+    "id": 451,
+    "description": "Baio Cabos Negros",
+    "id_species": 19,
+    "created_at": "2023-03-14T16:05:10.85033+00:00"
+  },
+  {
+    "id": 452,
+    "description": "Gateado",
+    "id_species": 19,
+    "created_at": "2023-03-14T16:05:20.108132+00:00"
+  },
+  {
+    "id": 453,
+    "description": "Gateado Pangaré",
+    "id_species": 19,
+    "created_at": "2023-03-14T16:05:30.019314+00:00"
+  },
+  {
+    "id": 454,
+    "description": "Gateado Brasino",
+    "id_species": 19,
+    "created_at": "2023-03-14T16:05:42.73459+00:00"
+  },
+  {
+    "id": 455,
+    "description": "Gateado Ruivo",
+    "id_species": 19,
+    "created_at": "2023-03-14T16:05:58.093652+00:00"
+  },
+  {
+    "id": 456,
+    "description": "Tordilho Negro",
+    "id_species": 19,
+    "created_at": "2023-03-14T16:06:11.486555+00:00"
+  },
+  {
+    "id": 457,
+    "description": "Tordilho Branco",
+    "id_species": 19,
+    "created_at": "2023-03-14T16:06:25.956141+00:00"
+  },
+  {
+    "id": 458,
+    "description": "Oveiro Negro",
+    "id_species": 19,
+    "created_at": "2023-03-14T16:06:37.609107+00:00"
+  },
+  {
+    "id": 459,
+    "description": "Pastor Maremano Abruzês",
+    "id_species": 1,
+    "created_at": "2023-04-25T16:58:57.420503+00:00"
+  },
+  {
+    "id": 460,
+    "description": "Pastor Romeno Miorítico",
+    "id_species": 1,
+    "created_at": "2023-04-25T17:04:40.393115+00:00"
+  },
+  {
+    "id": 461,
+    "description": "Lancashire Heeler",
+    "id_species": 1,
+    "created_at": "2023-04-25T17:06:23.553814+00:00"
+  },
+  {
+    "id": 462,
+    "description": "Pastor Boêmio Chodský Pes",
+    "id_species": 1,
+    "created_at": "2023-04-25T17:07:05.509418+00:00"
+  }
+]
