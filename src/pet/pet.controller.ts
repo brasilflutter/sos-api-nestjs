@@ -1,14 +1,21 @@
-import { Controller, Delete, Get, Post, Put } from '@nestjs/common'
-import { ApiTags } from '@nestjs/swagger'
+import { Controller, Delete, Get, Param, Post, Put } from '@nestjs/common'
+import { ApiOkResponse, ApiTags } from '@nestjs/swagger'
+import { PetEntity } from '@/core/entities/pets/pet.entity'
+import { PetService } from '@/pet/services/pet.service'
 
 @ApiTags('Pet')
 @Controller('pet')
 export class PetController {
-  constructor() {}
+  constructor(private readonly petService: PetService) {}
 
+  @ApiOkResponse({
+    description: 'The user profile',
+    type: PetEntity,
+    isArray: true,
+  })
   @Get(':id')
-  getById() {
-    return 'This action returns an item'
+  getById(@Param('id') id: number) {
+    return this.petService.getById(id)
   }
 
   @Put(':id')
