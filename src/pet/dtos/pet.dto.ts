@@ -1,8 +1,13 @@
 import { PetStatusEnum } from '@/core/enums/pet-status.enum'
 import { PetColorsDto } from '@/pet/dtos/pet-colors.dto'
 import { PetImagesDto } from '@/pet/dtos/pet-images.dto'
+import { ApiProperty } from '@nestjs/swagger'
 
-export type PetDto = {
+export class PetDto {
+  @ApiProperty({
+    example: '0',
+    required: true,
+  })
   id: number
   idSpecimen: number
   idBreed: number
