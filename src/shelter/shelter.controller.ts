@@ -2,6 +2,7 @@ import { Controller, Post } from '@nestjs/common'
 import { ApiOkResponse, ApiTags } from '@nestjs/swagger'
 import { AddressDto } from '@/address/dtos/address.dto'
 import { SignInDto } from '@/auth/dtos/sign-in.dto'
+import { ShelterDto } from '@/shelter/dtos/shelter.dto'
 
 @ApiTags('Shelter')
 @Controller('shelter')
@@ -10,7 +11,7 @@ export class ShelterController {
 
   @ApiOkResponse({
     description: 'The user records',
-    type: AddressDto,
+    type: ShelterDto,
     isArray: true,
   })
   @Post('')
