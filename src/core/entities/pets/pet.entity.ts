@@ -2,8 +2,8 @@ import { PetStatusEnum } from '@/core/enums/pet-status.enum'
 import { Column, Entity, OneToMany, PrimaryGeneratedColumn } from 'typeorm'
 import { PetColorsEntity } from '@/core/entities/pets/pet-colors-entity'
 import { SpecimenEntity } from '@/core/entities/pets/specimen.entity'
-import { BreedEntity } from '@/core/entities/pets/breedEntity'
 import { SizeEntity } from '@/core/entities/pets/size.entity'
+import { BreedEntity } from '@/core/entities/pets/breed.entity'
 
 @Entity('pets')
 export class PetEntity {

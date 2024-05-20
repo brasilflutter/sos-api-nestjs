@@ -20,15 +20,6 @@ export class PetColorsEntity {
   @Column('int', { name: 'idColor', unsigned: true })
   idColor: number
 
-  @Column('int', { name: 'idSpecimen', unsigned: true })
-  idSpecimen: number
-
-  @Column('int', { name: 'idBreed', unsigned: true })
-  idBreed: number
-
-  @Column('int', { name: 'idSize', unsigned: true })
-  idSize: number
-
   @Column('enum', { name: 'type', enum: PetColorsTypeEnum })
   type: PetColorsTypeEnum
 

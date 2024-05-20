@@ -6,10 +6,10 @@ export class SpecimenEntity {
   @PrimaryGeneratedColumn({ type: 'int', name: 'id', unsigned: true })
   id: number
 
-  @Column({ type: 'string', name: 'name', unsigned: true })
+  @Column({ type: 'varchar', name: 'name', unsigned: true })
   name: string
 
-  @Column({ type: 'string', name: 'description', unsigned: true })
+  @Column({ type: 'varchar', name: 'description', unsigned: true })
   description: string
 
   @ManyToOne(() => PetEntity, (pet) => pet.colors)
