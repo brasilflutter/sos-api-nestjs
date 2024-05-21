@@ -59,3 +59,5 @@ db
 db/*
 
 database.backup.sql
+
+/pgdata
