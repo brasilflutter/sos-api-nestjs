@@ -11,6 +11,10 @@ services:
       - ./pgdata:/var/lib/postgresql/data
     ports:
       - '5432:5432'
+    deploy:
+      resources:
+        limits:
+          memory: 1g
 
   app:
     build:
@@ -23,3 +27,7 @@ services:
       - db
     volumes:
       - ./src:/app/src
+    deploy:
+      resources:
+        limits:
+          memory: 512M
