@@ -26,7 +26,7 @@ export class PetEntity {
   lastSeenLocation: string
 
   @Column('enum', { name: 'status', enum: PetStatusEnum })
-  status: string
+  status: PetStatusEnum
 
   @Column('timestamp', {
     name: 'createdAt',

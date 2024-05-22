@@ -6,6 +6,9 @@ import { PetEntity } from '@/core/entities/pets/pet.entity'
 import { PetService } from '@/pet/services/pet.service'
 import { ColorEntity } from '@/core/entities/pets/color.entity'
 import { PetColorsEntity } from '@/core/entities/pets/pet-colors-entity'
+import { SizeEntity } from '@/core/entities/pets/size.entity'
+import { SpecimenEntity } from '@/core/entities/pets/specimen.entity'
+import { BreedEntity } from '@/core/entities/pets/breed.entity'
 
 @Module({
   controllers: [PetController],
@@ -13,7 +16,14 @@ import { PetColorsEntity } from '@/core/entities/pets/pet-colors-entity'
   exports: [],
   imports: [
     CoreModule,
-    TypeOrmModule.forFeature([PetEntity, PetColorsEntity, ColorEntity]),
+    TypeOrmModule.forFeature([
+      PetEntity,
+      PetColorsEntity,
+      ColorEntity,
+      SizeEntity,
+      SpecimenEntity,
+      BreedEntity,
+    ]),
   ],
 })
 export class PetModule {}
