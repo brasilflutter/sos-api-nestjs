@@ -16,7 +16,7 @@ export class SpecimenDto {
     }
   }
 
-  static fromEntity(entity: BreedEntity): SpecimenDto {
+  static fromEntity(entity: SpecimenEntity): SpecimenDto {
     const dto = { ...entity } as unknown as SpecimenDto
     return new SpecimenDto({ ...dto })
   }

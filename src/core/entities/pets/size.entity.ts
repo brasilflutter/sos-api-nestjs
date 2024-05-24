@@ -12,7 +12,7 @@ export class SizeEntity {
   @Column({ name: 'description', unsigned: true })
   description: string
 
-  @ManyToOne(() => PetEntity, (pet) => pet.colors)
+  @ManyToOne(() => PetEntity, (pet) => pet.size)
   pets: PetEntity[]
 
   constructor(partial?: Partial<SizeEntity>) {

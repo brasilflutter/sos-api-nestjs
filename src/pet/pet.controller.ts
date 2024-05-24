@@ -7,8 +7,9 @@ import {
   Param,
   Post,
   Put,
+  Query,
 } from '@nestjs/common'
-import { ApiOkResponse, ApiTags } from '@nestjs/swagger'
+import { ApiOkResponse, ApiQuery, ApiTags } from '@nestjs/swagger'
 import { PetEntity } from '@/core/entities/pets/pet.entity'
 import { PetService } from '@/pet/services/pet.service'
 import { ColorDto } from '@/pet/dtos/attributes/color.dto'
@@ -63,9 +64,10 @@ export class PetController {
     type: BreedDto,
     isArray: true,
   })
+  @ApiQuery({ name: 'name', required: false, type: String })
   @Get('/breeds')
-  getBreeds(@Param('name') name: string) {
-    return this.petService.getBreeds(name)
+  getBreeds(@Query('name') name?: string) {
+    return this.petService.getBreeds(name ?? '')
   }
 
   @ApiOkResponse({
