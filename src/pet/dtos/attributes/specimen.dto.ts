@@ -9,9 +9,6 @@ export class SpecimenDto {
   @ApiProperty({ type: 'string', readOnly: true })
   description: string
 
-  // @ApiProperty({ type: BreedDto, isArray: true, readOnly: true })
-  // breeds: BreedEntity[]
-
   constructor(partial?: Partial<SpecimenDto>) {
     if (partial) {
       Object.assign(this, partial)
