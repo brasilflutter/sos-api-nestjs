@@ -7,15 +7,10 @@ import {
   Param,
   Post,
   Put,
-  Query,
 } from '@nestjs/common'
-import { ApiOkResponse, ApiQuery, ApiTags } from '@nestjs/swagger'
+import { ApiOkResponse, ApiTags } from '@nestjs/swagger'
 import { PetEntity } from '@/core/entities/pets/pet.entity'
 import { PetService } from '@/pet/services/pet.service'
-import { ColorDto } from '@/pet/dtos/attributes/color.dto'
-import { SpecimenDto } from '@/pet/dtos/attributes/specimen.dto'
-import { SizeDto } from '@/pet/dtos/attributes/size.dto'
-import { BreedDto } from '@/pet/dtos/attributes/breed.dto'
 import { Either } from '@/core/adapters/either'
 import { PetDto } from '@/pet/dtos/pet.dto'
 
@@ -57,52 +52,5 @@ export class PetController {
   @Delete(':id')
   delete(@Param('id') id: number) {
     return 'This action removes an item'
-  }
-
-  @ApiOkResponse({
-    description: 'The list of breeds',
-    type: BreedDto,
-    isArray: true,
-  })
-  @ApiQuery({ name: 'name', required: false, type: String })
-  @Get('/breeds')
-  getBreeds(@Query('name') name?: string) {
-    return this.petService.getBreeds(name ?? '')
-  }
-
-  @ApiOkResponse({
-    description: 'The list of sizes',
-    type: SizeDto,
-    isArray: true,
-  })
-  @Get('/sizes')
-  getSizes(
-    @Param('name') name: string,
-  ): Promise<Either<HttpException, SizeDto[]>> {
-    return this.petService.getSizes(name)
-  }
-
-  @ApiOkResponse({
-    description: 'The list of colors',
-    type: ColorDto,
-    isArray: true,
-  })
-  @Get('/colors')
-  getColors(
-    @Param('name') name: string,
-  ): Promise<Either<HttpException, ColorDto[]>> {
-    return this.petService.getColors(name)
-  }
-
-  @ApiOkResponse({
-    description: 'The list of specimens',
-    type: SpecimenDto,
-    isArray: true,
-  })
-  @Get('/specimens')
-  getSpecimens(
-    @Param('name') name: string,
-  ): Promise<Either<HttpException, SpecimenDto[]>> {
-    return this.petService.getSpecimens(name)
   }
 }

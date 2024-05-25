@@ -1,4 +1,4 @@
-import { Column, Entity, ManyToOne, PrimaryGeneratedColumn } from 'typeorm'
+import { Column, Entity, OneToMany, PrimaryGeneratedColumn } from 'typeorm'
 import { PetEntity } from '@/core/entities/pets/pet.entity'
 
 @Entity('sizes')
@@ -12,7 +12,7 @@ export class SizeEntity {
   @Column({ name: 'description', unsigned: true })
   description: string
 
-  @ManyToOne(() => PetEntity, (pet) => pet.size)
+  @OneToMany(() => PetEntity, (pet) => pet.size)
   pets: PetEntity[]
 
   constructor(partial?: Partial<SizeEntity>) {

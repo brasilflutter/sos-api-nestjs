@@ -1,5 +1,4 @@
 import { ApiProperty } from '@nestjs/swagger'
-import { BreedEntity } from '@/core/entities/pets/breed.entity'
 import { SpecimenEntity } from '@/core/entities/pets/specimen.entity'
 
 export class SpecimenDto {
@@ -10,6 +9,9 @@ export class SpecimenDto {
   @ApiProperty({ type: 'string', readOnly: true })
   description: string
 
+  // @ApiProperty({ type: BreedDto, isArray: true, readOnly: true })
+  // breeds: BreedEntity[]
+
   constructor(partial?: Partial<SpecimenDto>) {
     if (partial) {
       Object.assign(this, partial)
@@ -17,8 +19,13 @@ export class SpecimenDto {
   }
 
   static fromEntity(entity: SpecimenEntity): SpecimenDto {
-    const dto = { ...entity } as unknown as SpecimenDto
-    return new SpecimenDto({ ...dto })
+    const dto = new SpecimenDto()
+    dto.id = entity.id
+    dto.name = entity.name
+    dto.description = entity.description
+    // dto.breeds = entity.breeds
+
+    return dto
   }
 
   static fromForm(entity: SpecimenDto): SpecimenDto {

@@ -1,4 +1,10 @@
-import { Column, Entity, ManyToOne, PrimaryGeneratedColumn } from 'typeorm'
+import {
+  Column,
+  Entity,
+  ManyToOne,
+  OneToMany,
+  PrimaryGeneratedColumn,
+} from 'typeorm'
 import { PetEntity } from '@/core/entities/pets/pet.entity'
 import { SpecimenEntity } from '@/core/entities/pets/specimen.entity'
 
@@ -7,13 +13,13 @@ export class BreedEntity {
   @PrimaryGeneratedColumn({ type: 'int', name: 'id', unsigned: true })
   id: number
 
-  @Column({ name: 'name', unsigned: true })
+  @Column({ name: 'name' })
   name: string
 
-  @Column({ name: 'description', unsigned: true, nullable: true })
+  @Column({ name: 'description', nullable: true })
   description?: string
 
-  @ManyToOne(() => PetEntity, (pet) => pet.breed)
+  @OneToMany(() => PetEntity, (pet) => pet.breed)
   pets: PetEntity[]
 
   @ManyToOne(() => SpecimenEntity, (specimen) => specimen.breeds)

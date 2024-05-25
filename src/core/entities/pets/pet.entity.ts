@@ -1,5 +1,5 @@
 import { PetStatusEnum } from '@/core/enums/pet-status.enum'
-import { Column, Entity, OneToMany, PrimaryGeneratedColumn } from 'typeorm'
+import { Column, Entity, ManyToOne, OneToMany, PrimaryGeneratedColumn } from "typeorm";
 import { PetColorsEntity } from '@/core/entities/pets/pet-colors-entity'
 import { SpecimenEntity } from '@/core/entities/pets/specimen.entity'
 import { SizeEntity } from '@/core/entities/pets/size.entity'
@@ -46,13 +46,13 @@ export class PetEntity {
   @OneToMany(() => PetColorsEntity, (entity) => entity.pets)
   colors: PetColorsEntity[]
 
-  @OneToMany(() => SpecimenEntity, (entity) => entity.pets)
+  @ManyToOne(() => SpecimenEntity, (entity) => entity.pets)
   specimen?: SpecimenEntity
 
-  @OneToMany(() => BreedEntity, (entity) => entity.pets)
+  @ManyToOne(() => BreedEntity, (entity) => entity.pets)
   breed?: BreedEntity
 
-  @OneToMany(() => SizeEntity, (entity) => entity.pets)
+  @ManyToOne(() => SizeEntity, (entity) => entity.pets)
   size?: SizeEntity
 
   constructor(partial?: Partial<PetEntity>) {

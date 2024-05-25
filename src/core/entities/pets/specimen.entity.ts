@@ -1,8 +1,8 @@
-import { Column, Entity, ManyToOne, PrimaryGeneratedColumn } from 'typeorm'
+import { Column, Entity, OneToMany, PrimaryGeneratedColumn } from 'typeorm'
 import { PetEntity } from '@/core/entities/pets/pet.entity'
 import { BreedEntity } from '@/core/entities/pets/breed.entity'
 
-@Entity('specimen')
+@Entity('specimens')
 export class SpecimenEntity {
   @PrimaryGeneratedColumn({ type: 'int', name: 'id', unsigned: true })
   id: number
@@ -13,10 +13,10 @@ export class SpecimenEntity {
   @Column({ type: 'varchar', name: 'description', unsigned: true })
   description: string
 
-  @ManyToOne(() => PetEntity, (pet) => pet.specimen)
+  @OneToMany(() => PetEntity, (pet) => pet.specimen)
   pets: PetEntity[]
 
-  @ManyToOne(() => BreedEntity, (breed) => breed.specimen)
+  @OneToMany(() => BreedEntity, (breed) => breed.specimen)
   breeds: BreedEntity[]
 
   constructor(partial?: Partial<SpecimenEntity>) {
