@@ -65,10 +65,10 @@ export class PetDto {
   @ApiProperty({
     description: 'Id das Cores do animal',
     writeOnly: true,
+    type: Number,
+    isArray: true,
   })
-  @IsArray({
-    each: true,
-  })
+  @IsArray({})
   colorIds: number[]
 
   @ApiProperty({ type: [PetColorsDto], readOnly: true })
@@ -99,9 +99,7 @@ export class PetDto {
     description: 'Imagens do animal',
     type: [PetImageDto],
   })
-  @IsArray({
-    each: true,
-  })
+  @IsArray({})
   images: PetImageDto[]
 
   static fromEntity(pet: PetEntity): PetDto {

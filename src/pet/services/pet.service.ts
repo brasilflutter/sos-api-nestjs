@@ -52,7 +52,7 @@ export class PetService {
     return new Left(new HttpException('Pet not found', 404))
   }
 
-  async create(pet: PetDto): Promise<Either<HttpException, PetEntity>> {
+  async create(pet: PetDto): Promise<Either<HttpException, PetDto>> {
     const newPet = this.petRepository.create()
     newPet.description = pet.description
     newPet.idBreed = pet.idBreed
@@ -64,15 +64,17 @@ export class PetService {
     const result = await this.petRepository.save(newPet)
 
     if (result) {
-      return new Right(result)
+      return new Right(PetDto.fromEntity(result))
     }
 
     return new Left(new HttpException('Pet not created', 400))
   }
 
-  async update(id: number, pet: Partial<PetEntity>): Promise<PetEntity> {
+  async update(id: number, pet: Partial<PetDto>): Promise<PetDto> {
     await this.petRepository.update(id, pet)
-    return this.petRepository.findOneBy({ id })
+    const newPet = await this.petRepository.findOneBy({ id })
+
+    return PetDto.fromEntity(newPet)
   }
 
   async delete(id: number): Promise<void> {

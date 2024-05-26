@@ -1,5 +1,12 @@
 import { PetStatusEnum } from '@/core/enums/pet-status.enum'
-import { Column, Entity, ManyToOne, OneToMany, PrimaryGeneratedColumn } from "typeorm";
+import {
+  Column,
+  Entity,
+  JoinColumn,
+  ManyToOne,
+  OneToMany,
+  PrimaryGeneratedColumn,
+} from 'typeorm'
 import { PetColorsEntity } from '@/core/entities/pets/pet-colors-entity'
 import { SpecimenEntity } from '@/core/entities/pets/specimen.entity'
 import { SizeEntity } from '@/core/entities/pets/size.entity'
@@ -47,12 +54,15 @@ export class PetEntity {
   colors: PetColorsEntity[]
 
   @ManyToOne(() => SpecimenEntity, (entity) => entity.pets)
+  @JoinColumn({ name: 'idSpecimen' })
   specimen?: SpecimenEntity
 
   @ManyToOne(() => BreedEntity, (entity) => entity.pets)
+  @JoinColumn({ name: 'idBreed' })
   breed?: BreedEntity
 
   @ManyToOne(() => SizeEntity, (entity) => entity.pets)
+  @JoinColumn({ name: 'idSize' })
   size?: SizeEntity
 
   constructor(partial?: Partial<PetEntity>) {

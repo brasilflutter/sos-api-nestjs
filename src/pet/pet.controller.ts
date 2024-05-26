@@ -41,16 +41,16 @@ export class PetController {
 
   @Put(':id')
   put(@Param('id') id: number, @Body() pet: PetDto) {
-    return 'This action updates an item'
+    return this.petService.update(id, pet)
   }
 
   @Post()
   post(@Body() pet: PetDto) {
-    return 'This action creates an item'
+    return this.petService.create(pet)
   }
 
   @Delete(':id')
   delete(@Param('id') id: number) {
-    return 'This action removes an item'
+    return this.petService.delete(id)
   }
 }
