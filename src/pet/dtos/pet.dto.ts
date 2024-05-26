@@ -112,10 +112,6 @@ export class PetDto {
     petResponse.lastSeenLocation = pet.lastSeenLocation
     petResponse.status = pet.status
 
-    // if (pet.colors) {
-    //   petResponse.colors = pet.colors.map((color) => ColorDto.fromEntity(color))
-    // }
-
     if (pet.specimen) {
       petResponse.specimen = SpecimenDto.fromEntity(pet.specimen)
     }
@@ -128,6 +124,40 @@ export class PetDto {
       petResponse.size = SizeDto.fromEntity(pet.size)
     }
 
+    // if (pet.colors) {
+    //   petResponse.colors = pet.colors.map((color) =>
+    //     PetColorsDto.fromEntity(color),
+    //   )
+    // }
+
+    // if (pet.images) {
+    //   petResponse.images = pet.images.map((image) =>
+    //     PetImageDto.fromEntity(image),
+    //   )
+    // }
+
     return petResponse
+  }
+
+  toEntity(): Partial<PetEntity> {
+    const petEntity = new PetEntity()
+    petEntity.id = this.id
+    petEntity.idSpecimen = this.idSpecimen
+    petEntity.idBreed = this.idBreed
+    petEntity.idSize = this.idSize
+    petEntity.description = this.description
+    petEntity.lastSeenLocation = this.lastSeenLocation
+    petEntity.status = this.status
+
+    // Assuming you handle colorIds separately to link with PetColorsEntity
+    // if (this.colorIds) {
+    //   petEntity.colors = this.colorIds.map((id) => {
+    //     const color = new PetColorsEntity()
+    //     color.id = id
+    //     return color
+    //   })
+    // }
+
+    return petEntity
   }
 }

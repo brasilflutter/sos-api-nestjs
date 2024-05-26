@@ -1,12 +1,11 @@
 import { AddressEntity } from '@/core/entities/address.entity'
-import { AddressService } from '@/core/services/address.service'
 import { EncrypterImpl } from '@/core/services/encripter.impl'
 import { Module } from '@nestjs/common'
 import { TypeOrmModule } from '@nestjs/typeorm'
 
 @Module({
-  providers: [EncrypterImpl, AddressService],
+  providers: [EncrypterImpl],
   imports: [TypeOrmModule.forFeature([AddressEntity])],
-  exports: [EncrypterImpl, AddressService],
+  exports: [EncrypterImpl],
 })
 export class CoreModule {}

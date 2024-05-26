@@ -5,7 +5,6 @@ import { Repository } from 'typeorm'
 import { Either, Left, Right } from '@/core/adapters/either'
 import { ShelterEntity } from '@/core/entities/shelter/shelter.entity'
 import { ShelterDto } from '@/shelter/dtos/shelter.dto'
-import { AddressEntity } from '@/core/entities/address.entity'
 
 @Injectable()
 export class ShelterService {
@@ -14,12 +13,16 @@ export class ShelterService {
     private readonly request: Request,
     @InjectRepository(ShelterEntity)
     private readonly shelterRepository: Repository<ShelterEntity>,
-    @InjectRepository(AddressEntity)
-    private readonly addressRepository: Repository<AddressEntity>,
   ) {}
 
-  async get(): Promise<any> {
-    return this.shelterRepository.find()
+  async get(): Promise<Either<HttpException, ShelterDto[]>> {
+    const shelters = await this.shelterRepository.find()
+
+    if (!shelters) {
+      return new Left(new HttpException('Shelters not found', 404))
+    }
+
+    return new Right(shelters.map((shelter) => ShelterDto.fromEntity(shelter)))
   }
 
   async getById(id: number): Promise<Either<HttpException, ShelterEntity>> {
@@ -37,18 +40,18 @@ export class ShelterService {
   }
 
   async create(shelter: ShelterDto): Promise<ShelterEntity> {
-    return await this.shelterRepository.save(shelter)
+    return await this.shelterRepository.save(shelter.toEntity())
   }
 
-  async update(
-    id: number,
-    pet: Partial<ShelterEntity>,
-  ): Promise<ShelterEntity> {
-    await this.shelterRepository.update(id, pet)
-    return this.shelterRepository.findOneBy({ id })
-  }
+  async update(id: number, item: Partial<ShelterDto>): Promise<ShelterDto> {
+    await this.shelterRepository.update(id, item)
 
-  async delete(id: number): Promise<void> {
-    await this.shelterRepository.delete(id)
+    const dto = new ShelterDto(item)
+
+    await this.shelterRepository.update({ id }, dto.toEntity())
+
+    const updated = await this.shelterRepository.findOne({ where: { id } })
+
+    return ShelterDto.fromEntity(updated)
   }
 }

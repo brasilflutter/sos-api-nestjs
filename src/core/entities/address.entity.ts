@@ -1,49 +1,73 @@
-import { Column, Entity, PrimaryGeneratedColumn } from 'typeorm'
+import {
+  Column,
+  CreateDateColumn,
+  DeleteDateColumn,
+  Entity,
+  OneToMany,
+  PrimaryGeneratedColumn,
+  UpdateDateColumn,
+} from 'typeorm'
+import { ShelterAddressEntity } from '@/core/entities/shelter/shelter-address.entity'
 
 @Entity('addresses')
 export class AddressEntity {
-  @PrimaryGeneratedColumn({ type: 'int', name: 'id', unsigned: true })
+  @PrimaryGeneratedColumn()
   id: number
-  @Column('varchar', { name: 'name', length: 255 })
-  name: string
-  @Column('varchar', { name: 'number', length: 255 })
-  number: string
-  @Column('varchar', { name: 'street', length: 255 })
-  street: string
-  @Column('varchar', { name: 'description', nullable: true, length: 255 })
-  description?: string | null
-  @Column('varchar', { name: 'neighborhood', length: 255 })
-  neighborhood: string
-  @Column('varchar', { name: 'city', length: 255 })
-  city: string
-  @Column('varchar', { name: 'state', length: 100 })
-  state: string
-  @Column('varchar', { name: 'country', length: 100 })
-  country: string
-  @Column('varchar', { name: 'zip', length: 100 })
-  zip: string
-  @Column('varchar', { name: 'latitude', nullable: true, length: 20 })
-  latitude?: string | null
-  @Column('varchar', { name: 'longitude', nullable: true, length: 20 })
-  longitude?: string | null
-  @Column('smallint', { name: 'index', default: () => 0 })
-  index: number
-  @Column('timestamp', {
-    name: 'createdAt',
-    default: () => 'CURRENT_TIMESTAMP',
-  })
-  createdAt: Date
-  @Column('timestamp', {
-    name: 'updatedAt',
-    default: () => 'CURRENT_TIMESTAMP',
-  })
-  updatedAt: Date
-  @Column('timestamp', { name: 'deletedAt', nullable: true })
-  deletedAt?: Date | null
 
-  constructor(partial?: Partial<AddressEntity>) {
-    if (partial) {
-      Object.assign(this, partial)
-    }
-  }
+  @Column({ nullable: true })
+  name: string
+
+  @Column({ nullable: true })
+  number: string
+
+  @Column({ nullable: true })
+  street: string
+
+  @Column({ nullable: true })
+  neighborhood: string
+
+  @Column({ nullable: true })
+  city: string
+
+  @Column({ nullable: true })
+  state: string
+
+  @Column({ nullable: true })
+  country: string
+
+  @Column({ nullable: true })
+  zip: string
+
+  @Column({ nullable: true })
+  description: string
+
+  @Column({ nullable: true })
+  complement: string
+
+  @Column('float8', { nullable: true })
+  latitude: number
+
+  @Column('float8', { nullable: true })
+  longitude: number
+
+  @Column({ nullable: true })
+  index: number
+
+  @CreateDateColumn({ name: 'createdAt' })
+  createdAt: Date
+
+  @UpdateDateColumn({ name: 'updatedAt' })
+  updatedAt: Date
+
+  @DeleteDateColumn({ name: 'deletedAt', nullable: true })
+  deletedAt?: Date
+
+  @OneToMany(
+    () => ShelterAddressEntity,
+    (shelterAddress) => shelterAddress.address,
+  )
+  shelterAddresses: ShelterAddressEntity[]
+
+  // @OneToMany(() => UserAddressEntity, (userAddress) => userAddress.address)
+  // userAddresses: UserAddressEntity[]
 }

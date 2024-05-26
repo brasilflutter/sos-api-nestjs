@@ -5,7 +5,7 @@ import { CoreModule } from '@/core/core.module'
 import { AuthModule } from '@/auth/auth.module'
 import { TypeOrmModule } from '@nestjs/typeorm'
 import { AddressEntity } from '@/core/entities/address.entity'
-import { UserEntity } from '@/core/entities/user.entity'
+import { UserEntity } from '@/core/entities/user/user.entity'
 
 @Module({
   controllers: [ProfileController],

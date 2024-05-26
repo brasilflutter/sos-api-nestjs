@@ -1,28 +1,47 @@
-import { Controller, Delete, Get, Post, Put } from '@nestjs/common'
+import {
+  Body,
+  Controller,
+  Delete,
+  Get,
+  Param,
+  ParseIntPipe,
+  Post,
+  Put,
+} from '@nestjs/common'
 import { ApiTags } from '@nestjs/swagger'
+import { AddressService } from './address.service'
+import { AddressDto } from '@/address/dtos/address.dto'
 
 @ApiTags('Address')
 @Controller('address')
 export class AddressController {
-  constructor() {}
+  constructor(private readonly addressService: AddressService) {}
 
-  @Get(':id')
-  getById() {
-    return 'This action returns an item'
+  @Get('')
+  async get(): Promise<AddressDto[]> {
+    return this.addressService.get()
   }
 
-  @Put(':id')
-  put() {
-    return 'This action updates an item'
+  @Get(':id')
+  async getById(@Param('id', ParseIntPipe) id: number): Promise<AddressDto> {
+    return this.addressService.getById(id)
   }
 
   @Post()
-  post() {
-    return 'This action creates an item'
+  async post(@Body() data: AddressDto): Promise<AddressDto> {
+    return this.addressService.create(data)
+  }
+
+  @Put(':id')
+  async put(
+    @Param('id', ParseIntPipe) id: number,
+    @Body() data: AddressDto,
+  ): Promise<AddressDto> {
+    return this.addressService.update(id, data)
   }
 
   @Delete(':id')
-  delete() {
-    return 'This action removes an item'
+  async delete(@Param('id', ParseIntPipe) id: number): Promise<void> {
+    return this.addressService.delete(id)
   }
 }

@@ -5,7 +5,7 @@ import { JwtModule } from '@nestjs/jwt'
 import { CoreModule } from '@/core/core.module'
 import { UserService } from '@/auth/services/user.service'
 import { TypeOrmModule } from '@nestjs/typeorm'
-import { UserEntity } from '@/core/entities/user.entity'
+import { UserEntity } from '@/core/entities/user/user.entity'
 
 const JwtModuleInstance = JwtModule.register({
   secret: String(process.env.JWT_SECRET),

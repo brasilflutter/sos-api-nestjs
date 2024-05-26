@@ -2,7 +2,7 @@ import { HttpException, Inject, Injectable } from '@nestjs/common'
 import { REQUEST } from '@nestjs/core'
 import { InjectRepository } from '@nestjs/typeorm'
 import { Repository } from 'typeorm'
-import { UserEntity } from '@/core/entities/user.entity'
+import { UserEntity } from '@/core/entities/user/user.entity'
 import { Either, Left, Right } from '@/core/adapters/either'
 import { getAuthorization } from '@/core/adapters/getAuthorization'
 

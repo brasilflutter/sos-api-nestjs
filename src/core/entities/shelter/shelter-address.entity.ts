@@ -1,19 +1,21 @@
-import { Column, Entity, PrimaryGeneratedColumn } from 'typeorm'
+import { Column, Entity, ManyToOne, PrimaryGeneratedColumn } from 'typeorm'
+import { AddressEntity } from '@/core/entities/address.entity'
+import { ShelterEntity } from '@/core/entities/shelter/shelter.entity' // Assuming you have a ShelterEntity defined
 
 @Entity('shelter_addresses')
 export class ShelterAddressEntity {
-  constructor(partial?: Partial<ShelterAddressEntity>) {
-    if (partial) {
-      Object.assign(this, partial)
-    }
-  }
-
-  @PrimaryGeneratedColumn({ type: 'int', name: 'id', unsigned: true })
+  @PrimaryGeneratedColumn()
   id: number
 
-  @Column({ name: 'idShelter', unsigned: true })
+  @Column()
   idShelter: number
 
-  @Column({ name: 'idAddress', unsigned: true })
+  @Column()
   idAddress: number
+
+  @ManyToOne(() => AddressEntity, (address) => address.shelterAddresses)
+  address: AddressEntity
+
+  // @ManyToOne(() => ShelterEntity, (shelter) => shelter.shelterAddresses)
+  // shelter: ShelterEntity
 }

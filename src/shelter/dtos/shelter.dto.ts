@@ -2,6 +2,7 @@ import { AddressDto } from '@/address/dtos/address.dto'
 import { ActiveStatusEnum } from '@/core/enums/active-status.enum'
 import { ApiProperty } from '@nestjs/swagger'
 import { IsArray, IsEnum, IsObject, IsString } from 'class-validator'
+import { ShelterEntity } from '@/core/entities/shelter/shelter.entity'
 
 export class ShelterDto {
   constructor(partial: Partial<ShelterDto>) {
@@ -31,4 +32,22 @@ export class ShelterDto {
   @IsArray()
   @IsObject({ each: true })
   addresses: AddressDto[]
+
+  static fromEntity(shelter: ShelterEntity) {
+    return new ShelterDto({
+      name: shelter.name,
+      status: shelter.status,
+      // addresses: shelter.addresses.map((address) =>
+      //   AddressDto.fromEntity(address),
+      // ),
+    })
+  }
+
+  toEntity(): Partial<ShelterEntity> {
+    return new ShelterEntity({
+      name: this.name,
+      status: this.status,
+      // addresses: this.addresses.map((address) => address.toEntity()),
+    })
+  }
 }

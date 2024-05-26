@@ -13,7 +13,7 @@ import { AddressDto } from '@/address/dtos/address.dto'
 import { ProfileService } from '@/profile/services/profile.service'
 import { AuthGuard } from '@/core/guards/auth.guard'
 import { REQUEST } from '@nestjs/core'
-import { UserEntity } from '@/core/entities/user.entity'
+import { UserEntity } from '@/core/entities/user/user.entity'
 import { Either } from '@/core/adapters/either'
 
 @ApiSecurity('bearer')

@@ -2,7 +2,7 @@ import { HttpException, Injectable } from '@nestjs/common'
 import { IsNull, Repository } from 'typeorm'
 import { InjectRepository } from '@nestjs/typeorm'
 import { Either, Left, Right } from '@/core/adapters/either'
-import { UserEntity } from '@/core/entities/user.entity'
+import { UserEntity } from '@/core/entities/user/user.entity'
 import { SignUpDto } from '@/auth/dtos/sign-up.dto'
 import { EncrypterImpl } from '@/core/services/encripter.impl'
 
