@@ -11,6 +11,9 @@ import { ShelterModule } from '@/shelter/shelter.module'
 import { ProfileModule } from '@/profile/profile.module'
 import { NotificationModule } from '@/notification/notification.module'
 import { ContactModule } from '@/contact/contact.module'
+import { FileUploadModule } from '@/file-upload/file-upload.module'
+import { ServeStaticModule } from '@nestjs/serve-static'
+import { join } from 'path'
 
 @Module({
   imports: [
@@ -28,6 +31,10 @@ import { ContactModule } from '@/contact/contact.module'
       autoLoadEntities: true,
       entities: [__dirname + '/**/*.entity{.ts,.js}'],
     }),
+    ServeStaticModule.forRoot({
+      rootPath: join(__dirname, '..', 'uploads'),
+      serveRoot: '/uploads',
+    }),
     AuthModule,
     CoreModule,
     UserModule,
@@ -37,6 +44,7 @@ import { ContactModule } from '@/contact/contact.module'
     ShelterModule,
     ProfileModule,
     NotificationModule,
+    FileUploadModule,
   ],
   controllers: [AppController],
 })
