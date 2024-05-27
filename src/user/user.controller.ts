@@ -6,7 +6,6 @@ import {
   Inject,
   Param,
   ParseIntPipe,
-  Post,
   Put,
   UseGuards,
 } from '@nestjs/common'
@@ -46,11 +45,6 @@ export class UserController {
   @Get(':id')
   async getById(@Param('id', ParseIntPipe) id: number): Promise<UserDto> {
     return this.userService.findOne(id)
-  }
-
-  @Post()
-  async post(@Body() userDto: UserDto): Promise<UserDto> {
-    return this.userService.create(userDto)
   }
 
   @Put(':id')
