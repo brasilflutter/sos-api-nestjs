@@ -1,5 +1,10 @@
 import { AuthService } from '@/auth/services/auth.service'
-import { CanActivate, ExecutionContext, Injectable } from '@nestjs/common'
+import {
+  CanActivate,
+  ExecutionContext,
+  Injectable,
+  UnauthorizedException,
+} from '@nestjs/common'
 
 @Injectable()
 export class AuthGuard implements CanActivate {
@@ -9,10 +14,18 @@ export class AuthGuard implements CanActivate {
     const request = context.switchToHttp().getRequest()
     const { authorization } = request.headers
 
-    const token = (authorization ?? '').split(' ')[1]
+    if (!authorization) {
+      throw new UnauthorizedException('Authorization header not found')
+    }
 
-    if (!this.authService.tokenIsValid(token)) {
-      return false
+    const token = authorization.split(' ')[1]
+    if (!token) {
+      throw new UnauthorizedException('Token not found')
+    }
+
+    const isValid = this.authService.tokenIsValid(token)
+    if (!isValid) {
+      throw new UnauthorizedException('Invalid token')
     }
 
     request.authDto = this.authService.tokenGetData(token)

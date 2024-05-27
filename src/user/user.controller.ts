@@ -1,29 +1,68 @@
-import { Controller, Get } from '@nestjs/common'
-import { ApiOkResponse, ApiTags } from '@nestjs/swagger'
-import { AddressDto } from '@/address/dtos/address.dto'
+import {
+  Body,
+  Controller,
+  Delete,
+  Get,
+  Inject,
+  Param,
+  ParseIntPipe,
+  Post,
+  Put,
+  UseGuards,
+} from '@nestjs/common'
+import { ApiSecurity, ApiTags } from '@nestjs/swagger'
+import { UserService } from './user.service'
+import { UserDto } from '@/user/dtos/user.dto'
+import { AuthGuard } from '@/core/guards/auth.guard'
+import { getAuthorization } from '@/core/adapters/getAuthorization'
+import { REQUEST } from '@nestjs/core'
 
+@ApiSecurity('bearer')
+@UseGuards(AuthGuard)
 @ApiTags('User')
 @Controller('user')
 export class UserController {
-  constructor() {}
+  constructor(
+    private readonly userService: UserService,
+    @Inject(REQUEST)
+    private readonly request: Request,
+  ) {}
 
-  @ApiOkResponse({
-    description: 'The user records',
-    type: AddressDto,
-    isArray: true,
-  })
-  @Get('')
-  async get(): Promise<any> {
-    throw new Error('Not implemented')
+  @Get()
+  async get(): Promise<UserDto[]> {
+    return this.userService.findAll()
   }
 
-  @ApiOkResponse({
-    description: 'The user records',
-    type: AddressDto,
-    isArray: true,
-  })
+  @Get('/me')
+  @UseGuards(AuthGuard)
+  async me(): Promise<UserDto> {
+    const authDto = getAuthorization(this.request)
+
+    console.log(authDto.id)
+
+    return await this.userService.findOne(authDto.id)
+  }
+
   @Get(':id')
-  async getById(id: string): Promise<any> {
-    throw new Error('Not implemented')
+  async getById(@Param('id', ParseIntPipe) id: number): Promise<UserDto> {
+    return this.userService.findOne(id)
+  }
+
+  @Post()
+  async post(@Body() userDto: UserDto): Promise<UserDto> {
+    return this.userService.create(userDto)
+  }
+
+  @Put(':id')
+  async put(
+    @Param('id', ParseIntPipe) id: number,
+    @Body() userDto: UserDto,
+  ): Promise<UserDto> {
+    return this.userService.update(id, userDto)
+  }
+
+  @Delete(':id')
+  async delete(@Param('id', ParseIntPipe) id: number): Promise<void> {
+    return this.userService.delete(id)
   }
 }

@@ -8,7 +8,6 @@ import { UserModule } from '@/user/user.module'
 import { AddressModule } from '@/address/address.module'
 import { PetModule } from '@/pet/pet.module'
 import { ShelterModule } from '@/shelter/shelter.module'
-import { ProfileModule } from '@/profile/profile.module'
 import { NotificationModule } from '@/notification/notification.module'
 import { ContactModule } from '@/contact/contact.module'
 import { FileUploadModule } from '@/file-upload/file-upload.module'
@@ -42,7 +41,6 @@ import { join } from 'path'
     ContactModule,
     PetModule,
     ShelterModule,
-    ProfileModule,
     NotificationModule,
     FileUploadModule,
   ],

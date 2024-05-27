@@ -6,6 +6,11 @@ import { ApiTags } from '@nestjs/swagger'
 export class ContactController {
   constructor() {}
 
+  @Get('')
+  get() {
+    return 'This action returns a list of items'
+  }
+
   @Get(':id')
   getById() {
     return 'This action returns an item'
